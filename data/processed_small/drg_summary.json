@@ -1,0 +1,29 @@
+{
+  "dataset": "Nguyen et al. eLife 2021, human DRG snRNA-seq (CELLxGENE 6a6e7f1e)",
+  "n_nuclei": 1837,
+  "n_clusters": 15,
+  "n_donors": 6,
+  "PTGS2_pct_in_DRG_neurons": 0.0,
+  "IL1B_pct_in_DRG_neurons": 0.0,
+  "IL6_pct_in_DRG_neurons": 0.05,
+  "PTGER3_mean_pct_all_clusters": 30.0,
+  "PTGER3_max_pct": 83.9,
+  "PTGER3_cluster_max": "H3",
+  "PTGER1_pct_all": 0.08,
+  "IL6ST_gp130_mean_pct": 59.3,
+  "IL6R_mean_pct": 7.6,
+  "TNFRSF1A_mean_pct": 15.6,
+  "NTRK1_mean_pct": 33.8,
+  "nociceptor_clusters": [
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6",
+    "H7",
+    "H9",
+    "H10",
+    "H11"
+  ]
+}

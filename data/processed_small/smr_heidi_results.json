@@ -1,0 +1,387 @@
+{
+ "IL1B": {
+  "top_snp": "rs6542082",
+  "outcomes": {
+   "stomach_abdominal_pain": {
+    "smr_b": -0.0006536507505756329,
+    "smr_se": 0.006037032833440816,
+    "smr_p": 0.9137787329566174,
+    "instrument_snp": "rs6542082",
+    "is_fallback": false,
+    "heidi": {
+     "n_snp": 0,
+     "reason": "top SNP missing in region data"
+    }
+   },
+   "chronic_abdominal_pain_3mo": {
+    "smr_b": -0.0430383889942504,
+    "smr_se": 0.03738228827339704,
+    "smr_p": 0.24960707139032035,
+    "instrument_snp": "rs6542082",
+    "is_fallback": false,
+    "heidi": {
+     "n_snp": 0,
+     "reason": "top SNP missing in region data"
+    }
+   },
+   "upper_abdominal_pain_R101": {
+    "smr_b": -0.001871161799724276,
+    "smr_se": 0.002444608426923348,
+    "smr_p": 0.4440191453564615,
+    "instrument_snp": "rs6542082",
+    "is_fallback": false,
+    "heidi": {
+     "n_snp": 0,
+     "reason": "top SNP missing in region data"
+    }
+   },
+   "abdominal_pain_R104": {
+    "smr_b": 0.004410347824195538,
+    "smr_se": 0.0034554759817565887,
+    "smr_p": 0.20183682758143906,
+    "instrument_snp": "rs6542082",
+    "is_fallback": false,
+    "heidi": {
+     "n_snp": 0,
+     "reason": "top SNP missing in region data"
+    }
+   }
+  }
+ },
+ "TNF": {
+  "top_snp": "rs1121800",
+  "outcomes": {
+   "stomach_abdominal_pain": {
+    "smr_b": -0.0018478969397557293,
+    "smr_se": 0.00205193062444531,
+    "smr_p": 0.36781964123242117,
+    "instrument_snp": "rs1121800",
+    "is_fallback": false,
+    "heidi": {
+     "n_snp": 4,
+     "statistic": 4.4486,
+     "df": 3,
+     "p_heidi": 0.2169,
+     "b_smr": -0.00185
+    }
+   },
+   "chronic_abdominal_pain_3mo": {
+    "smr_b": -0.015452586798408125,
+    "smr_se": 0.012542272720507033,
+    "smr_p": 0.21793399012886783,
+    "instrument_snp": "rs1121800",
+    "is_fallback": false,
+    "heidi": {
+     "n_snp": 4,
+     "statistic": 2.3538,
+     "df": 3,
+     "p_heidi": 0.5023,
+     "b_smr": -0.01545
+    }
+   },
+   "upper_abdominal_pain_R101": {
+    "smr_b": -0.0010482331549334432,
+    "smr_se": 0.0008277650237164781,
+    "smr_p": 0.20539086546328078,
+    "instrument_snp": "rs1121800",
+    "is_fallback": false,
+    "heidi": {
+     "n_snp": 4,
+     "statistic": 2.31,
+     "df": 3,
+     "p_heidi": 0.5106,
+     "b_smr": -0.00105
+    }
+   },
+   "abdominal_pain_R104": {
+    "smr_b": -0.0007101996706463565,
+    "smr_se": 0.0011595024603740177,
+    "smr_p": 0.5402044803062593,
+    "instrument_snp": "rs1121800",
+    "is_fallback": false,
+    "heidi": {
+     "n_snp": 4,
+     "statistic": 1.2855,
+     "df": 3,
+     "p_heidi": 0.7326,
+     "b_smr": -0.00071
+    }
+   }
+  }
+ },
+ "PTGS2": {
+  "top_snp": "rs689470",
+  "outcomes": {
+   "stomach_abdominal_pain": {
+    "smr_b": -0.0022436250212872753,
+    "smr_se": 0.0017179227690334138,
+    "smr_p": 0.19154901721881257,
+    "instrument_snp": "rs689470",
+    "is_fallback": false,
+    "heidi": {
+     "n_snp": 5,
+     "statistic": 0.0651,
+     "df": 4,
+     "p_heidi": 0.9995,
+     "b_smr": -0.00224
+    }
+   },
+   "chronic_abdominal_pain_3mo": {
+    "smr_b": -0.010151206876462099,
+    "smr_se": 0.010309952644523382,
+    "smr_p": 0.32481927884808004,
+    "instrument_snp": "rs689470",
+    "is_fallback": false,
+    "heidi": {
+     "n_snp": 5,
+     "statistic": 0.0466,
+     "df": 4,
+     "p_heidi": 0.9997,
+     "b_smr": -0.01015
+    }
+   },
+   "upper_abdominal_pain_R101": {
+    "smr_b": 0.0022341910973530436,
+    "smr_se": 0.0009943419821210214,
+    "smr_p": 0.024646155294214326,
+    "instrument_snp": "rs12037836",
+    "is_fallback": true,
+    "heidi": {
+     "n_snp": 0,
+     "reason": "top SNP missing in region data fallback instrument (top rs689470 absent)"
+    }
+   },
+   "abdominal_pain_R104": {
+    "smr_b": 0.000520857819199126,
+    "smr_se": 0.001385985151752397,
+    "smr_p": 0.7070631206631004,
+    "instrument_snp": "rs12037836",
+    "is_fallback": true,
+    "heidi": {
+     "n_snp": 0,
+     "reason": "top SNP missing in region data fallback instrument (top rs689470 absent)"
+    }
+   }
+  }
+ },
+ "IL6": {
+  "top_snp": "rs10265117",
+  "outcomes": {
+   "stomach_abdominal_pain": {
+    "smr_b": 0.0026633807556628295,
+    "smr_se": 0.005090886009436704,
+    "smr_p": 0.6008584272101052,
+    "instrument_snp": "rs10265117",
+    "is_fallback": false,
+    "heidi": {
+     "n_snp": 17,
+     "statistic": 4.5866,
+     "df": 16,
+     "p_heidi": 0.9975,
+     "b_smr": 0.00266
+    }
+   },
+   "chronic_abdominal_pain_3mo": {
+    "smr_b": -0.007286193371704418,
+    "smr_se": 0.031207656500727796,
+    "smr_p": 0.8153929343195487,
+    "instrument_snp": "rs10265117",
+    "is_fallback": false,
+    "heidi": {
+     "n_snp": 17,
+     "statistic": 3.455,
+     "df": 16,
+     "p_heidi": 0.9996,
+     "b_smr": -0.00729
+    }
+   },
+   "upper_abdominal_pain_R101": {
+    "smr_b": 0.002283507008911994,
+    "smr_se": 0.00206339586919093,
+    "smr_p": 0.2684348063578488,
+    "instrument_snp": "rs10265117",
+    "is_fallback": false,
+    "heidi": {
+     "n_snp": 17,
+     "statistic": 1.1355,
+     "df": 16,
+     "p_heidi": 1.0,
+     "b_smr": 0.00228
+    }
+   },
+   "abdominal_pain_R104": {
+    "smr_b": 0.0010144819903453396,
+    "smr_se": 0.002875529879225007,
+    "smr_p": 0.724239674669303,
+    "instrument_snp": "rs10265117",
+    "is_fallback": false,
+    "heidi": {
+     "n_snp": 17,
+     "statistic": 25.7151,
+     "df": 16,
+     "p_heidi": 0.0582,
+     "b_smr": 0.00101
+    }
+   }
+  }
+ },
+ "CALCRL": {
+  "top_snp": "rs8176580",
+  "outcomes": {
+   "stomach_abdominal_pain": {
+    "smr_b": 0.0017155383529142364,
+    "smr_se": 0.0020335488582571334,
+    "smr_p": 0.3988829211657593,
+    "instrument_snp": "rs8176580",
+    "is_fallback": false,
+    "heidi": {
+     "n_snp": 0,
+     "reason": "fewer than 2 non-proxy SNPs"
+    }
+   },
+   "chronic_abdominal_pain_3mo": {
+    "smr_b": -0.006940958329887859,
+    "smr_se": 0.012491907382407132,
+    "smr_p": 0.5784594489796102,
+    "instrument_snp": "rs8176580",
+    "is_fallback": false,
+    "heidi": {
+     "n_snp": 0,
+     "reason": "fewer than 2 non-proxy SNPs"
+    }
+   },
+   "upper_abdominal_pain_R101": {
+    "smr_b": -0.0003275470545954164,
+    "smr_se": 0.0008195056423039799,
+    "smr_p": 0.6893858971370065,
+    "instrument_snp": "rs8176580",
+    "is_fallback": false,
+    "heidi": {
+     "n_snp": 0,
+     "reason": "fewer than 2 non-proxy SNPs"
+    }
+   },
+   "abdominal_pain_R104": {
+    "smr_b": 0.00039092366310245467,
+    "smr_se": 0.0011490643795707075,
+    "smr_p": 0.7336980796135342,
+    "instrument_snp": "rs8176580",
+    "is_fallback": false,
+    "heidi": {
+     "n_snp": 0,
+     "reason": "fewer than 2 non-proxy SNPs"
+    }
+   }
+  }
+ },
+ "TACR1": {
+  "top_snp": "rs2087172",
+  "outcomes": {
+   "stomach_abdominal_pain": {
+    "smr_b": -0.0033486478655592043,
+    "smr_se": 0.005881122838643461,
+    "smr_p": 0.5690920401419416,
+    "instrument_snp": "rs10194657",
+    "is_fallback": true,
+    "heidi": {
+     "n_snp": 0,
+     "reason": "top SNP missing in region data fallback instrument (top rs2087172 absent)"
+    }
+   },
+   "chronic_abdominal_pain_3mo": {
+    "smr_b": -0.027123623720301335,
+    "smr_se": 0.03600615120535482,
+    "smr_p": 0.45126648827532156,
+    "instrument_snp": "rs10194657",
+    "is_fallback": true,
+    "heidi": {
+     "n_snp": 0,
+     "reason": "top SNP missing in region data fallback instrument (top rs2087172 absent)"
+    }
+   },
+   "upper_abdominal_pain_R101": {
+    "smr_b": 0.004099632992080356,
+    "smr_se": 0.0024153248480310308,
+    "smr_p": 0.08963196759669273,
+    "instrument_snp": "rs10194657",
+    "is_fallback": true,
+    "heidi": {
+     "n_snp": 0,
+     "reason": "top SNP missing in region data fallback instrument (top rs2087172 absent)"
+    }
+   },
+   "abdominal_pain_R104": {
+    "smr_b": -0.002959658103148542,
+    "smr_se": 0.003335735543198586,
+    "smr_p": 0.3749400031552742,
+    "instrument_snp": "rs10194657",
+    "is_fallback": true,
+    "heidi": {
+     "n_snp": 0,
+     "reason": "top SNP missing in region data fallback instrument (top rs2087172 absent)"
+    }
+   }
+  }
+ },
+ "TRPV1": {
+  "top_snp": "rs222741",
+  "outcomes": {
+   "stomach_abdominal_pain": {
+    "smr_b": -0.0006699450952905444,
+    "smr_se": 0.005387595687615658,
+    "smr_p": 0.9010385170797517,
+    "instrument_snp": "rs222741",
+    "is_fallback": false,
+    "heidi": {
+     "n_snp": 18,
+     "statistic": 9.3602,
+     "df": 17,
+     "p_heidi": 0.9283,
+     "b_smr": -0.00067
+    }
+   },
+   "chronic_abdominal_pain_3mo": {
+    "smr_b": -0.04338907246086579,
+    "smr_se": 0.03329293353251268,
+    "smr_p": 0.19248884245341835,
+    "instrument_snp": "rs222741",
+    "is_fallback": false,
+    "heidi": {
+     "n_snp": 18,
+     "statistic": 4.2338,
+     "df": 17,
+     "p_heidi": 0.9992,
+     "b_smr": -0.04339
+    }
+   },
+   "upper_abdominal_pain_R101": {
+    "smr_b": 0.00037359483995861285,
+    "smr_se": 0.0021718888103330605,
+    "smr_p": 0.8634266825865623,
+    "instrument_snp": "rs222741",
+    "is_fallback": false,
+    "heidi": {
+     "n_snp": 18,
+     "statistic": 1.5414,
+     "df": 17,
+     "p_heidi": 1.0,
+     "b_smr": 0.00037
+    }
+   },
+   "abdominal_pain_R104": {
+    "smr_b": 0.005286998097526785,
+    "smr_se": 0.003101356546331426,
+    "smr_p": 0.08824343520490209,
+    "instrument_snp": "rs222741",
+    "is_fallback": false,
+    "heidi": {
+     "n_snp": 18,
+     "statistic": 15.8212,
+     "df": 17,
+     "p_heidi": 0.5365,
+     "b_smr": 0.00529
+    }
+   }
+  }
+ }
+}

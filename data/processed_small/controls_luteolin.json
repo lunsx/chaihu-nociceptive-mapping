@@ -1,0 +1,22 @@
+{
+  "celecoxib": {
+    "affinity": -12.39,
+    "benchmark_percentile": 0.3
+  },
+  "diclofenac": {
+    "affinity": -8.546,
+    "benchmark_percentile": 41.0
+  },
+  "ibuprofen": {
+    "affinity": -7.716,
+    "benchmark_percentile": 65.3
+  },
+  "indomethacin": {
+    "affinity": -9.566,
+    "benchmark_percentile": 17.0
+  },
+  "luteolin": {
+    "affinity": -9.63,
+    "benchmark_percentile": 17.0
+  }
+}

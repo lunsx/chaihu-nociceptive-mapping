@@ -1,0 +1,18 @@
+{
+  "n_active": 50,
+  "n_decoy": 250,
+  "ROC_AUC": 0.78404,
+  "mean_affinity_active": -9.72726,
+  "mean_affinity_decoy": -7.871116,
+  "median_affinity_active": -9.839500000000001,
+  "median_affinity_decoy": -8.060500000000001,
+  "BEDROC_alpha20": 4.643532558911283,
+  "EF_1pct_EF": 6.0,
+  "EF_1pct_actives_in_top": 3,
+  "EF_5pct_EF": 5.6000000000000005,
+  "EF_5pct_actives_in_top": 14,
+  "EF_10pct_EF": 4.800000000000001,
+  "EF_10pct_actives_in_top": 24,
+  "EF_20pct_EF": 3.0,
+  "EF_20pct_actives_in_top": 30
+}

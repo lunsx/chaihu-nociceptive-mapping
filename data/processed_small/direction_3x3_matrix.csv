@@ -1,0 +1,4 @@
+﻿,obs_up,obs_down,obs_uncertain
+pred_up,18,0,17
+pred_down,0,6,11
+pred_uncertain,0,0,2

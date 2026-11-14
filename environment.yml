@@ -1,0 +1,26 @@
+name: chaihu-nociceptive
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - pandas=3.1.1
+  - numpy=2.5.4
+  - scipy=1.18.1
+  - statsmodels=0.15.0
+  - scikit-learn=1.9.1
+  - requests=2.34.2
+  - tqdm=4.70.1
+  - openpyxl=3.1.5
+  - scanpy=1.13.0
+  - anndata=0.13.4
+  - python-igraph=1.0.0
+  - networkx=3.7
+  - rdkit=2026.9.2
+  - meeko=0.8.0
+  - openmm=8.6.1
+  - openff-toolkit=0.18.0
+  - matplotlib=3.11.2
+  - seaborn=0.13.2
+  - python-docx=1.2.0
+  - openbabel
+  # AutoDock Vina is installed as a standalone executable, not a conda package.

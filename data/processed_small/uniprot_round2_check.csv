@@ -1,0 +1,7 @@
+﻿question,accession,id,name,genes,reviewed,organism
+NO66_URLC2,A0A0A8K8C0,A0A0A8K8C0_HUMAN,Bifunctional lysine-specific demethylase and histidyl-hydroxylase,['URLC2'],UniProtKB unreviewed (TrEMBL),Homo sapiens
+DHRS4,Q9BTZ2,DHRS4_HUMAN,Dehydrogenase/reductase SDR family member 4,['DHRS4'],UniProtKB reviewed (Swiss-Prot),Homo sapiens
+DHRS4,Q9P1J3,DHAS1_HUMAN,Putative uncharacterized protein DHRS4-AS1,['DHRS4-AS1'],UniProtKB reviewed (Swiss-Prot),Homo sapiens
+DHRS4,A0ACP2FI66,A0ACP2FI66_HUMAN,,['DHRS4'],UniProtKB unreviewed (TrEMBL),Homo sapiens
+DHRS4,A0ACP2HAF0,A0ACP2HAF0_HUMAN,,['DHRS4'],UniProtKB unreviewed (TrEMBL),Homo sapiens
+DHRS4,A0ACP2HAF6,A0ACP2HAF6_HUMAN,,['DHRS4'],UniProtKB unreviewed (TrEMBL),Homo sapiens

@@ -1,0 +1,19 @@
+target_name,original_trembl_acc,verdict,final_gene,final_uniprot,action,note
+2-isopropylmalate synthase,Q9HBB2,REJECT_WRONG,,,rejected; not a valid human target,IRP1/ACO1 是顺乌头酸酶与铁反应元件结合蛋白，不是异丙基苹果酸合酶；基因符号撞名
+6-phosphofructokinase,A0A7I2V3Z0,REPLACE,PFKP,Q01813,mapped to reviewed human entry,PFKP 即血小板型磷酸果糖激酶，同酶不同同工酶，名称同义
+Adenylsuccinate synthetase,B3KTV4,KEEP_TR,,,no reviewed human entry; kept as TrEMBL reference,ASS1 P00966 is argininosuccinate synthase; the correct reviewed entries are ADSS1 Q8N142 / ADSS2 P30520
+Alkaline phosphatase,B7Z1D1,KEEP_TR,,,no reviewed human entry; kept as TrEMBL reference,泛名，人类有 ALPL/ALPP/ALPPL2/ALPI 多个 reviewed 同工酶，需指定组织来源才能定
+Branched chain amino acid-dependent aminotransferase,B3KSI3,KEEP_TR,,,no reviewed human entry; kept as TrEMBL reference,片段型记录；人类 BCAT1/BCAT2 为 reviewed，需按名称另核
+Cytochrome c4,Q2HJZ5,REJECT_WRONG,,,rejected; not a valid human target,细胞色素 c4 与线粒体细胞色素 b（MT-CYB）不是同一蛋白，仅同属细胞色素家族
+Endoglucanase F,Q8N909,REJECT_WRONG,,,rejected; not a valid human target,内切葡聚糖酶为微生物酶，人类无对应；Q8N909 注释可疑，判为非人源靶点
+Gag-Pol polyprotein,V9H0H3,REJECT_WRONG,,,rejected; not a valid human target,病毒多聚蛋白，非人类靶点
+L-fucose isomerase,A0ACI8ST25,AMBIGUOUS,,,ambiguous; cannot map uniquely,FUOM 为岩藻糖变旋酶，与 L-岩藻糖异构酶（EC 5.3.1.25）活性不同，历史注释有混用
+Lysine-specific demethylase NO66,A0A0A8K8C0,KEEP_TR,,,no reviewed human entry; kept as TrEMBL reference,人类无 reviewed 记录，仅此条 TrEMBL 且名为双功能去甲基化酶/组氨酸羟化酶
+Membrane primary amine oxidase,A0A8I5KP93,REJECT_WRONG,,,rejected; not a valid human target,膜结合原胺氧化酶是 AOC3/VAP-1（铜依赖），MAOA 是 FAD 依赖单胺氧化酶，机制不同
+Methylmalonyl-CoA mutase,Q59HB4,KEEP_TR,,,no reviewed human entry; kept as TrEMBL reference,片段型记录；人类 reviewed 为 MMUT（P22033），需按名称另核
+Orotidine 5'-phosphate decarboxylase,B5LY70,REPLACE,UMPS,P11172,mapped to reviewed human entry,UMPS 为双功能酶，含乳清酸核苷酸脱羧酶活性，即该靶点
+Serine hydroxymethyltransferase,Q53ET7,KEEP_TR,,,no reviewed human entry; kept as TrEMBL reference,片段型记录；人类 SHMT1（P34896）/SHMT2（P34897）为 reviewed
+Serine hydroxymethyltransferase 1,Q53ET7,KEEP_TR,,,no reviewed human entry; kept as TrEMBL reference,SHMT1 即胞质型，按名称可直接定
+Serine hydroxymethyltransferase 2,Q53ET7,KEEP_TR,,,no reviewed human entry; kept as TrEMBL reference,SHMT2 即线粒体型，按名称可直接定
+Tryptophanyl-tRNA synthetase 2,G3V2Y7,REJECT_WRONG,,,rejected; not a valid human target,靶点写的是 synthetase 2（线粒体 WARS2），TrEMBL 却给了胞质 WARS1，符号错配
+Uridine phosphorylase,A0A0S2Z634,AMBIGUOUS,,,ambiguous; cannot map uniquely,人类有 UPP1 与 UPP2 两个同工酶，泛名无法唯一定位

@@ -1,0 +1,29 @@
+gene,outcome,instrument_snp,is_fallback,smr_b,smr_se,smr_p,heidi_n_snp,heidi_stat,heidi_p,heidi_note,smr_p_bonf,smr_p_bh
+IL1B,stomach_abdominal_pain,rs6542082,0,-0.00065,0.00604,0.9138,0,,,top SNP missing in region data,1.0,0.9138
+IL1B,chronic_abdominal_pain_3mo,rs6542082,0,-0.04304,0.03738,0.2496,0,,,top SNP missing in region data,1.0,0.7515
+IL1B,upper_abdominal_pain_R101,rs6542082,0,-0.00187,0.00244,0.444,0,,,top SNP missing in region data,1.0,0.7898
+IL1B,abdominal_pain_R104,rs6542082,0,0.00441,0.00346,0.2018,0,,,top SNP missing in region data,1.0,0.7515
+TNF,stomach_abdominal_pain,rs1121800,0,-0.00185,0.00205,0.3678,4,4.4486,0.2169,,1.0,0.7898
+TNF,chronic_abdominal_pain_3mo,rs1121800,0,-0.01545,0.01254,0.2179,4,2.3538,0.5023,,1.0,0.7515
+TNF,upper_abdominal_pain_R101,rs1121800,0,-0.00105,0.00083,0.2054,4,2.31,0.5106,,1.0,0.7515
+TNF,abdominal_pain_R104,rs1121800,0,-0.00071,0.00116,0.5402,4,1.2855,0.7326,,1.0,0.8413
+PTGS2,stomach_abdominal_pain,rs689470,0,-0.00224,0.00172,0.1915,5,0.0651,0.9995,,1.0,0.7515
+PTGS2,chronic_abdominal_pain_3mo,rs689470,0,-0.01015,0.01031,0.3248,5,0.0466,0.9997,,1.0,0.7898
+PTGS2,upper_abdominal_pain_R101,rs12037836,1,0.00223,0.00099,0.0246,0,,,top SNP missing in region data fallback instrument (top rs689470 absent),0.6888,0.6888
+PTGS2,abdominal_pain_R104,rs12037836,1,0.00052,0.00139,0.7071,0,,,top SNP missing in region data fallback instrument (top rs689470 absent),1.0,0.856
+IL6,stomach_abdominal_pain,rs10265117,0,0.00266,0.00509,0.6009,17,4.5866,0.9975,,1.0,0.8413
+IL6,chronic_abdominal_pain_3mo,rs10265117,0,-0.00729,0.03121,0.8154,17,3.455,0.9996,,1.0,0.9132
+IL6,upper_abdominal_pain_R101,rs10265117,0,0.00228,0.00206,0.2684,17,1.1355,1.0,,1.0,0.7515
+IL6,abdominal_pain_R104,rs10265117,0,0.00101,0.00288,0.7242,17,25.7151,0.0582,,1.0,0.856
+CALCRL,stomach_abdominal_pain,rs8176580,0,0.00172,0.00203,0.3989,0,,,fewer than 2 non-proxy SNPs,1.0,0.7898
+CALCRL,chronic_abdominal_pain_3mo,rs8176580,0,-0.00694,0.01249,0.5785,0,,,fewer than 2 non-proxy SNPs,1.0,0.8413
+CALCRL,upper_abdominal_pain_R101,rs8176580,0,-0.00033,0.00082,0.6894,0,,,fewer than 2 non-proxy SNPs,1.0,0.856
+CALCRL,abdominal_pain_R104,rs8176580,0,0.00039,0.00115,0.7337,0,,,fewer than 2 non-proxy SNPs,1.0,0.856
+TACR1,stomach_abdominal_pain,rs10194657,1,-0.00335,0.00588,0.5691,0,,,top SNP missing in region data fallback instrument (top rs2087172 absent),1.0,0.8413
+TACR1,chronic_abdominal_pain_3mo,rs10194657,1,-0.02712,0.03601,0.4513,0,,,top SNP missing in region data fallback instrument (top rs2087172 absent),1.0,0.7898
+TACR1,upper_abdominal_pain_R101,rs10194657,1,0.0041,0.00242,0.0896,0,,,top SNP missing in region data fallback instrument (top rs2087172 absent),1.0,0.7515
+TACR1,abdominal_pain_R104,rs10194657,1,-0.00296,0.00334,0.3749,0,,,top SNP missing in region data fallback instrument (top rs2087172 absent),1.0,0.7898
+TRPV1,stomach_abdominal_pain,rs222741,0,-0.00067,0.00539,0.901,18,9.3602,0.9283,,1.0,0.9138
+TRPV1,chronic_abdominal_pain_3mo,rs222741,0,-0.04339,0.03329,0.1925,18,4.2338,0.9992,,1.0,0.7515
+TRPV1,upper_abdominal_pain_R101,rs222741,0,0.00037,0.00217,0.8634,18,1.5414,1.0,,1.0,0.9138
+TRPV1,abdominal_pain_R104,rs222741,0,0.00529,0.0031,0.0882,18,15.8212,0.5365,,1.0,0.7515

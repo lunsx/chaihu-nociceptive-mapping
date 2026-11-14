@@ -1,0 +1,19 @@
+﻿target_name,trembl_acc,trembl_name,gene,decision,reason,canonical_acc,canonical_name,canonical_id
+2-isopropylmalate synthase,Q9HBB2,Iron-responsive element-binding protein 2,IRP1,KEEP_TR,no reviewed human entry for IRP1,,,
+6-phosphofructokinase,A0A7I2V3Z0,ATP-dependent 6-phosphofructokinase,PFKP,REJECT_WRONG,"gene symbol leads to an entry whose name does not match the TCMSP target name: ATP-dependent 6-phosphofructokinase, platelet type",Q01813,"ATP-dependent 6-phosphofructokinase, platelet type",PFKAP_HUMAN
+Adenylosuccinate synthetase,B3KTV4,Adenylosuccinate synthetase,,KEEP_TR,no human gene symbol on the unreviewed entry,,,
+Alkaline phosphatase,B7Z1D1,Alkaline phosphatase,,KEEP_TR,no human gene symbol on the unreviewed entry,,,
+Branched chain amino acid-dependent aminotransferase,B3KSI3,Branched-chain-amino-acid aminotransferase,,KEEP_TR,no human gene symbol on the unreviewed entry,,,
+Cytochrome c4,Q2HJZ5,Cytochrome b,CYTB,REPLACE,reviewed entry shares target wording: cytochrome,P00156,Cytochrome b,CYB_HUMAN
+Endoglucanase F,Q8N909,Endoglucanase,,KEEP_TR,no human gene symbol on the unreviewed entry,,,
+Gag-Pol polyprotein,V9H0H3,Gag-Pro-Pol polyprotein,,KEEP_TR,no human gene symbol on the unreviewed entry,,,
+L-fucose isomerase,A0ACI8ST25,L-fucose mutarotase,FUOM,REPLACE,reviewed entry shares target wording: fucose,A2VDF0,Fucose mutarotase,FUCM_HUMAN
+Lysine-specific demethylase NO66,A0A0A8K8C0,Bifunctional lysine-specific demethylase and histidyl-hydroxylase,URLC2,KEEP_TR,no reviewed human entry for URLC2,,,
+Membrane primary amine oxidase,A0A8I5KP93,Amine oxidase,MAOA,REPLACE,"reviewed entry shares target wording: amine, oxidase",P21397,Amine oxidase [flavin-containing] A,AOFA_HUMAN
+Methylmalonyl-CoA mutase,Q59HB4,methylmalonyl-CoA mutase,,KEEP_TR,no human gene symbol on the unreviewed entry,,,
+Orotidine 5'-phosphate decarboxylase,B5LY70,Orotidine 5'-phosphate decarboxylase,UMPS,REJECT_WRONG,gene symbol leads to an entry whose name does not match the TCMSP target name: Uridine 5'-monophosphate synthase,P11172,Uridine 5'-monophosphate synthase,UMPS_HUMAN
+Serine hydroxymethyltransferase,Q53ET7,Serine hydroxymethyltransferase,,KEEP_TR,no human gene symbol on the unreviewed entry,,,
+Serine hydroxymethyltransferase 1,Q53ET7,Serine hydroxymethyltransferase,,KEEP_TR,no human gene symbol on the unreviewed entry,,,
+Serine hydroxymethyltransferase 2,Q53ET7,Serine hydroxymethyltransferase,,KEEP_TR,no human gene symbol on the unreviewed entry,,,
+Tryptophanyl-tRNA synthetase 2,G3V2Y7,Tryptophanyl-tRNA synthetase,WARS1,REPLACE,reviewed entry shares target wording: trna,P23381,"Tryptophan--tRNA ligase, cytoplasmic",SYWC_HUMAN
+Uridine phosphorylase,A0A0S2Z634,Uridine phosphorylase,UPP2,REPLACE,"reviewed entry shares target wording: phosphorylase, uridine",O95045,Uridine phosphorylase 2,UPP2_HUMAN

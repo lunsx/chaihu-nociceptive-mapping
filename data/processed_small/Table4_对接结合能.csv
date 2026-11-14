@@ -1,0 +1,11 @@
+﻿receptor,ligand,n_modes,best_affinity_kcal_mol
+2AZ5,cyperotundone,10,-7.122
+2AZ5,kaempferol,10,-5.328
+2AZ5,luteolin,10,-7.326
+2AZ5,paeoniflorin,10,-6.041
+2AZ5,quercetin,10,-6.867
+5KIR,cyperotundone,10,-6.006
+5KIR,kaempferol,10,-5.313
+5KIR,luteolin,9,-7.011
+5KIR,paeoniflorin,10,-5.066
+5KIR,quercetin,9,-6.603

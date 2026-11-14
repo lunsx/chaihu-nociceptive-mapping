@@ -1,0 +1,17 @@
+﻿reference,n_positive_in_universe,strategy,n,tp,precision,recall,odds_ratio,fisher_p
+pain_genes,14,all_mapped_baseline,662,14,0.0211,1.0,,1.0
+pain_genes,14,degree_only_top60,60,5,0.0833,0.3571,5.9899,0.0055
+pain_genes,14,strict_intersection,47,6,0.1277,0.4286,11.1037,0.0002
+pain_genes,14,framework_tiered,55,14,0.2545,1.0,inf,0.0
+L1000_down,4,all_mapped_baseline,662,4,0.006,1.0,,1.0
+L1000_down,4,degree_only_top60,60,2,0.0333,0.5,10.3448,0.043
+L1000_down,4,strict_intersection,47,4,0.0851,1.0,inf,0.0
+L1000_down,4,framework_tiered,55,4,0.0727,1.0,inf,0.0
+direction_concordant,23,all_mapped_baseline,662,23,0.0347,1.0,,1.0
+direction_concordant,23,degree_only_top60,60,9,0.15,0.3913,7.4118,0.0001
+direction_concordant,23,strict_intersection,47,21,0.4468,0.913,247.5577,0.0
+direction_concordant,23,framework_tiered,55,23,0.4182,1.0,inf,0.0
+composite_any,34,all_mapped_baseline,662,34,0.0514,1.0,,1.0
+composite_any,34,degree_only_top60,60,11,0.1833,0.3235,5.6513,0.0001
+composite_any,34,strict_intersection,47,26,0.5532,0.7647,93.9405,0.0
+composite_any,34,framework_tiered,55,34,0.6182,1.0,inf,0.0

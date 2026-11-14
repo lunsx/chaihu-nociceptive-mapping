@@ -1,0 +1,35 @@
+# Python 3.13 (Windows primary; Linux cloud also used for CPU-heavy steps)
+# Install: python -m pip install -r requirements.txt
+pandas==3.1.1
+numpy==2.5.4
+scipy==1.18.1
+statsmodels==0.15.0
+scikit-learn==1.9.1
+requests==2.34.2
+tqdm==4.70.1
+openpyxl==3.1.5
+
+# Single-cell / graph
+scanpy==1.13.0
+anndata==0.13.4
+igraph==1.0.0
+networkx==3.7
+
+# Chemistry / docking ligand preparation
+rdkit==2026.9.2
+meeko==0.8.0
+
+# Molecular dynamics / force field
+openmm==8.6.1
+openff-toolkit==0.18.0
+openff-utilities==0.1.16
+
+# Plotting / document build
+matplotlib==3.11.2
+seaborn==0.13.2
+python-docx==1.2.0
+
+# External executables (NOT pip-installable here, install separately):
+#   AutoDock Vina 1.2.7  -> standalone vina.exe
+#   Open Babel           -> obabel.exe
+#   Meeko CLI            -> mk_prepare_ligand.exe (provided by the meeko package)

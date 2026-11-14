@@ -1,0 +1,207 @@
+{
+ "total_cells": 48594,
+ "total_genes": 30454,
+ "n_samples": 20,
+ "conditions": {
+  "MASLD": 41515,
+  "HC": 7079
+ },
+ "n_cell_types": 9,
+ "cluster_map": {
+  "0": "T/NK",
+  "1": "Hepatic stellate",
+  "2": "T/NK",
+  "3": "T/NK",
+  "4": "T/NK",
+  "5": "T/NK",
+  "6": "Hepatic stellate",
+  "7": "T/NK",
+  "8": "Macrophage/Kupffer",
+  "9": "T/NK",
+  "10": "Cholangiocyte",
+  "11": "Plasma",
+  "12": "Macrophage/Kupffer",
+  "13": "Plasma",
+  "14": "Endothelial",
+  "15": "Macrophage/Kupffer",
+  "16": "Plasma",
+  "17": "Cholangiocyte",
+  "18": "B",
+  "19": "Hepatic stellate",
+  "20": "Mast",
+  "21": "Cholangiocyte",
+  "22": "Endothelial",
+  "23": "Endothelial",
+  "24": "Hepatocyte",
+  "25": "Cholangiocyte",
+  "26": "Hepatocyte",
+  "27": "Endothelial",
+  "28": "Hepatocyte",
+  "29": "Plasma",
+  "30": "Plasma",
+  "31": "Cholangiocyte"
+ },
+ "samples": [
+  {
+   "file": "GSM9970276_MASLD_S001_LIVER_filtered_feature_bc_matrix.h5",
+   "gsm": "GSM9970276",
+   "condition": "MASLD",
+   "donor": "S001",
+   "n_cells_raw": 2274,
+   "n_genes": 36601
+  },
+  {
+   "file": "GSM9970277_MASLD_S002_LIVER_filtered_feature_bc_matrix.h5",
+   "gsm": "GSM9970277",
+   "condition": "MASLD",
+   "donor": "S002",
+   "n_cells_raw": 1324,
+   "n_genes": 36601
+  },
+  {
+   "file": "GSM9970278_MASLD_S003_LIVER_filtered_feature_bc_matrix.h5",
+   "gsm": "GSM9970278",
+   "condition": "MASLD",
+   "donor": "S003",
+   "n_cells_raw": 869,
+   "n_genes": 36601
+  },
+  {
+   "file": "GSM9970279_MASLD_S004_LIVER_filtered_feature_bc_matrix.h5",
+   "gsm": "GSM9970279",
+   "condition": "MASLD",
+   "donor": "S004",
+   "n_cells_raw": 638,
+   "n_genes": 36601
+  },
+  {
+   "file": "GSM9970280_MASLD_S005_LIVER_filtered_feature_bc_matrix.h5",
+   "gsm": "GSM9970280",
+   "condition": "MASLD",
+   "donor": "S005",
+   "n_cells_raw": 8159,
+   "n_genes": 36601
+  },
+  {
+   "file": "GSM9970281_MASLD_S006_LIVER_filtered_feature_bc_matrix.h5",
+   "gsm": "GSM9970281",
+   "condition": "MASLD",
+   "donor": "S006",
+   "n_cells_raw": 1553,
+   "n_genes": 36601
+  },
+  {
+   "file": "GSM9970282_MASLD_S007_LIVER_filtered_feature_bc_matrix.h5",
+   "gsm": "GSM9970282",
+   "condition": "MASLD",
+   "donor": "S007",
+   "n_cells_raw": 2198,
+   "n_genes": 36601
+  },
+  {
+   "file": "GSM9970283_MASLD_S008.h5",
+   "gsm": "GSM9970283",
+   "condition": "MASLD",
+   "donor": "GSM9970283",
+   "n_cells_raw": 3888,
+   "n_genes": 36601
+  },
+  {
+   "file": "GSM9970284_MASLD_S009.h5",
+   "gsm": "GSM9970284",
+   "condition": "MASLD",
+   "donor": "GSM9970284",
+   "n_cells_raw": 438,
+   "n_genes": 36601
+  },
+  {
+   "file": "GSM9970285_MASLD_S010.h5",
+   "gsm": "GSM9970285",
+   "condition": "MASLD",
+   "donor": "GSM9970285",
+   "n_cells_raw": 2145,
+   "n_genes": 36601
+  },
+  {
+   "file": "GSM9970286_MASLD_S011.h5",
+   "gsm": "GSM9970286",
+   "condition": "MASLD",
+   "donor": "GSM9970286",
+   "n_cells_raw": 5413,
+   "n_genes": 36601
+  },
+  {
+   "file": "GSM9970287_MASLD_S012.h5",
+   "gsm": "GSM9970287",
+   "condition": "MASLD",
+   "donor": "GSM9970287",
+   "n_cells_raw": 8023,
+   "n_genes": 36601
+  },
+  {
+   "file": "GSM9970288_MASLD_S013.h5",
+   "gsm": "GSM9970288",
+   "condition": "MASLD",
+   "donor": "GSM9970288",
+   "n_cells_raw": 4093,
+   "n_genes": 36601
+  },
+  {
+   "file": "GSM9970289_MASLD_S014.h5",
+   "gsm": "GSM9970289",
+   "condition": "MASLD",
+   "donor": "GSM9970289",
+   "n_cells_raw": 4218,
+   "n_genes": 36601
+  },
+  {
+   "file": "GSM9970290_MASLD_S015.h5",
+   "gsm": "GSM9970290",
+   "condition": "MASLD",
+   "donor": "GSM9970290",
+   "n_cells_raw": 4641,
+   "n_genes": 36601
+  },
+  {
+   "file": "GSM9970291_MASLD_S016.h5",
+   "gsm": "GSM9970291",
+   "condition": "MASLD",
+   "donor": "GSM9970291",
+   "n_cells_raw": 2694,
+   "n_genes": 36601
+  },
+  {
+   "file": "GSM9970292_MASLD_S017.h5",
+   "gsm": "GSM9970292",
+   "condition": "MASLD",
+   "donor": "GSM9970292",
+   "n_cells_raw": 3366,
+   "n_genes": 36601
+  },
+  {
+   "file": "GSM9970293_MASLD_S018.h5",
+   "gsm": "GSM9970293",
+   "condition": "MASLD",
+   "donor": "GSM9970293",
+   "n_cells_raw": 964,
+   "n_genes": 36601
+  },
+  {
+   "file": "GSM9970294_MASLD_S019.h5",
+   "gsm": "GSM9970294",
+   "condition": "MASLD",
+   "donor": "GSM9970294",
+   "n_cells_raw": 1741,
+   "n_genes": 36601
+  },
+  {
+   "file": "GSM9970295_HC_S020.h5",
+   "gsm": "GSM9970295",
+   "condition": "HC",
+   "donor": "GSM9970295",
+   "n_cells_raw": 7568,
+   "n_genes": 36601
+  }
+ ],
+ "caveat": "single healthy-control donor; disease contrast is descriptive donor-level, no p-values, no donor-level inference"
+}

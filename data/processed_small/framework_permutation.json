@@ -1,0 +1,18 @@
+{
+ "n_perm": 10000,
+ "universe": 662,
+ "n_selected": 49,
+ "n_positive": 8,
+ "observed_overlap": 8,
+ "observed_precision": 0.1633,
+ "expected_overlap_by_chance": 0.59,
+ "enrichment_vs_chance": 13.51,
+ "null_precision_mean": 0.0123,
+ "null_precision_p95": 0.0408,
+ "null_precision_max": 0.0816,
+ "empirical_p": 0.0001,
+ "reference": "pain_external_only",
+ "selection": "framework_minus_pain_seeded",
+ "note": "permutation floor is 1/10001; report as p<1e-4",
+ "seed": 20261114
+}

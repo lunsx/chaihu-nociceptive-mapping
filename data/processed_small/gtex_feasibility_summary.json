@@ -1,0 +1,76 @@
+[
+ {
+  "gene": "IL1B",
+  "n_tissues_lead": 7,
+  "n_tissues_F>=10": 7,
+  "whole_blood": null,
+  "liver": null,
+  "strongest_overall": {
+   "tissue": "Testis",
+   "snp": "rs16944",
+   "p": 6.824000000000001e-26,
+   "nes": -0.603224,
+   "F_approx": 110.7
+  }
+ },
+ {
+  "gene": "TNF",
+  "n_tissues_lead": 0,
+  "n_tissues_F>=10": 0,
+  "whole_blood": null,
+  "liver": null,
+  "strongest_overall": null
+ },
+ {
+  "gene": "PTGS2",
+  "n_tissues_lead": 0,
+  "n_tissues_F>=10": 0,
+  "whole_blood": null,
+  "liver": null,
+  "strongest_overall": null
+ },
+ {
+  "gene": "IL6",
+  "n_tissues_lead": 0,
+  "n_tissues_F>=10": 0,
+  "whole_blood": null,
+  "liver": null,
+  "strongest_overall": null
+ },
+ {
+  "gene": "CALCRL",
+  "n_tissues_lead": 0,
+  "n_tissues_F>=10": 0,
+  "whole_blood": null,
+  "liver": null,
+  "strongest_overall": null
+ },
+ {
+  "gene": "TACR1",
+  "n_tissues_lead": 42,
+  "n_tissues_F>=10": 42,
+  "whole_blood": {
+   "tissue": "Whole_Blood",
+   "snp": "rs4366930",
+   "p": 9.66432e-07,
+   "nes": 0.0688671,
+   "F_approx": 24.0
+  },
+  "liver": null,
+  "strongest_overall": {
+   "tissue": "Artery_Tibial",
+   "snp": "rs12366",
+   "p": 2.71715e-35,
+   "nes": -0.318569,
+   "F_approx": 153.7
+  }
+ },
+ {
+  "gene": "TRPV1",
+  "n_tissues_lead": 0,
+  "n_tissues_F>=10": 0,
+  "whole_blood": null,
+  "liver": null,
+  "strongest_overall": null
+ }
+]

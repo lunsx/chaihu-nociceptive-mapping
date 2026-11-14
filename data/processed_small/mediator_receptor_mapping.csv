@@ -1,0 +1,16 @@
+﻿liver_mediator,receptor,max_pct_in_any_cluster,cluster_with_max,clusters_pct_ge_20,mean_pct_all_neurons
+PGE2 (PTGS2/PTGES product),PTGER3,83.9,H3,"H1,H2,H3,H4,H6,H7,H8,H9,H10,H14",30.0
+PGE2 (PTGS2/PTGES product),PTGER4,37.2,H3,"H2,H3,H9,H13",13.7
+PGE2 (PTGS2/PTGES product),PTGER2,17.8,H11,(none >=20%),3.1
+PGE2 (PTGS2/PTGES product),PTGER1,0.8,H12,(none >=20%),0.1
+TNF,TNFRSF1A,36.5,H3,"H3,H6,H11,H13",15.6
+TNF,TNFRSF1B,8.3,H13,(none >=20%),4.8
+IL-1 beta,IL1R1,15.4,H9,(none >=20%),6.7
+IL-1 beta,IL1RAP,23.1,H9,H9,7.1
+IL-6,IL6R,20.5,H9,H9,7.6
+IL-6,IL6ST,85.4,H3,"H1,H2,H3,H5,H6,H7,H8,H9,H10,H11,H12,H13,H14,H15",59.3
+NGF,NTRK1,92.0,H3,"H1,H2,H3,H4,H5,H6,H8,H9",33.8
+CGRP,CALCRL,12.0,H10,(none >=20%),4.2
+CGRP,RAMP1,18.6,H15,(none >=20%),4.3
+Substance P,TACR1,7.7,H9,(none >=20%),2.6
+Oncostatin M / IL-31,OSMR,82.2,H11,"H3,H10,H11,H13",21.4

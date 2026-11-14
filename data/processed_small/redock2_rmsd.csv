@@ -1,0 +1,4 @@
+structure,crystal_ligand,best_affinity_kcal_mol,GetBestRMS_aligned_A,direct_RMSD_A,pass_2A
+1CX2,S58,-11.233,0.718,0.718,yes
+6COX,S58,-11.549,0.105,0.105,yes
+3PGH,FLP,-8.762,1.478,1.478,yes

@@ -1,0 +1,154 @@
+﻿cell_type,gene,pct_HC,pct_MASLD,delta_MASLD_minus_HC
+B,CALCRL,0.0,0.0,0.0
+B,FOS,84.42,89.95,5.53
+B,ICAM1,40.26,43.61,3.35
+B,IL1A,0.0,0.0,0.0
+B,IL1B,3.9,0.84,-3.06
+B,IL6,1.3,2.75,1.45
+B,IL6R,3.9,6.42,2.52
+B,IL6ST,25.97,41.14,15.17
+B,PTGER1,0.0,0.0,0.0
+B,PTGER3,1.3,0.0,-1.3
+B,PTGES,0.0,0.0,0.0
+B,PTGS2,1.3,0.23,-1.07
+B,SPP1,0.0,0.0,0.0
+B,TACR1,1.3,0.0,-1.3
+B,TNF,31.17,52.58,21.41
+B,TNFRSF1A,6.49,12.39,5.9
+B,TRPV1,9.09,13.88,4.79
+Cholangiocyte,CALCRL,1.59,1.67,0.08
+Cholangiocyte,FOS,89.48,96.28,6.8
+Cholangiocyte,ICAM1,18.17,12.29,-5.88
+Cholangiocyte,IL1A,2.02,0.59,-1.43
+Cholangiocyte,IL1B,34.54,2.28,-32.26
+Cholangiocyte,IL6,0.11,0.0,-0.11
+Cholangiocyte,IL6R,6.06,27.11,21.05
+Cholangiocyte,IL6ST,19.34,68.57,49.23
+Cholangiocyte,PTGER1,0.0,1.43,1.43
+Cholangiocyte,PTGER3,0.21,0.0,-0.21
+Cholangiocyte,PTGES,0.0,1.92,1.92
+Cholangiocyte,PTGS2,2.23,1.01,-1.22
+Cholangiocyte,SPP1,46.23,84.0,37.77
+Cholangiocyte,TACR1,0.11,1.31,1.2
+Cholangiocyte,TNF,8.82,3.91,-4.91
+Cholangiocyte,TNFRSF1A,7.55,48.81,41.26
+Cholangiocyte,TRPV1,2.44,8.8,6.36
+Endothelial,CALCRL,35.32,53.63,18.31
+Endothelial,FOS,83.26,74.12,-9.14
+Endothelial,ICAM1,20.72,25.62,4.9
+Endothelial,IL1A,0.44,0.36,-0.08
+Endothelial,IL1B,9.51,10.16,0.65
+Endothelial,IL6,0.29,0.0,-0.29
+Endothelial,IL6R,3.17,8.66,5.49
+Endothelial,IL6ST,40.86,55.67,14.81
+Endothelial,PTGER1,0.07,0.0,-0.07
+Endothelial,PTGER3,0.66,0.0,-0.66
+Endothelial,PTGES,0.15,0.0,-0.15
+Endothelial,PTGS2,2.29,13.48,11.19
+Endothelial,SPP1,2.73,3.0,0.27
+Endothelial,TACR1,1.11,2.27,1.16
+Endothelial,TNF,7.23,2.42,-4.81
+Endothelial,TNFRSF1A,16.15,37.34,21.19
+Endothelial,TRPV1,0.59,1.87,1.28
+Hepatic stellate,CALCRL,1.44,0.45,-0.99
+Hepatic stellate,FOS,63.94,48.28,-15.66
+Hepatic stellate,ICAM1,14.9,11.83,-3.07
+Hepatic stellate,IL1A,0.0,0.0,0.0
+Hepatic stellate,IL1B,0.0,0.33,0.33
+Hepatic stellate,IL6,0.48,0.0,-0.48
+Hepatic stellate,IL6R,0.96,2.94,1.98
+Hepatic stellate,IL6ST,11.06,21.69,10.63
+Hepatic stellate,PTGER1,0.0,0.0,0.0
+Hepatic stellate,PTGER3,0.48,0.47,-0.01
+Hepatic stellate,PTGES,0.0,0.0,0.0
+Hepatic stellate,PTGS2,2.88,0.67,-2.21
+Hepatic stellate,SPP1,0.0,0.0,0.0
+Hepatic stellate,TACR1,0.48,0.0,-0.48
+Hepatic stellate,TNF,12.98,14.47,1.49
+Hepatic stellate,TNFRSF1A,8.17,6.02,-2.15
+Hepatic stellate,TRPV1,0.96,2.94,1.98
+Hepatocyte,CALCRL,7.14,0.0,-7.14
+Hepatocyte,FOS,47.14,13.51,-33.63
+Hepatocyte,ICAM1,23.57,2.7,-20.87
+Hepatocyte,IL1A,0.36,0.0,-0.36
+Hepatocyte,IL1B,20.71,0.9,-19.81
+Hepatocyte,IL6,0.0,0.0,0.0
+Hepatocyte,IL6R,7.14,3.46,-3.68
+Hepatocyte,IL6ST,11.79,8.11,-3.68
+Hepatocyte,PTGER1,0.36,0.0,-0.36
+Hepatocyte,PTGER3,0.0,0.0,0.0
+Hepatocyte,PTGES,0.0,0.0,0.0
+Hepatocyte,PTGS2,0.71,0.31,-0.4
+Hepatocyte,SPP1,0.0,0.0,0.0
+Hepatocyte,TACR1,0.0,0.0,0.0
+Hepatocyte,TNF,12.5,2.7,-9.8
+Hepatocyte,TNFRSF1A,6.07,3.08,-2.99
+Hepatocyte,TRPV1,2.14,0.38,-1.76
+Macrophage/Kupffer,CALCRL,3.29,7.8,4.51
+Macrophage/Kupffer,FOS,91.78,95.33,3.55
+Macrophage/Kupffer,ICAM1,63.56,71.68,8.12
+Macrophage/Kupffer,IL1A,16.71,17.55,0.84
+Macrophage/Kupffer,IL1B,85.21,80.0,-5.21
+Macrophage/Kupffer,IL6,4.11,3.29,-0.82
+Macrophage/Kupffer,IL6R,26.58,53.91,27.33
+Macrophage/Kupffer,IL6ST,28.22,51.42,23.2
+Macrophage/Kupffer,PTGER1,0.0,0.31,0.31
+Macrophage/Kupffer,PTGER3,0.55,1.43,0.88
+Macrophage/Kupffer,PTGES,0.27,0.82,0.55
+Macrophage/Kupffer,PTGS2,31.51,44.01,12.5
+Macrophage/Kupffer,SPP1,0.27,1.96,1.69
+Macrophage/Kupffer,TACR1,0.55,0.32,-0.23
+Macrophage/Kupffer,TNF,38.63,52.58,13.95
+Macrophage/Kupffer,TNFRSF1A,14.25,34.38,20.13
+Macrophage/Kupffer,TRPV1,3.29,4.05,0.76
+Mast,CALCRL,1.21,2.17,0.96
+Mast,FOS,84.24,75.0,-9.24
+Mast,ICAM1,30.91,26.37,-4.54
+Mast,IL1A,1.82,0.0,-1.82
+Mast,IL1B,33.33,7.14,-26.19
+Mast,IL6,0.0,0.0,0.0
+Mast,IL6R,4.85,6.82,1.97
+Mast,IL6ST,13.03,16.67,3.64
+Mast,PTGER1,0.61,0.0,-0.61
+Mast,PTGER3,1.21,9.09,7.88
+Mast,PTGES,0.0,0.0,0.0
+Mast,PTGS2,10.0,18.68,8.68
+Mast,SPP1,12.73,0.0,-12.73
+Mast,TACR1,0.0,0.0,0.0
+Mast,TNF,18.48,16.33,-2.15
+Mast,TNFRSF1A,6.06,4.08,-1.98
+Mast,TRPV1,0.91,2.17,1.26
+Plasma,CALCRL,5.99,11.36,5.37
+Plasma,FOS,75.18,88.05,12.87
+Plasma,ICAM1,33.49,50.51,17.02
+Plasma,IL1A,1.1,0.0,-1.1
+Plasma,IL1B,19.31,4.53,-14.78
+Plasma,IL6,0.08,0.0,-0.08
+Plasma,IL6R,6.07,28.27,22.2
+Plasma,IL6ST,19.15,41.41,22.26
+Plasma,PTGER1,0.16,0.0,-0.16
+Plasma,PTGER3,0.87,0.57,-0.3
+Plasma,PTGES,0.0,0.0,0.0
+Plasma,PTGS2,1.5,2.11,0.61
+Plasma,SPP1,5.12,0.0,-5.12
+Plasma,TACR1,0.24,0.96,0.72
+Plasma,TNF,22.14,14.59,-7.55
+Plasma,TNFRSF1A,4.65,10.17,5.52
+Plasma,TRPV1,2.76,3.09,0.33
+T/NK,CALCRL,2.31,0.24,-2.07
+T/NK,FOS,79.41,86.52,7.11
+T/NK,ICAM1,32.98,43.68,10.7
+T/NK,IL1A,0.75,0.06,-0.69
+T/NK,IL1B,18.51,1.03,-17.48
+T/NK,IL6,0.04,0.0,-0.04
+T/NK,IL6R,3.28,5.76,2.48
+T/NK,IL6ST,17.44,31.65,14.21
+T/NK,PTGER1,0.49,0.25,-0.24
+T/NK,PTGER3,0.27,0.28,0.01
+T/NK,PTGES,0.0,0.0,0.0
+T/NK,PTGS2,1.64,1.21,-0.43
+T/NK,SPP1,1.15,0.0,-1.15
+T/NK,TACR1,0.09,0.15,0.06
+T/NK,TNF,29.96,54.89,24.93
+T/NK,TNFRSF1A,7.28,14.97,7.69
+T/NK,TRPV1,1.46,2.28,0.82

@@ -1,0 +1,62 @@
+{
+ "n_mmgbsa_frames": 125,
+ "mmgbsa_mean_kcal": -29.076,
+ "mmgbsa_sd_kcal": 2.334,
+ "mmgbsa_block_means": [
+  -29.757,
+  -29.357,
+  -28.782,
+  -29.13,
+  -28.354
+ ],
+ "mmgbsa_block_sd": [
+  2.036,
+  2.031,
+  2.603,
+  2.539,
+  2.334
+ ],
+ "mmgbsa_block_range_kcal": 1.403,
+ "mmgbsa_first_vs_second_half_p": 0.0743,
+ "ligand_rmsd_mean_nm": 0.2214,
+ "ligand_rmsd_max_nm": 0.4013,
+ "ligand_pose_within_0p3nm_fraction": 0.892,
+ "ligand_rmsd_first_vs_second_half_p": 0.4728,
+ "backbone_rmsd_mean_nm": 0.1478,
+ "backbone_rmsd_first_vs_second_half_p": 0.0,
+ "hbond_top3": [
+  {
+   "residue": "ARG",
+   "resSeq": 376,
+   "occupancy": 1.0
+  },
+  {
+   "residue": "ASN",
+   "resSeq": 375,
+   "occupancy": 0.94
+  },
+  {
+   "residue": "VAL",
+   "resSeq": 228,
+   "occupancy": 0.696
+  }
+ ],
+ "drift_test": {
+  "burn_in_frames": 12,
+  "dg_slope_kcal_per_ns": 0.22199,
+  "dg_p": 0.0089,
+  "ligand_rmsd_slope_nm_per_ns": -0.00785,
+  "ligand_p": 0.0,
+  "backbone_rmsd_slope_nm_per_ns": 0.00205,
+  "backbone_p": 0.0
+ },
+ "bootstrap": {
+  "n_resamples": 1000,
+  "mean_ci95": [
+   -29.494,
+   -28.668
+  ],
+  "note": "frame-level bootstrap, not a replicate"
+ },
+ "note": "single trajectory; block/half-trajectory stability only, no independent replicate"
+}

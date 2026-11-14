@@ -1,0 +1,21 @@
+{
+  "n_overlap_genes": 54,
+  "median_pct_disease_percent": 6.293859649122807,
+  "median_abs_pooled_g": 0.13413099423674588,
+  "median_within_gene_attenuation": 22.00391390737221,
+  "pct_vs_sc_delta_same_dataset_spearman": [
+    0.7587863078447816,
+    2.978367313566748e-11,
+    54
+  ],
+  "pct_vs_abs_bulk_g_spearman": [
+    0.027292305937983957,
+    0.8446882005785759,
+    54
+  ],
+  "pct_vs_abs_g_big_cohort_spearman": [
+    -0.08599363435208353,
+    0.5363892517946859,
+    54
+  ]
+}

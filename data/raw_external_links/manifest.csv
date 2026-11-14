@@ -1,0 +1,25 @@
+dataset,data_type,source_url,local_role,notes
+GSE89632,bulk expression,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE89632,01_bulk_deg,63 samples NAFLD/NASH
+GSE130970,bulk expression,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE130970,01_bulk_deg,78 cases graded severity
+GSE281797,bulk expression,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE281797,06_multicohort_meta,case-control 64/30
+GSE260666,bulk expression,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE260666,06_multicohort_meta,case-control 4/6
+GSE147304,bulk expression,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147304,06_multicohort_meta,case-control 5/5
+GSE344087,single-cell,https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9970nnn/GSM<GSM>/suppl/<GSM>_<tag>_LIVER_filtered_feature_bc_matrix.h5,07_singlecell_spatial,19 MASLD + 1 HC all retrieved per sample; GSM9970276-294 MASLD_S001-S019, GSM9970295 HC_S020
+human PSC single-cell,single-cell,https://cellxgene.cziscience.com/collections/ff713455-e6b7-45b3-b2dd-1c9dd26251f6,07_singlecell_spatial,CELLxGENE id ff713455 89637 cells 16 donors
+human PSC Visium,spatial,https://cellxgene.cziscience.com/collections/085648af-883b-4969-851a-046d9dcedf49,07_singlecell_spatial,slice PSC011 one of four PSC records (1d929cac/975d4575/c8c7681f)
+human normal Visium,spatial,https://cellxgene.cziscience.com/ (C73: 36122151/878d13cd/adbebdbd/c12dd8cc),07_singlecell_spatial,four slices of donor C73; not yet analysed
+mouse MASLD Visium,spatial,https://cellxgene.cziscience.com/ (pooled: 4a34293d-929f-41cb-bdc1-ff707e3318b6),07_singlecell_spatial,6671 spots carrying both SD and WD groups; not yet analysed
+TCMSP,compound/target,https://www.tcmsp-e.com/,02_tcmsp_targets,938 compounds 139 pass
+UniProt reviewed,protein reference,https://rest.uniprot.org/,02_tcmsp_targets,human mapping
+STRING,network,https://string-db.org/,03_ppi_enrichment,239 nodes 5047 edges
+DUD-E pgh2,docking benchmark,https://dude.docking.org/targets/pgh2,04_docking,PTGS2 3LN1
+2AZ5,protein structure,https://www.rcsb.org/structure/2AZ5,04_docking,TNF
+5KIR,protein structure,https://www.rcsb.org/structure/5KIR,04_docking,PTGS2
+6COX,protein structure,https://www.rcsb.org/structure/6COX,04_docking,PTGS2
+1CX2,protein structure,https://www.rcsb.org/structure/1CX2,04_docking,PTGS2 inhibitor-bound (ensemble grid)
+3PGH,protein structure,https://www.rcsb.org/structure/3PGH,04_docking,PTGS2 ligand-free (ensemble grid)
+OpenGWAS,MR API,https://api.opengwas.io/api/,11_mr,POST-first; token via OPENGWAS_JWT not committed
+eQTLGen cis-eQTL,exposure eQTL,https://eqtlgen.org/cis-eqtl.html,11_mr,7 eqtl-a-ENSG datasets via OpenGWAS; N 14k-32k
+UKB abdominal pain GWAS,outcome GWAS,https://gwas.mrcieu.ac.uk/,11_mr,ukb-b-11413/19097/6608/6223 European binary
+Ensembl GRCh37,gene coordinates,https://grch37.rest.ensembl.org/,11_mr,hg19 cis/trans 1 Mb window
+human DRG snRNA-seq,single-cell,https://cellxgene.cziscience.com/datasets/6a6e7f1e-26b0-4f0a-ab34-66e9dec3bed2,12_drg,Nguyen eLife 2021 1837 nuclei 15 clusters 6 donors

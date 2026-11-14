@@ -1,0 +1,6 @@
+﻿cohort,n,platform,groups,data_type,analysis
+GSE281797,94,GPL24676,30 NoPath / 53 MASL / 11 MASH,TPM+count,病例对照+分级
+GSE260666,16,GPL24676,6 Control / 6 NAFL / 4 NASH,raw counts,病例对照
+GSE147304,10,GPL20795,5 NASH vs 5 Normal（血管瘤旁）,FPKM,inconclusive，不参与一致率
+GSE193066,164,GPL18573,全 NAFLD 分级,GCT,分级相关
+GSE192959,48,GPL18573,偏晚期；IL6/TNF/PTGES 缺测,GCT,分级相关

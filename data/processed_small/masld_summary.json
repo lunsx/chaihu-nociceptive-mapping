@@ -1,0 +1,32 @@
+{
+  "total_cells": 10992,
+  "total_genes": 27132,
+  "n_samples": 7,
+  "conditions": {
+    "MASLD": 10992
+  },
+  "n_cell_types": 9,
+  "cluster_map": {
+    "0": "T/NK",
+    "1": "T/NK",
+    "2": "T/NK",
+    "3": "T/NK",
+    "4": "T/NK",
+    "5": "Macrophage/Kupffer",
+    "6": "Macrophage/Kupffer",
+    "7": "Plasma",
+    "8": "Endothelial",
+    "9": "Macrophage/Kupffer",
+    "10": "Macrophage/Kupffer",
+    "11": "Plasma",
+    "12": "Cholangiocyte",
+    "13": "B",
+    "14": "Hepatic stellate",
+    "15": "Mast",
+    "16": "T/NK",
+    "17": "Endothelial",
+    "18": "Hepatocyte",
+    "19": "T/NK",
+    "20": "Hepatic stellate"
+  }
+}

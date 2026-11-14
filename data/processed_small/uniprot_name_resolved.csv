@@ -1,0 +1,13 @@
+﻿target_name,accession,entry_id,name,gene
+Adenylsuccinate synthetase,P00966,ASSY_HUMAN,Argininosuccinate synthase,ASS1
+Methylmalonyl-CoA mutase,P22033,MUTA_HUMAN,"Methylmalonyl-CoA mutase, mitochondrial",MMUT
+Branched chain amino acid-dependent aminotransferase,O15382,BCAT2_HUMAN,"Branched-chain-amino-acid aminotransferase, mitochondrial",BCAT2
+Branched chain amino acid-dependent aminotransferase,P54687,BCAT1_HUMAN,"Branched-chain-amino-acid aminotransferase, cytosolic",BCAT1
+Branched chain amino acid-dependent aminotransferase,P24288,BCAT1_MOUSE,"Branched-chain-amino-acid aminotransferase, cytosolic",Bcat1
+Branched chain amino acid-dependent aminotransferase,P54690,BCAT1_RAT,"Branched-chain-amino-acid aminotransferase, cytosolic",Bcat1
+Branched chain amino acid-dependent aminotransferase,Q93Y32,BCAT1_ARATH,"Branched-chain-amino-acid aminotransferase 1, mitochondrial",BCAT1
+Alkaline phosphatase,P09923,PPBI_HUMAN,Intestinal-type alkaline phosphatase,ALPI
+Alkaline phosphatase,P05187,PPB1_HUMAN,"Alkaline phosphatase, placental type",ALPP
+Alkaline phosphatase,P10696,PPBN_HUMAN,"Alkaline phosphatase, germ cell type",ALPG
+Alkaline phosphatase,P05186,PPBT_HUMAN,"Alkaline phosphatase, tissue-nonspecific isozyme",ALPL
+Alkaline phosphatase,P24823,PPBN_MOUSE,"Alkaline phosphatase, germ cell type",Alpg

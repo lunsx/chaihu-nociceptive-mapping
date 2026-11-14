@@ -1,0 +1,170 @@
+{
+ "n_runs": 144,
+ "receptors": [
+  "1CX2",
+  "3PGH",
+  "5KIR",
+  "6COX"
+ ],
+ "scorings": [
+  "vina",
+  "vinardo"
+ ],
+ "seeds": [
+  7,
+  42,
+  2026
+ ],
+ "top1_counts": {
+  "alpha_cyperone": 2,
+  "celecoxib": 4,
+  "luteolin": 2
+ },
+ "luteolin_rank": {
+  "vina": {
+   "min": 1,
+   "median": 3.0,
+   "max": 3
+  },
+  "vinardo": {
+   "min": 1,
+   "median": 2.5,
+   "max": 3
+  }
+ },
+ "celecoxib_rank": {
+  "vina": {
+   "min": 1,
+   "median": 1.5,
+   "max": 2
+  },
+  "vinardo": {
+   "min": 1,
+   "median": 2.5,
+   "max": 4
+  }
+ },
+ "vina_vs_vinardo_spearman": 0.755,
+ "vina_vs_vinardo_p": 2e-05,
+ "vina_vs_vinardo_wilcoxon_p": 0.0,
+ "vinardo_minus_vina_mean": 2.348,
+ "vinardo_minus_vina_range": [
+  0.402,
+  4.642
+ ],
+ "celecoxib_minus_luteolin": {
+  "1CX2|vina": -3.119,
+  "1CX2|vinardo": -2.859,
+  "3PGH|vina": -1.167,
+  "3PGH|vinardo": 1.197,
+  "5KIR|vina": 0.335,
+  "5KIR|vinardo": 0.375,
+  "6COX|vina": -3.03,
+  "6COX|vinardo": -2.534
+ },
+ "mean_seed_spread": 0.04,
+ "max_seed_spread": 0.647,
+ "cross_structure": {
+  "vina": [
+   {
+    "scoring": "vina",
+    "r1": "1CX2",
+    "r2": "3PGH",
+    "spearman": 0.886,
+    "spearman_p": 0.0188,
+    "kendall": 0.733
+   },
+   {
+    "scoring": "vina",
+    "r1": "1CX2",
+    "r2": "5KIR",
+    "spearman": 0.543,
+    "spearman_p": 0.2657,
+    "kendall": 0.467
+   },
+   {
+    "scoring": "vina",
+    "r1": "1CX2",
+    "r2": "6COX",
+    "spearman": 1.0,
+    "spearman_p": 0.0,
+    "kendall": 1.0
+   },
+   {
+    "scoring": "vina",
+    "r1": "3PGH",
+    "r2": "5KIR",
+    "spearman": 0.257,
+    "spearman_p": 0.6228,
+    "kendall": 0.2
+   },
+   {
+    "scoring": "vina",
+    "r1": "3PGH",
+    "r2": "6COX",
+    "spearman": 0.886,
+    "spearman_p": 0.0188,
+    "kendall": 0.733
+   },
+   {
+    "scoring": "vina",
+    "r1": "5KIR",
+    "r2": "6COX",
+    "spearman": 0.543,
+    "spearman_p": 0.2657,
+    "kendall": 0.467
+   }
+  ],
+  "vinardo": [
+   {
+    "scoring": "vinardo",
+    "r1": "1CX2",
+    "r2": "3PGH",
+    "spearman": 0.429,
+    "spearman_p": 0.3965,
+    "kendall": 0.333
+   },
+   {
+    "scoring": "vinardo",
+    "r1": "1CX2",
+    "r2": "5KIR",
+    "spearman": -0.371,
+    "spearman_p": 0.4685,
+    "kendall": -0.2
+   },
+   {
+    "scoring": "vinardo",
+    "r1": "1CX2",
+    "r2": "6COX",
+    "spearman": 0.829,
+    "spearman_p": 0.0416,
+    "kendall": 0.733
+   },
+   {
+    "scoring": "vinardo",
+    "r1": "3PGH",
+    "r2": "5KIR",
+    "spearman": 0.086,
+    "spearman_p": 0.8717,
+    "kendall": 0.2
+   },
+   {
+    "scoring": "vinardo",
+    "r1": "3PGH",
+    "r2": "6COX",
+    "spearman": 0.657,
+    "spearman_p": 0.1562,
+    "kendall": 0.6
+   },
+   {
+    "scoring": "vinardo",
+    "r1": "5KIR",
+    "r2": "6COX",
+    "spearman": -0.086,
+    "spearman_p": 0.8717,
+    "kendall": 0.067
+   }
+  ]
+ },
+ "caveat": "docking scores are not binding free energies; the ensemble tests robustness of ranking, not affinity"
+}
