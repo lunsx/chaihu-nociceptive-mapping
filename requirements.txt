@@ -14,6 +14,7 @@ scanpy==1.13.0
 anndata==0.13.4
 igraph==1.0.0
 networkx==3.7
+harmonypy==0.0.6
 
 # Chemistry / docking ligand preparation
 rdkit==2026.9.2

@@ -36,6 +36,15 @@ All accessions are resolved through the GEO portal: https://www.ncbi.nlm.nih.gov
 | Multi-donor normal Visium | Independent normal reference | pooled `e84dbcac-…` (4,333 spots, 4 donors H35-H38); no image coordinates retained, so fractions/expression only (Moran not estimable) |
 | Mouse MASLD Visium | Cross-species spatial | pooled accession `4a34293d-929f-41cb-bdc1-ff707e3318b6` (6,671 spots, 1 SD + 2 WD donors); Spp1 0.4254->1.9241 (4.52x), descriptive only |
 
+Harmony batch integration (derived from the GSE344087 MASLD series, not a new
+dataset): sample treated as the batch, random_state 0. The same-sample neighbor
+fraction fell from 0.359 to 0.237 overall (MASLD 0.319 to 0.191, HC 0.593 to
+0.509), a descriptive mixing check; with one healthy donor it is not a disease
+comparison. Outputs: `masld_harmony_summary.json`, `masld_harmony_mixing.csv`,
+`masld_marker_heatmap.csv`, and the three figures. The large
+`masld_harmony_embeddings.npz` and per-cell `masld_harmony_obs.csv` are
+regenerable intermediates and are not committed.
+
 GSE344087 per-sample matrices: `https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9970nnn/GSM<GSM>/suppl/<GSM>_<MASLD_S0xx|HC_S020>_LIVER_filtered_feature_bc_matrix.h5`
 (GSM9970276-9970294 = MASLD_S001-S019, GSM9970295 = HC_S020). The series-level FTP is
 https://ftp.ncbi.nlm.nih.gov/geo/series/GSE344nnn/GSE344087/suppl/
@@ -83,6 +92,8 @@ public release.
 | PTGS2 structure | 3PGH, co-crystallized with flurbiprofen | https://www.rcsb.org/structure/3PGH |
 | Redock RMSD (all < 2 A) | 5KIR 1.073, 1CX2 0.718, 6COX 0.105, 3PGH 1.478 | data/processed_small/redock2_rmsd.csv |
 | SC-558 / flurbiprofen | PubChem CID 1396 / CID 3394 | https://pubchem.ncbi.nlm.nih.gov/ |
+| Pocket volume (grid flood-fill) | 0.5 A voxel volumes (A^3): 5KIR 6967, 6COX 7490, 1CX2 7578, 3PGH 5659; 0.5/0.75 A spacing agreement within 2%; geometric cavity descriptor, not an energy | data/processed_small/pocket_volume.csv |
+| Pocket volume (grid flood-fill) | 0.5 A voxel volumes (A^3): 5KIR 6967, 6COX 7490, 1CX2 7578, 3PGH 5659; 0.5/0.75 A spacing agreement within 2%; geometric cavity descriptor, not an energy | data/processed_small/pocket_volume.csv |
 | DUD-E target | pgh2 (PTGS2), 3LN1 receptor, celecoxib co-crystal | https://dude.docking.org/targets/pgh2 |
 | DUD-E ligands | 50 actives + 250 decoys (benchmark subset) | https://dude.docking.org/ |
 | Positive controls | celecoxib, diclofenac, ibuprofen, indomethacin | PubChem CIDs 2662, 3033, 3673, 3715 |
@@ -127,6 +138,8 @@ cannot be computed in this environment. See `docs/第4轮_人DRG伤害感受器�
 - Open Babel (`obabel`)
 - Meeko (`mk_prepare_ligand`)
 - OpenMM 8.6.1, OpenFF Sage 2.1.0 force field, TIP3P water
+- harmonypy 0.0.6 (pure-Python batch correction; the 2.1.0 release needs a C++ toolchain and is not used)
+- harmonypy 0.0.6 (pure-Python batch correction; the 2.1.0 release needs a C++ toolchain and is not used)
 
 ## Third-party licenses
 

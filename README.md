@@ -119,6 +119,13 @@ Ligand protonation uses **Meeko** and **Open Babel**. See `docs/workflow.md`.
   reproducibility rather than population-level inference, and the paper states
   this. Sparse cytokines keep near-zero Moran values because each spot mixes
   multiple cells, which is treated as a detection limit rather than absence.
+- The 20-sample MASLD series is integrated with Harmony (pure-Python harmonypy
+  0.0.6, sample as batch). The same-sample neighbor fraction falls from 0.359 to
+  0.237 (MASLD 0.319 to 0.191), a descriptive mixing check that is not a disease
+  comparison given the single control. Co-crystal pocket volumes are measured by
+  a grid flood-fill (5KIR 6967, 6COX 7490, 1CX2 7578, 3PGH 5659 A^3 at 0.5 A
+  spacing; two spacings agree within 2%) as a geometric cavity descriptor, not an
+  energy. Large regenerable embeddings and per-cell tables stay out of git.
 
 ## Citation and archived data
 

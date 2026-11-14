@@ -17,6 +17,7 @@ those are not needed to reproduce reported results and stay in the project archi
 | 04_docking | e11_ensemble_get.py, e12_ensemble_clean.py, e13_ensemble_compare.py | multi-structure ensemble docking |
 | 04_docking | run_ensemble.py, analyze_ensemble.py (C:\dockwork\ens2) | four-structure two-scoring three-seed grid (144 runs), seed/scoring/structural concordance |
 | 04_docking | 14_redock_pipeline.py, 15_recompute_rmsd.py (C:\dockwork\redock2) | three-structure co-crystal redock (1CX2/6COX/3PGH), element/atom-order repair, GetBestRMS alignment, redock2_rmsd.csv |
+| 04_docking | 16_pocket_volume.py (C:\dockwork) | grid-based flood-fill pocket volume around each co-crystal ligand at two voxel spacings; geometric cavity descriptor, not an energy; outputs pocket_volume.csv |
 | 04_docking | run_docking.py, enrichment.py, controls_luteolin.py, clean_receptor.py (C:\dockwork\dude_bench) | DUD-E screen, enrichment metrics, controls |
 | 05_md_mmgbsa | e33_system_build.py, e35_min_eq.py, e38_production.py, e39_md_analysis.py, e40_mmgbsa.py | OpenMM system, production, MD analysis, MM-GBSA |
 | 05_md_mmgbsa | md_robustness.py | block means, half-trajectory test, drift regression, pose stability, frame bootstrap (no new trajectory) |
@@ -25,6 +26,7 @@ those are not needed to reproduce reported results and stay in the project archi
 | 07_singlecell_spatial | download_gsm.py, analyze_masld_full.py (C:\dockwork\masld) | per-sample GSE344087 retrieval (19 MASLD + 1 control), full-series localization |
 | 07_singlecell_spatial | all_sections_analysis.py (cloud spatial) | nine-file multi-section Visium analysis (4 PSC011 + 4 C73 + pooled e84), memory-safe backed reads, per-section fractions/Moran and group contrast; outputs 空间_全切片_*.csv |
 | 07_singlecell_spatial | mouse_case_control.py (cloud spatial) | mouse MASLD donor-level descriptive case-control (1 SD vs 2 WD); outputs 空间_小鼠病例对照_供体级.csv |
+| 07_singlecell_spatial | 10_harmony_integration.py (C:\dockwork\masld) | Harmony batch integration on the 20-sample MASLD series (sample as batch), rebuilt neighbors/UMAP, same-sample neighbor mixing metric, marker heatmap and composition stack; outputs masld_harmony_*.json/csv and figures |
 | 08_perturbation | e63_enrichr_lincs.py, e64_summarize.py (lincs/) | Enrichr/L1000 signatures and summary |
 | 09_benchmarks | dilution_analysis.py, meta_ci_analysis.py, framework_benchmark.py | dilution, CI/TOST, framework benchmark |
 | 09_benchmarks | framework_decirculation.py | external-only reference sets, leave-one-out labels, exact permutation null (10,000 draws) |
@@ -46,9 +48,11 @@ The originals were written during the analysis and use absolute paths
 the path constants at the top of each script or set the documented environment
 variables. The curated modules read all paths from environment variables with
 sensible in-module defaults: `CHAIHU_MR_WORKDIR` / `CHAIHU_MR_OUTDIR`,
-`CHAIHU_DRG_WORKDIR` / `CHAIHU_DRG_OUTDIR` / `CHAIHU_FIGDIR`, and
+`CHAIHU_DRG_WORKDIR` / `CHAIHU_DRG_OUTDIR` / `CHAIHU_FIGDIR`,
 `CHAIHU_SPATIAL_DIR` for the human multi-section and mouse case-control Visium
-scripts. The OpenGWAS token
+scripts, `CHAIHU_MASLD_DIR` for the Harmony integration, and
+`CHAIHU_DOCK_DIR` / `CHAIHU_POCKET_OUT` for the grid-based pocket-volume
+script. The OpenGWAS token
 is read from `OPENGWAS_JWT` or `OPENGWAS_JWT_FILE` and is never committed.
 Refactoring every older script into a single shared `config.py` is tracked as a
 follow-up cleanup; the current curation preserves the exact code that produced

@@ -16,8 +16,9 @@ are configured at the top of each script.
    GO/KEGG over-representation, ssGSEA immune fractions, and ROC checks.
 4. **Docking (04_docking).** Prepare rigid receptors and ligands, run AutoDock
    Vina (seed 42), validate with a co-crystal redock, run the DUD-E benchmark and
-   positive controls, and run a four-structure x two-scoring x three-seed grid
-   (144 runs) with a celecoxib positive control in every panel.
+   positive controls, run a four-structure x two-scoring x three-seed grid
+   (144 runs) with a celecoxib positive control in every panel, and estimate each
+   co-crystal pocket volume with a grid flood-fill at two voxel spacings.
 5. **Molecular dynamics (05_md_mmgbsa).** Build the solvated 5KIR-luteolin
    complex, minimize/equilibrate, run production, analyze RMSD/H-bonds, compute
    MM-GBSA, and run within-trajectory robustness checks (blocks, half split,
@@ -30,7 +31,9 @@ are configured at the top of each script.
    run the nine-file multi-section Visium analysis (4 PSC011 vs 4 C73 sections
    plus the pooled e84 normal reference) with memory-safe backed reads and a
    mouse MASLD donor-level case-control table. Sections within a donor are
-   technical replicates, so these spatial contrasts stay descriptive.
+   technical replicates, so these spatial contrasts stay descriptive. The 20-sample
+   MASLD series is then integrated with Harmony (sample as batch) and checked with
+   a same-sample neighbor mixing metric, marker heatmap, and composition stack.
 8. **Perturbation (08_perturbation).** Enrichr/L1000 reversal signatures and
    CellOracle-style in silico knockout/overexpression.
 9. **Benchmarks (09_benchmarks).** Bulk-dilution analysis, confidence intervals
@@ -62,6 +65,9 @@ are configured at the top of each script.
 | Fig 8 | Molecular dynamics | 05_md_mmgbsa |
 | Fig 9 | Causal perturbation | 08_perturbation |
 | DRG dot plot | Receptor/channel expression across 15 DRG clusters | 12_drg (figures/drg_receptor_dotplot.png) |
+| Harmony UMAP | MASLD pre/post-correction UMAP by sample and condition | 07_singlecell_spatial (figures/masld_harmony_umap.png) |
+| Marker heatmap | 9 MASLD cell types by marker-gene z-score | 07_singlecell_spatial (figures/masld_marker_heatmap.png) |
+| Composition stack | 20 donor cell-type composition | 07_singlecell_spatial (figures/masld_composition_stacked.png) |
 
 ## Table mapping
 
@@ -73,6 +79,8 @@ are configured at the top of each script.
 | Table 4 | Docking binding energies | 04_docking |
 | Table 5 | Meta effects and BH | 06_multicohort_meta |
 | Ensemble docking | docking_ensemble_summary, _ranks, structure_concordance, _stats | 04_docking |
+| Pocket volume | pocket_volume (4 structures x 2 spacings) | 04_docking |
+| Harmony integration | masld_harmony_summary, masld_harmony_mixing, masld_marker_heatmap | 07_singlecell_spatial |
 | MD robustness | md_block_average, md_robustness | 05_md_mmgbsa |
 | De-circularized benchmark | framework_decirculation, framework_permutation | 09_benchmarks |
 | UniProt adjudication | uniprot_round2_check, _trembl_canonical, _trembl_adjudicated, _name_resolved | 02_tcmsp_targets |
@@ -110,8 +118,9 @@ are configured at the top of each script.
   independent replicate.
 - Selection benchmark: 8 external pain genes (after removing the 6 seeded ones),
   framework precision 14.6% (55 targets) and 16.3% (49), permutation p<1e-4,
-  enrichment 13.5x; degree top-60 1.7% (p 0.53); strict intersection 0 hits;
-  tier ordering does not survive the external reference (core 1/8, strong 1/8).
+  enrichment 13.55x over the 664-gene pool; degree top-60 1.7% (p 0.53); strict
+  intersection 0 hits; tier ordering does not survive the external reference
+  (core 1/8, strong 1/8).
 - MASLD single-cell: 19 MASLD + 1 control, 48,594 cells; donor-level medians
   IL1B 80.0%, TNF 52.6%, PTGS2 44.0% in macrophages/Kupffer; control composition
   not matched, so localization only.
@@ -123,6 +132,14 @@ are configured at the top of each script.
   The pooled e84 normal has no coordinates and cannot return Moran.
 - Mouse MASLD Visium: 1 SD vs 2 WD donors, descriptive only; Spp1 4.52x
   (0.4254->1.9241), Ccl2 4.90x, Il1b 1.61x; Il6/Calcr/Trpv1/Tacr1 are all zero.
+- Harmony (harmonypy 0.0.6, pure Python): sample as batch, random_state 0;
+  same-sample neighbor fraction 0.359 to 0.237 overall (MASLD 0.319 to 0.191,
+  HC 0.593 to 0.509). A descriptive mixing check only; one healthy donor means
+  no inferential disease comparison. The embeddings .npz and per-cell .csv are
+  regenerable and not committed.
+- Pocket volume (grid flood-fill, 16_pocket_volume.py): 0.5 A voxel volumes
+  5KIR 6967, 6COX 7490, 1CX2 7578, 3PGH 5659 A^3; 0.5/0.75 A spacing agreement
+  within 2%. A geometric cavity descriptor, not a binding energy.
 - DRG and other external tissue resources are analyzed separately and never
   pooled with liver single-cell data.
 - MR: instruments p<=5e-8, LD clump r2=0.001, 5000 kb, EUR; cis within 1 Mb;
