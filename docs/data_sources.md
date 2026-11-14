@@ -93,7 +93,7 @@ public release.
 | Redock RMSD (all < 2 A) | 5KIR 1.073, 1CX2 0.718, 6COX 0.105, 3PGH 1.478 | data/processed_small/redock2_rmsd.csv |
 | SC-558 / flurbiprofen | PubChem CID 1396 / CID 3394 | https://pubchem.ncbi.nlm.nih.gov/ |
 | Pocket volume (grid flood-fill) | 0.5 A voxel volumes (A^3): 5KIR 6967, 6COX 7490, 1CX2 7578, 3PGH 5659; 0.5/0.75 A spacing agreement within 2%; geometric cavity descriptor, not an energy | data/processed_small/pocket_volume.csv |
-| Pocket volume (grid flood-fill) | 0.5 A voxel volumes (A^3): 5KIR 6967, 6COX 7490, 1CX2 7578, 3PGH 5659; 0.5/0.75 A spacing agreement within 2%; geometric cavity descriptor, not an energy | data/processed_small/pocket_volume.csv |
+| MD pose clustering (average linkage) | one backbone basin for all 250 frames (threshold 0.16 nm); six ligand pose clusters, dominant 72.8% and secondary 18% (threshold 0.15 nm) | data/processed_small/md_pose_clusters.csv, md_pose_cluster_summary.json |
 | DUD-E target | pgh2 (PTGS2), 3LN1 receptor, celecoxib co-crystal | https://dude.docking.org/targets/pgh2 |
 | DUD-E ligands | 50 actives + 250 decoys (benchmark subset) | https://dude.docking.org/ |
 | Positive controls | celecoxib, diclofenac, ibuprofen, indomethacin | PubChem CIDs 2662, 3033, 3673, 3715 |
@@ -139,7 +139,7 @@ cannot be computed in this environment. See `docs/第4轮_人DRG伤害感受器�
 - Meeko (`mk_prepare_ligand`)
 - OpenMM 8.6.1, OpenFF Sage 2.1.0 force field, TIP3P water
 - harmonypy 0.0.6 (pure-Python batch correction; the 2.1.0 release needs a C++ toolchain and is not used)
-- harmonypy 0.0.6 (pure-Python batch correction; the 2.1.0 release needs a C++ toolchain and is not used)
+- MDTraj, SciPy (hierarchical average-linkage pose clustering)
 
 ## Third-party licenses
 

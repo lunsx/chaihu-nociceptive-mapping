@@ -125,7 +125,10 @@ Ligand protonation uses **Meeko** and **Open Babel**. See `docs/workflow.md`.
   comparison given the single control. Co-crystal pocket volumes are measured by
   a grid flood-fill (5KIR 6967, 6COX 7490, 1CX2 7578, 3PGH 5659 A^3 at 0.5 A
   spacing; two spacings agree within 2%) as a geometric cavity descriptor, not an
-  energy. Large regenerable embeddings and per-cell tables stay out of git.
+  energy. Average-linkage pose clustering places all 250 frames in one backbone
+  basin (0.16 nm) and splits ligand poses into six clusters with a dominant 72.8%
+  basin and a 18% secondary pose (0.15 nm). Large regenerable embeddings and
+  per-cell tables stay out of git.
 
 ## Citation and archived data
 

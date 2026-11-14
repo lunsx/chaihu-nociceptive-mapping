@@ -1,0 +1,84 @@
+{
+ "n_production_frames": 250,
+ "ligand_pose": {
+  "atom_indices": "ligand heavy atoms",
+  "n_atoms": 21,
+  "distance_threshold_nm": 0.15,
+  "linkage": "average",
+  "n_clusters": 6,
+  "clusters": [
+   {
+    "cluster": 1,
+    "n_frames": 182,
+    "frame_fraction": 0.728,
+    "medoid_frame": 220,
+    "medoid_time_ns": 8.8,
+    "mean_within_cluster_RMSD_nm": 0.111,
+    "max_within_cluster_RMSD_nm": 0.2834
+   },
+   {
+    "cluster": 2,
+    "n_frames": 45,
+    "frame_fraction": 0.18,
+    "medoid_frame": 64,
+    "medoid_time_ns": 2.56,
+    "mean_within_cluster_RMSD_nm": 0.0929,
+    "max_within_cluster_RMSD_nm": 0.2241
+   },
+   {
+    "cluster": 3,
+    "n_frames": 13,
+    "frame_fraction": 0.052,
+    "medoid_frame": 12,
+    "medoid_time_ns": 0.48,
+    "mean_within_cluster_RMSD_nm": 0.0861,
+    "max_within_cluster_RMSD_nm": 0.1806
+   },
+   {
+    "cluster": 4,
+    "n_frames": 8,
+    "frame_fraction": 0.032,
+    "medoid_frame": 226,
+    "medoid_time_ns": 9.04,
+    "mean_within_cluster_RMSD_nm": 0.1024,
+    "max_within_cluster_RMSD_nm": 0.173
+   },
+   {
+    "cluster": 5,
+    "n_frames": 1,
+    "frame_fraction": 0.004,
+    "medoid_frame": 207,
+    "medoid_time_ns": 8.28,
+    "mean_within_cluster_RMSD_nm": 0.0,
+    "max_within_cluster_RMSD_nm": 0.0
+   },
+   {
+    "cluster": 6,
+    "n_frames": 1,
+    "frame_fraction": 0.004,
+    "medoid_frame": 255,
+    "medoid_time_ns": 10.2,
+    "mean_within_cluster_RMSD_nm": 0.0,
+    "max_within_cluster_RMSD_nm": 0.0
+   }
+  ]
+ },
+ "protein_backbone": {
+  "atom_indices": "backbone and chainid 0",
+  "n_atoms": 2204,
+  "distance_threshold_nm": 0.16,
+  "linkage": "average",
+  "n_clusters": 1,
+  "clusters": [
+   {
+    "cluster": 1,
+    "n_frames": 250,
+    "frame_fraction": 1.0,
+    "medoid_frame": 105,
+    "medoid_time_ns": 4.2,
+    "mean_within_cluster_RMSD_nm": 0.123,
+    "max_within_cluster_RMSD_nm": 0.1995
+   }
+  ]
+ }
+}

@@ -21,8 +21,9 @@ are configured at the top of each script.
    co-crystal pocket volume with a grid flood-fill at two voxel spacings.
 5. **Molecular dynamics (05_md_mmgbsa).** Build the solvated 5KIR-luteolin
    complex, minimize/equilibrate, run production, analyze RMSD/H-bonds, compute
-   MM-GBSA, and run within-trajectory robustness checks (blocks, half split,
-   drift regression, pose stability, frame bootstrap).
+   MM-GBSA, run within-trajectory robustness checks (blocks, half split,
+   drift regression, pose stability, frame bootstrap), and cluster backbone-superposed
+   frames by average-linkage on ligand and backbone RMSD (pose clustering).
 6. **Multi-cohort meta-analysis (06_multicohort_meta).** Harmonize five cohorts,
    run direction voting, Hedges' g random-effects pooling, sensitivity and BH.
 7. **Single-cell and spatial (07_singlecell_spatial).** Localize targets across
@@ -82,6 +83,7 @@ are configured at the top of each script.
 | Pocket volume | pocket_volume (4 structures x 2 spacings) | 04_docking |
 | Harmony integration | masld_harmony_summary, masld_harmony_mixing, masld_marker_heatmap | 07_singlecell_spatial |
 | MD robustness | md_block_average, md_robustness | 05_md_mmgbsa |
+| MD pose clustering | md_pose_clusters, md_pose_cluster_summary, md_pose_clustering.png | 05_md_mmgbsa |
 | De-circularized benchmark | framework_decirculation, framework_permutation | 09_benchmarks |
 | UniProt adjudication | uniprot_round2_check, _trembl_canonical, _trembl_adjudicated, _name_resolved | 02_tcmsp_targets |
 | MASLD 20-sample | masld_full_localization, _composition, _contrast, _summary | 07_singlecell_spatial |
