@@ -15,6 +15,8 @@ anndata==0.13.4
 igraph==1.0.0
 networkx==3.7
 harmonypy==0.0.6
+squidpy==1.6.0
+gseapy==1.3.2
 
 # Chemistry / docking ligand preparation
 rdkit==2026.9.2
@@ -24,6 +26,9 @@ meeko==0.8.0
 openmm==8.6.1
 openff-toolkit==0.18.0
 openff-utilities==0.1.16
+openmmforcefields==0.15.1
+mdtraj==1.11.2
+pdbfixer==1.12.0
 
 # Plotting / document build
 matplotlib==3.11.2
