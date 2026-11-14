@@ -1,0 +1,114 @@
+{
+  "n_production_frames": {
+    "traj1": 250,
+    "traj2": 250
+  },
+  "mean_backbone_RMSD_nm": {
+    "traj1": 0.1477683712232,
+    "traj2": 0.1503516286611557
+  },
+  "mean_ligand_RMSD_nm": {
+    "traj1": 0.22140135657600002,
+    "traj2": 0.12177993357181549
+  },
+  "mean_HB_count": {
+    "traj1": 4.624,
+    "traj2": 4.956
+  },
+  "MMGBSA_total_kcal_mol": {
+    "traj1": {
+      "mean": -29.075843748214506,
+      "SD": 2.3337477562703905,
+      "SEM": 0.20873674501432815,
+      "median": -29.36229133985058
+    },
+    "traj2": {
+      "mean": -31.601459716001823,
+      "SD": 3.561469985713638,
+      "SEM": 0.31854755951523595,
+      "median": -31.704922365094045
+    },
+    "mean_difference_traj2_minus_traj1": -2.525615967787317
+  },
+  "frame_dG_pearson": -0.05796229700644439,
+  "shared_HB_occupancy": [
+    {
+      "resSeq": 142,
+      "residue": "PHE",
+      "ligand_role": "ligDonor",
+      "traj1_occupancy": 0.16,
+      "traj2_occupancy": 0.292
+    },
+    {
+      "resSeq": 228,
+      "residue": "VAL",
+      "ligand_role": "ligAcceptor",
+      "traj1_occupancy": 0.02,
+      "traj2_occupancy": 0.196
+    },
+    {
+      "resSeq": 228,
+      "residue": "VAL",
+      "ligand_role": "ligDonor",
+      "traj1_occupancy": 0.696,
+      "traj2_occupancy": 0.264
+    },
+    {
+      "resSeq": 374,
+      "residue": "GLN",
+      "ligand_role": "ligAcceptor",
+      "traj1_occupancy": 0.176,
+      "traj2_occupancy": 0.268
+    },
+    {
+      "resSeq": 374,
+      "residue": "GLN",
+      "ligand_role": "ligDonor",
+      "traj1_occupancy": 0.06,
+      "traj2_occupancy": 0.12
+    },
+    {
+      "resSeq": 375,
+      "residue": "ASN",
+      "ligand_role": "ligAcceptor",
+      "traj1_occupancy": 0.012,
+      "traj2_occupancy": 0.004
+    },
+    {
+      "resSeq": 375,
+      "residue": "ASN",
+      "ligand_role": "ligDonor",
+      "traj1_occupancy": 0.94,
+      "traj2_occupancy": 0.884
+    },
+    {
+      "resSeq": 376,
+      "residue": "ARG",
+      "ligand_role": "ligAcceptor",
+      "traj1_occupancy": 1.0,
+      "traj2_occupancy": 0.996
+    },
+    {
+      "resSeq": 536,
+      "residue": "GLY",
+      "ligand_role": "ligDonor",
+      "traj1_occupancy": 0.052,
+      "traj2_occupancy": 0.344
+    },
+    {
+      "resSeq": 537,
+      "residue": "ASN",
+      "ligand_role": "ligAcceptor",
+      "traj1_occupancy": 0.008,
+      "traj2_occupancy": 0.088
+    },
+    {
+      "resSeq": 538,
+      "residue": "VAL",
+      "ligand_role": "ligAcceptor",
+      "traj1_occupancy": 0.204,
+      "traj2_occupancy": 0.232
+    }
+  ],
+  "note": "Two independent single trajectories (velocity seeds 42 and 2027); MM-GBSA omits entropy and is relative, not absolute affinity."
+}

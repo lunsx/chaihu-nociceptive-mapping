@@ -127,7 +127,10 @@ Ligand protonation uses **Meeko** and **Open Babel**. See `docs/workflow.md`.
   spacing; two spacings agree within 2%) as a geometric cavity descriptor, not an
   energy. Average-linkage pose clustering places all 250 frames in one backbone
   basin (0.16 nm) and splits ligand poses into six clusters with a dominant 72.8%
-  basin and a 18% secondary pose (0.15 nm). Large regenerable embeddings and
+  basin and a 18% secondary pose (0.15 nm). A second independent 10 ns trajectory
+  (seed 2027) reproduces the same pose and the ARG376/ASN375 anchors, while its
+  MM-GBSA mean is 2.53 kcal/mol more negative; the pose is reproducible across
+  seeds, the absolute free energy is not. Large regenerable embeddings and
   per-cell tables stay out of git.
 
 ## Citation and archived data

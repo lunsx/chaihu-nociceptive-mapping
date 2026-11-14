@@ -345,13 +345,14 @@ common_n = min(len(md1_pf), len(pf))
 g1 = md1_pf["dG_total_kcal"].to_numpy()[:common_n]
 g2 = pf["dG_total_kcal"].to_numpy()[:common_n]
 
-md1_top = md1_occ.set_index(["resSeq", "residue"])["occupancy"]
-md2_top = occ_df.set_index(["resSeq", "residue"])["occupancy"]
+md1_top = md1_occ.set_index(["resSeq", "residue", "ligand_role"])["occupancy"]
+md2_top = occ_df.set_index(["resSeq", "residue", "ligand_role"])["occupancy"]
 shared_keys = sorted(set(md1_top.index) & set(md2_top.index))
 hb_occ_compare = [
     {
         "resSeq": int(k[0]),
         "residue": k[1],
+        "ligand_role": k[2],
         "traj1_occupancy": float(md1_top[k]),
         "traj2_occupancy": float(md2_top[k]),
     }

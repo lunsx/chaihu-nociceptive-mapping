@@ -22,8 +22,10 @@ are configured at the top of each script.
 5. **Molecular dynamics (05_md_mmgbsa).** Build the solvated 5KIR-luteolin
    complex, minimize/equilibrate, run production, analyze RMSD/H-bonds, compute
    MM-GBSA, run within-trajectory robustness checks (blocks, half split,
-   drift regression, pose stability, frame bootstrap), and cluster backbone-superposed
-   frames by average-linkage on ligand and backbone RMSD (pose clustering).
+   drift regression, pose stability, frame bootstrap), cluster backbone-superposed
+   frames by average-linkage on ligand and backbone RMSD (pose clustering), and run
+   a second independent 10 ns trajectory from a different velocity seed through the
+   same pipeline, then compare the two trajectories frame by frame.
 6. **Multi-cohort meta-analysis (06_multicohort_meta).** Harmonize five cohorts,
    run direction voting, Hedges' g random-effects pooling, sensitivity and BH.
 7. **Single-cell and spatial (07_singlecell_spatial).** Localize targets across
@@ -84,6 +86,7 @@ are configured at the top of each script.
 | Harmony integration | masld_harmony_summary, masld_harmony_mixing, masld_marker_heatmap | 07_singlecell_spatial |
 | MD robustness | md_block_average, md_robustness | 05_md_mmgbsa |
 | MD pose clustering | md_pose_clusters, md_pose_cluster_summary, md_pose_clustering.png | 05_md_mmgbsa |
+| MD2 replicate comparison | md2_replicate_comparison, md2_* per-frame CSVs | 05_md_mmgbsa |
 | De-circularized benchmark | framework_decirculation, framework_permutation | 09_benchmarks |
 | UniProt adjudication | uniprot_round2_check, _trembl_canonical, _trembl_adjudicated, _name_resolved | 02_tcmsp_targets |
 | MASLD 20-sample | masld_full_localization, _composition, _contrast, _summary | 07_singlecell_spatial |
@@ -116,8 +119,12 @@ are configured at the top of each script.
   Five 25-frame blocks span minus 29.76 to minus 28.35 kcal/mol (range 1.40);
   drift after discarding 12 frames is plus 0.22 kcal/mol per ns (p 0.009); the
   ligand stays within 0.3 nm in 89.2% of frames; frame bootstrap 95% interval
-  minus 29.49 to minus 28.67. Pose stable, energy not fully converged, no
-  independent replicate.
+  minus 29.49 to minus 28.67. Pose stable, energy not fully converged.
+- Independent replicate (seed 2027, 10 ns): same pipeline; backbone RMSD 0.150
+  vs 0.148 nm, HB 4.96 vs 4.62, ARG376 (0.996 vs 1.0) and ASN375 (0.884 vs 0.94)
+  anchors reproduced, VAL228 weaker (0.264 vs 0.696); MM-GBSA minus 31.60 vs
+  minus 29.08 (2.53 apart), frame energies uncorrelated (Pearson minus 0.06).
+  The pose is reproducible across seeds; the absolute free energy stays uncertain.
 - Selection benchmark: 8 external pain genes (after removing the 6 seeded ones),
   framework precision 14.6% (55 targets) and 16.3% (49), permutation p<1e-4,
   enrichment 13.55x over the 664-gene pool; degree top-60 1.7% (p 0.53); strict

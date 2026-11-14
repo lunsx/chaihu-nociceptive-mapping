@@ -22,6 +22,7 @@ those are not needed to reproduce reported results and stay in the project archi
 | 05_md_mmgbsa | e33_system_build.py, e35_min_eq.py, e38_production.py, e39_md_analysis.py, e40_mmgbsa.py | OpenMM system, production, MD analysis, MM-GBSA |
 | 05_md_mmgbsa | md_robustness.py | block means, half-trajectory test, drift regression, pose stability, frame bootstrap (no new trajectory) |
 | 05_md_mmgbsa | 07_pose_clustering.py (C:\dockwork\md) | average-linkage clustering of backbone-superposed production frames on ligand heavy-atom RMSD (0.15 nm) and backbone RMSD (0.16 nm); outputs md_pose_clusters.csv, md_pose_cluster_summary.json, figures/md_pose_clustering.png |
+| 05_md_mmgbsa | 08_md2_analysis.py (C:\dockwork\md2) | independent replicate analysis with the same RMSD/HB/distance and single-trajectory MM-GBSA (OBC2, NoCutoff, entropy omitted) pipeline, plus two-trajectory frame-by-frame comparison; outputs md2_* CSVs and md2_replicate_comparison.json |
 | 06_multicohort_meta | e45_download_cohorts.py, e47_build_meta.py, e48_multicohort.py, e49_meta.py, e50_sensitivity.py, e71_meta_bh.py | cohort harmonization, voting, meta, sensitivity, BH |
 | 07_singlecell_spatial | d9l_localize.py, d9m_figs.py | target localization and figures |
 | 07_singlecell_spatial | download_gsm.py, analyze_masld_full.py (C:\dockwork\masld) | per-sample GSE344087 retrieval (19 MASLD + 1 control), full-series localization |
@@ -53,7 +54,8 @@ sensible in-module defaults: `CHAIHU_MR_WORKDIR` / `CHAIHU_MR_OUTDIR`,
 `CHAIHU_SPATIAL_DIR` for the human multi-section and mouse case-control Visium
 scripts, `CHAIHU_MASLD_DIR` for the Harmony integration,
 `CHAIHU_DOCK_DIR` / `CHAIHU_POCKET_OUT` for the grid-based pocket-volume
-script, and `CHAIHU_MD_DIR` for the pose-clustering script. The OpenGWAS token
+script, `CHAIHU_MD_DIR` for the pose-clustering script, and `CHAIHU_MD2_DIR`
+for the independent-replicate analysis. The OpenGWAS token
 is read from `OPENGWAS_JWT` or `OPENGWAS_JWT_FILE` and is never committed.
 Refactoring every older script into a single shared `config.py` is tracked as a
 follow-up cleanup; the current curation preserves the exact code that produced

@@ -94,6 +94,7 @@ public release.
 | SC-558 / flurbiprofen | PubChem CID 1396 / CID 3394 | https://pubchem.ncbi.nlm.nih.gov/ |
 | Pocket volume (grid flood-fill) | 0.5 A voxel volumes (A^3): 5KIR 6967, 6COX 7490, 1CX2 7578, 3PGH 5659; 0.5/0.75 A spacing agreement within 2%; geometric cavity descriptor, not an energy | data/processed_small/pocket_volume.csv |
 | MD pose clustering (average linkage) | one backbone basin for all 250 frames (threshold 0.16 nm); six ligand pose clusters, dominant 72.8% and secondary 18% (threshold 0.15 nm) | data/processed_small/md_pose_clusters.csv, md_pose_cluster_summary.json |
+| Independent MD replicate (seed 2027) | second 10 ns trajectory through the same pipeline; backbone RMSD 0.150 vs 0.148 nm, HB 4.96 vs 4.62, ARG376/ASN375 anchors reproduced, MM-GBSA minus 31.60 vs minus 29.08 (2.53 apart); pose reproducible, absolute energy still uncertain | data/processed_small/md2_replicate_comparison.json |
 | DUD-E target | pgh2 (PTGS2), 3LN1 receptor, celecoxib co-crystal | https://dude.docking.org/targets/pgh2 |
 | DUD-E ligands | 50 actives + 250 decoys (benchmark subset) | https://dude.docking.org/ |
 | Positive controls | celecoxib, diclofenac, ibuprofen, indomethacin | PubChem CIDs 2662, 3033, 3673, 3715 |
