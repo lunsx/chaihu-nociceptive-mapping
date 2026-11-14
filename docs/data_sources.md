@@ -31,9 +31,10 @@ All accessions are resolved through the GEO portal: https://www.ncbi.nlm.nih.gov
 |---|---|---|
 | Human PSC/PBC single-cell | Cell-type localization | CELLxGENE dataset `ff713455-e6b7-45b3-b2dd-1c9dd26251f6`; 89,637 cells, 16 donors; PSC 47,156, PBC 18,240, normal 24,241 |
 | Human MASLD GSE344087 | Correct-disease localization | 20 samples (19 MASLD + 1 HC); all 20 retrieved per sample; 48,594 cells, 9 types after QC; donor-level medians reported |
-| Human PSC Visium | Spatial autocorrelation | CELLxGENE PSC datasets include `085648af-883b-4969-851a-046d9dcedf49` (slice PSC011) and three related PSC records; Moran I per gene |
-| Human normal Visium | Spatial comparison | normal slices C73 (`36122151-…`, `878d13cd-…`, `adbebdbd-…`, `c12dd8cc-…`); not yet analysed |
-| Mouse MASLD Visium | Cross-species spatial | pooled accession `4a34293d-929f-41cb-bdc1-ff707e3318b6` (6,671 spots, carries both SD and WD groups); not yet analysed |
+| Human PSC Visium | Spatial autocorrelation | PSC011 four sections `085648af-…`, `1d929cac-…`, `975d4575-…`, `c8c7681f-…`; SPP1 Moran I 0.402/0.308/0.390/0.485, reproducible across all four sections |
+| Human normal Visium | Spatial comparison | C73 four sections `36122151-…`, `878d13cd-…`, `adbebdbd-…`, `c12dd8cc-…`; SPP1 Moran I 0.116/0.053/0.025/0.106, no overlap with the PSC range |
+| Multi-donor normal Visium | Independent normal reference | pooled `e84dbcac-…` (4,333 spots, 4 donors H35-H38); no image coordinates retained, so fractions/expression only (Moran not estimable) |
+| Mouse MASLD Visium | Cross-species spatial | pooled accession `4a34293d-929f-41cb-bdc1-ff707e3318b6` (6,671 spots, 1 SD + 2 WD donors); Spp1 0.4254->1.9241 (4.52x), descriptive only |
 
 GSE344087 per-sample matrices: `https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9970nnn/GSM<GSM>/suppl/<GSM>_<MASLD_S0xx|HC_S020>_LIVER_filtered_feature_bc_matrix.h5`
 (GSM9970276-9970294 = MASLD_S001-S019, GSM9970295 = HC_S020). The series-level FTP is
@@ -49,7 +50,7 @@ public release.
 | Source | Role | Key facts |
 |---|---|---|
 | TCMSP | Formula compounds/targets | 7 herbs; 938 unique compounds; 139 pass OB>=30 and DL>=0.18; 6,712 compound-target pairs; 946 targets |
-| UniProt | Human target mapping | reviewed human reference; 691 mapped rows, 662 unique human genes |
+| UniProt | Human target mapping | reviewed human reference; 693 mapped rows, 253 unmapped, 664 unique human genes (two TrEMBL replacements written back) |
 | HERB | Reproduction check | 234/237 reproduced |
 | TTD | Target verification | 196 verified |
 | STITCH | Interaction network | luteolin 84 edges; no PTGS2 edge |
@@ -76,10 +77,12 @@ public release.
 | Item | Detail | Source |
 |---|---|---|
 | TNF structure | 2AZ5 | https://www.rcsb.org/structure/2AZ5 |
-| PTGS2 structure | 5KIR | https://www.rcsb.org/structure/5KIR |
-| PTGS2 structure | 6COX | https://www.rcsb.org/structure/6COX |
-| PTGS2 structure | 1CX2 | https://www.rcsb.org/structure/1CX2 |
-| PTGS2 structure | 3PGH | https://www.rcsb.org/structure/3PGH |
+| PTGS2 structure | 5KIR, co-crystallized with rofecoxib | https://www.rcsb.org/structure/5KIR |
+| PTGS2 structure | 6COX, co-crystallized with SC-558 (I222 form) | https://www.rcsb.org/structure/6COX |
+| PTGS2 structure | 1CX2, co-crystallized with SC-558 | https://www.rcsb.org/structure/1CX2 |
+| PTGS2 structure | 3PGH, co-crystallized with flurbiprofen | https://www.rcsb.org/structure/3PGH |
+| Redock RMSD (all < 2 A) | 5KIR 1.073, 1CX2 0.718, 6COX 0.105, 3PGH 1.478 | data/processed_small/redock2_rmsd.csv |
+| SC-558 / flurbiprofen | PubChem CID 1396 / CID 3394 | https://pubchem.ncbi.nlm.nih.gov/ |
 | DUD-E target | pgh2 (PTGS2), 3LN1 receptor, celecoxib co-crystal | https://dude.docking.org/targets/pgh2 |
 | DUD-E ligands | 50 actives + 250 decoys (benchmark subset) | https://dude.docking.org/ |
 | Positive controls | celecoxib, diclofenac, ibuprofen, indomethacin | PubChem CIDs 2662, 3033, 3673, 3715 |

@@ -26,7 +26,11 @@ are configured at the top of each script.
    run direction voting, Hedges' g random-effects pooling, sensitivity and BH.
 7. **Single-cell and spatial (07_singlecell_spatial).** Localize targets across
    cell types and spatial spots, including disease-vs-normal percentage shifts,
-   and retrieve all 20 GSE344087 samples individually for the full-series map.
+   retrieve all 20 GSE344087 samples individually for the full-series map, and
+   run the nine-file multi-section Visium analysis (4 PSC011 vs 4 C73 sections
+   plus the pooled e84 normal reference) with memory-safe backed reads and a
+   mouse MASLD donor-level case-control table. Sections within a donor are
+   technical replicates, so these spatial contrasts stay descriptive.
 8. **Perturbation (08_perturbation).** Enrichr/L1000 reversal signatures and
    CellOracle-style in silico knockout/overexpression.
 9. **Benchmarks (09_benchmarks).** Bulk-dilution analysis, confidence intervals
@@ -73,18 +77,24 @@ are configured at the top of each script.
 | De-circularized benchmark | framework_decirculation, framework_permutation | 09_benchmarks |
 | UniProt adjudication | uniprot_round2_check, _trembl_canonical, _trembl_adjudicated, _name_resolved | 02_tcmsp_targets |
 | MASLD 20-sample | masld_full_localization, _composition, _contrast, _summary | 07_singlecell_spatial |
+| Multi-section spatial | 空间_全切片_逐切片, _Moran, _组间汇总, 空间_PSC四切片_中期核验 | 07_singlecell_spatial |
+| Mouse case-control | 空间_小鼠病例对照_供体级 | 07_singlecell_spatial |
 | MR tables | mr_results_table, coloc_table, instrument_table | 11_mr |
 | SMR table | smr_heidi_table, smr_heidi_results | 11_mr |
 | DRG tables | drg_cluster_annotation, mediator_receptor_mapping, drg_summary | 12_drg |
 
 ## Key statistical and reproducibility settings
 
-- Docking Vina seed: 42; co-crystal redock RMSD 1.073 A (pass threshold < 2).
+- All four PTGS2 structures are co-crystal complexes: 5KIR with rofecoxib, 1CX2
+  and 6COX with SC-558, 3PGH with flurbiprofen. None is an apo structure.
+- Co-crystal redock RMSDs on all four structures: 5KIR 1.073 A, 1CX2 0.718 A,
+  6COX 0.105 A, 3PGH 1.478 A (all pass the < 2 A threshold).
 - Ensemble grid: 4 structures (5KIR, 6COX, 1CX2, 3PGH) x 2 scorings (vina,
   vinardo) x 3 seeds (42, 2026, 7), exhaustiveness 8, box 22 A, 5 modes; mean
   seed spread 0.04 kcal/mol (max 0.65); Vinardo systematically 2.35 kcal/mol less
-  negative than Vina; cross-structure Spearman 1.00 to 0.886 where a bound ligand
-  defines the pocket, dropping to 0.257 or below for the ligand-free structure.
+  negative than Vina; cross-structure Spearman is 1.00 between the two SC-558
+  structures and 0.886 between 1CX2 and 3PGH, dropping to 0.257 or below when
+  5KIR enters the comparison; pocket shape differs across the co-crystal forms.
 - Celecoxib preparation note: Meeko and Open Babel outputs crash Vina with an
   internal tree error (`src/lib/tree.h:101`); the working ligand file is the
   DUD-E control `c-1.pdbqt`, and this is the only celecoxib file used in the grid.
@@ -105,6 +115,14 @@ are configured at the top of each script.
 - MASLD single-cell: 19 MASLD + 1 control, 48,594 cells; donor-level medians
   IL1B 80.0%, TNF 52.6%, PTGS2 44.0% in macrophages/Kupffer; control composition
   not matched, so localization only.
+- Multi-section Visium: 9 files (4 PSC011, 4 C73, pooled e84); self-made lognorm
+  on in-tissue spots, Delaunay Moran with 200 perms; backed reads with 2,000-gene
+  chunks keep peak memory at about 3.2 GB. SPP1 Moran I is 0.31-0.49 on PSC versus
+  0.03-0.12 on C73 (no overlap), positive spots 29.3-40.1% versus 1.7-2.5%; one
+  donor per group, so technical reproducibility only, no cross-section p-values.
+  The pooled e84 normal has no coordinates and cannot return Moran.
+- Mouse MASLD Visium: 1 SD vs 2 WD donors, descriptive only; Spp1 4.52x
+  (0.4254->1.9241), Ccl2 4.90x, Il1b 1.61x; Il6/Calcr/Trpv1/Tacr1 are all zero.
 - DRG and other external tissue resources are analyzed separately and never
   pooled with liver single-cell data.
 - MR: instruments p<=5e-8, LD clump r2=0.001, 5000 kb, EUR; cis within 1 Mb;

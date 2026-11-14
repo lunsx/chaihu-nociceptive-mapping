@@ -95,20 +95,30 @@ Ligand protonation uses **Meeko** and **Open Babel**. See `docs/workflow.md`.
   across 28 tests. The human DRG analysis shows neurons carry inflammatory-mediator
   receptors (notably PTGER3) without producing the mediators; both are reported as
   bridging, not causal, evidence.
-- Docking conclusions are reported at the level the grid supports: seed variation
-  is negligible (mean spread 0.04 kcal/mol), Vinardo and Vina rank ligands
-  similarly but differ by 2.35 kcal/mol in absolute value, cross-structure
-  agreement ranges from 1.00 to below 0.26, and the positive control celecoxib
-  outscores the formula compounds in the two inhibitor-bound pockets. Luteolin is
-  placed among known inhibitors, not above them.
+- Docking conclusions are reported at the level the grid supports. All four PTGS2
+  structures are co-crystal complexes (5KIR rofecoxib; 1CX2/6COX SC-558; 3PGH
+  flurbiprofen), and co-crystal redock passes on all four, with RMSDs of 1.073,
+  0.718, 0.105, and 1.478 A. Seed variation is negligible (mean spread 0.04
+  kcal/mol), Vinardo and Vina rank ligands similarly but differ by 2.35 kcal/mol
+  in absolute value, cross-structure agreement ranges from 1.00 to below 0.26, and
+  the positive control celecoxib outscores the formula compounds in the SC-558
+  pockets. Luteolin is placed among known inhibitors, not above them.
 - The selection benchmark is reported with its residual circularity: against an
   eight-gene external reference the framework keeps 8/8 with 14.6% precision and a
-  permutation p<1e-4 (13.5x enrichment), while the degree-based and strict-
-  intersection heuristics recover 1/8 and 0/8. Evidence tiers do not predict
-  external confirmation, and the paper says so.
+  permutation p<1e-4 (13.55x enrichment over the 664-gene universe), while the
+  degree-based and strict-intersection heuristics recover 1/8 and 0/8. Evidence
+  tiers do not predict external confirmation, and the paper says so.
 - The MASLD single-cell series is complete (19 case + 1 control, 48,594 cells) but
   the single control is composition-mismatched, so it is used for donor-level
   localization only, never for a disease-versus-normal comparison.
+- The spatial analysis is replicated across nine Visium files. SPP1 spatial
+  clustering holds on all four PSC011 sections (Moran I 0.31-0.49) and separates
+  completely from the four C73 normal sections (0.03-0.12); the pooled four-donor
+  normal reference and the mouse MASLD case-control table point the same way.
+  Each donor group has one donor, so the sections establish technical
+  reproducibility rather than population-level inference, and the paper states
+  this. Sparse cytokines keep near-zero Moran values because each spot mixes
+  multiple cells, which is treated as a detection limit rather than absence.
 
 ## Citation and archived data
 

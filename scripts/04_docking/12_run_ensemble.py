@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 """Multi-conformation x multi-scoring x multi-seed docking robustness scan.
 
-Receptors : 5KIR, 6COX, 1CX2, 3PGH (four COX-2 crystal forms, pocket empty)
+Receptors : 5KIR (rofecoxib), 1CX2 and 6COX (SC-558), 3PGH (flurbiprofen);
+            all four are ligand-bound COX-2 co-crystal structures
 Ligands   : five formula compounds + celecoxib (positive control)
 Scoring   : vina, vinardo
 Seeds     : 42, 2026, 7
