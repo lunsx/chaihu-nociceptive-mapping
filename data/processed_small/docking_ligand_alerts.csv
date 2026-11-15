@@ -1,0 +1,8 @@
+﻿docking_ligand,cid,smiles,pains_alert,brenk_alert,alert_status
+luteolin,5280445,C1=CC(=C(C=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O)O,,catechol; catechol_A(92),catechol; catechol_A(92)
+quercetin,5280343,C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O,,catechol; catechol_A(92),catechol; catechol_A(92)
+kaempferol,5280863,C1=CC(=CC=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O,,,pass
+paeoniflorin,442534,C[C@]12C[C@@]3([C@@H]4C[C@]1([C@@]4([C@H](O2)O3)COC(=O)C5=CC=CC=C5)O[C@H]6[C@@H]([C@H]([C@@H]([C@H](O6)CO)O)O)O)O,,,pass
+cyperotundone,118722630,C[C@@H]1CCC2CC3=C(C(=O)CC13C2(C)C)C,,,pass
+alpha-cyperone,6452086,CC1=C2C[C@@H](CC[C@]2(CCC1=O)C)C(=C)C,,isolated_alkene,isolated_alkene
+celecoxib,2662,CC1=CC=C(C=C1)C2=CC(=NN2C3=CC=C(C=C3)S(=O)(=O)N)C(F)(F)F,,,pass

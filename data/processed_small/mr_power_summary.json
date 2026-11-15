@@ -1,0 +1,122 @@
+{
+ "exposure": "eQTLGen whole blood N=31684",
+ "outcome": "ukb-b-11413 N=461857",
+ "approximation": "two-sample standardized continuous-outcome NCP",
+ "binary_outcome_sensitivity": {
+  "K=0.1": {
+   "N_eff": 166269,
+   "median_MDE_80": 0.052
+  },
+  "K=0.2": {
+   "N_eff": 295588,
+   "median_MDE_80": 0.039
+  },
+  "K=0.3": {
+   "N_eff": 387960,
+   "median_MDE_80": 0.034
+  }
+ },
+ "median_MDE_80": 0.031,
+ "multi_tissue": {
+  "IL1B": {
+   "tissues_with_F>=10": 7,
+   "liver_available": false
+  },
+  "TNF": {
+   "tissues_with_F>=10": 0,
+   "liver_available": false
+  },
+  "PTGS2": {
+   "tissues_with_F>=10": 0,
+   "liver_available": false
+  },
+  "IL6": {
+   "tissues_with_F>=10": 0,
+   "liver_available": false
+  },
+  "CALCRL": {
+   "tissues_with_F>=10": 0,
+   "liver_available": false
+  },
+  "TACR1": {
+   "tissues_with_F>=10": 42,
+   "liver_available": false
+  },
+  "TRPV1": {
+   "tissues_with_F>=10": 0,
+   "liver_available": false
+  }
+ },
+ "per_gene": {
+  "CALCRL": {
+   "n_snp": 1,
+   "total_R2": 0.01954,
+   "MDE_80": 0.029,
+   "power": {
+    "0.1": 1.0,
+    "0.2": 1.0,
+    "0.3": 1.0
+   }
+  },
+  "IL1B": {
+   "n_snp": 9,
+   "total_R2": 0.01759,
+   "MDE_80": 0.031,
+   "power": {
+    "0.1": 1.0,
+    "0.2": 1.0,
+    "0.3": 1.0
+   }
+  },
+  "IL6": {
+   "n_snp": 1,
+   "total_R2": 0.00284,
+   "MDE_80": 0.077,
+   "power": {
+    "0.1": 0.952,
+    "0.2": 1.0,
+    "0.3": 1.0
+   }
+  },
+  "PTGS2": {
+   "n_snp": 9,
+   "total_R2": 0.05322,
+   "MDE_80": 0.018,
+   "power": {
+    "0.1": 1.0,
+    "0.2": 1.0,
+    "0.3": 1.0
+   }
+  },
+  "TACR1": {
+   "n_snp": 3,
+   "total_R2": 0.00821,
+   "MDE_80": 0.045,
+   "power": {
+    "0.1": 1.0,
+    "0.2": 1.0,
+    "0.3": 1.0
+   }
+  },
+  "TNF": {
+   "n_snp": 3,
+   "total_R2": 0.02054,
+   "MDE_80": 0.029,
+   "power": {
+    "0.1": 1.0,
+    "0.2": 1.0,
+    "0.3": 1.0
+   }
+  },
+  "TRPV1": {
+   "n_snp": 1,
+   "total_R2": 0.00253,
+   "MDE_80": 0.082,
+   "power": {
+    "0.1": 0.928,
+    "0.2": 1.0,
+    "0.3": 1.0
+   }
+  }
+ }
+}

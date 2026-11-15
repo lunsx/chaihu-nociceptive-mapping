@@ -1,0 +1,19 @@
+{
+ "provenance": "single-cell GSE344087 MASLD vs independent bulk meta; no shared cells",
+ "n_genes": 52,
+ "masld_fraction_vs_abs_pooled_g": {
+  "spearman": 0.1519,
+  "p": 0.28243,
+  "n": 52
+ },
+ "masld_fraction_vs_abs_big_g": {
+  "spearman": -0.0002,
+  "p": 0.99904,
+  "n": 52
+ },
+ "masld_fraction_vs_titration_retained_0.1": {
+  "spearman": 0.1554,
+  "p": 0.2968,
+  "n": 47
+ }
+}

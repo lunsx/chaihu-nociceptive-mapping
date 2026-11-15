@@ -1,0 +1,4 @@
+﻿TPM_threshold,universe_size,n_selected_in_universe,n_positive_in_universe,observed_overlap,expected_overlap,precision,enrichment,null_p95,empirical_p
+0.5,13981,36,6,6,0.0154,0.1667,388.4,0.0,0.0005
+1.0,13981,36,6,6,0.0154,0.1667,388.4,0.0,0.0005
+2.0,12593,31,6,6,0.0148,0.1935,406.2,0.0,0.0005

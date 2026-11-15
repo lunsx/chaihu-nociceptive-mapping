@@ -1,0 +1,393 @@
+{
+ "total_compounds": 139,
+ "screened_with_structure": 118,
+ "no_structure": 21,
+ "any_pains_hit": 0,
+ "any_brenk_hit": 64,
+ "clean_pass": 54,
+ "pains_hits": [],
+ "brenk_hits": [
+  {
+   "MOL_ID": "MOL000359",
+   "molecule_name": "sitosterol",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL000098",
+   "molecule_name": "quercetin",
+   "brenk_alert": "catechol; catechol_A(92)"
+  },
+  {
+   "MOL_ID": "MOL000358",
+   "molecule_name": "beta-sitosterol",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL000211",
+   "molecule_name": "Mairin",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL000449",
+   "molecule_name": "Stigmasterol",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL002311",
+   "molecule_name": "Glycyrol",
+   "brenk_alert": "cumarine; isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL004990",
+   "molecule_name": "7,2',4'-trihydroxy－5-methoxy-3－arylcoumarin",
+   "brenk_alert": "cumarine"
+  },
+  {
+   "MOL_ID": "MOL004904",
+   "molecule_name": "licopyranocoumarin",
+   "brenk_alert": "cumarine"
+  },
+  {
+   "MOL_ID": "MOL004068",
+   "molecule_name": "rosenonolactone",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL005017",
+   "molecule_name": "Phaseol",
+   "brenk_alert": "cumarine; isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL004841",
+   "molecule_name": "Licochalcone B",
+   "brenk_alert": "Michael_acceptor_1; catechol; catechol_A(92)"
+  },
+  {
+   "MOL_ID": "MOL004959",
+   "molecule_name": "1-Methoxyphaseollidin",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL000433",
+   "molecule_name": "FA",
+   "brenk_alert": "Michael_acceptor_1"
+  },
+  {
+   "MOL_ID": "MOL004808",
+   "molecule_name": "glyasperin B",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL004829",
+   "molecule_name": "Glepidotin B",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL004855",
+   "molecule_name": "Licoricone",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL004835",
+   "molecule_name": "Glypallichalcone",
+   "brenk_alert": "Michael_acceptor_1"
+  },
+  {
+   "MOL_ID": "MOL005000",
+   "molecule_name": "Gancaonin G",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL005003",
+   "molecule_name": "Licoagrocarpin",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL005012",
+   "molecule_name": "Licoagroisoflavone",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL000492",
+   "molecule_name": "(+)-catechin",
+   "brenk_alert": "catechol; catechol_A(92)"
+  },
+  {
+   "MOL_ID": "MOL004910",
+   "molecule_name": "Glabranin",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL004879",
+   "molecule_name": "Glycyrin",
+   "brenk_alert": "cumarine; isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL003656",
+   "molecule_name": "Lupiwighteone",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL004856",
+   "molecule_name": "Gancaonin A",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL005001",
+   "molecule_name": "Gancaonin H",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL004848",
+   "molecule_name": "licochalcone G",
+   "brenk_alert": "Michael_acceptor_1; isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL004857",
+   "molecule_name": "Gancaonin B",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL004624",
+   "molecule_name": "Longikaurin A",
+   "brenk_alert": "Michael_acceptor_1"
+  },
+  {
+   "MOL_ID": "MOL002151",
+   "molecule_name": "senkyunone",
+   "brenk_alert": "chinone_1; isolated_alkene; quinone_A(370)"
+  },
+  {
+   "MOL_ID": "MOL004898",
+   "molecule_name": "(E)-3-[3,4-dihydroxy-5-(3-methylbut-2-enyl)phenyl]-1-(2,4-dihydroxyphenyl)prop-2-en-1-one",
+   "brenk_alert": "Michael_acceptor_1; catechol; catechol_A(92); isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL004911",
+   "molecule_name": "Glabrene",
+   "brenk_alert": "stilbene"
+  },
+  {
+   "MOL_ID": "MOL004653",
+   "molecule_name": "(+)-Anomalin",
+   "brenk_alert": "Michael_acceptor_1; cumarine"
+  },
+  {
+   "MOL_ID": "MOL004811",
+   "molecule_name": "Glyasperin C",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL004949",
+   "molecule_name": "Isolicoflavonol",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL004027",
+   "molecule_name": "1,4-Epoxy-16-hydroxyheneicos-1,3,12,14,18-pentaene",
+   "brenk_alert": "Aliphatic_long_chain; isolated_alkene; polyene"
+  },
+  {
+   "MOL_ID": "MOL004828",
+   "molecule_name": "Glepidotin A",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL004948",
+   "molecule_name": "Isoglycyrol",
+   "brenk_alert": "cumarine"
+  },
+  {
+   "MOL_ID": "MOL004074",
+   "molecule_name": "stigmasterol glucoside_qt",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL004966",
+   "molecule_name": "3'-Hydroxy-4'-O-Methylglabridin",
+   "brenk_alert": "catechol; catechol_A(92)"
+  },
+  {
+   "MOL_ID": "MOL001919",
+   "molecule_name": "(3S,5R,8R,9R,10S,14S)-3,17-dihydroxy-4,4,8,10,14-pentamethyl-2,3,5,6,7,9-hexahydro-1H-cyclopenta[a]phenanthrene-15,16-dione",
+   "brenk_alert": "diketo_group; imine_one_A(321)"
+  },
+  {
+   "MOL_ID": "MOL004915",
+   "molecule_name": "Eurycarpin A",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL004718",
+   "molecule_name": "α-spinasterol",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL001645",
+   "molecule_name": "Linoleyl acetate",
+   "brenk_alert": "Aliphatic_long_chain; isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL001494",
+   "molecule_name": "Mandenol",
+   "brenk_alert": "Aliphatic_long_chain; isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL004883",
+   "molecule_name": "Licoisoflavone",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL000497",
+   "molecule_name": "licochalcone a",
+   "brenk_alert": "Michael_acceptor_1; isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL002776",
+   "molecule_name": "Baicalin",
+   "brenk_alert": "catechol; catechol_A(92)"
+  },
+  {
+   "MOL_ID": "MOL004980",
+   "molecule_name": "Inflacoumarin A",
+   "brenk_alert": "cumarine; isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL004815",
+   "molecule_name": "(E)-1-(2,4-dihydroxyphenyl)-3-(2,2-dimethylchromen-6-yl)prop-2-en-1-one",
+   "brenk_alert": "Michael_acceptor_1"
+  },
+  {
+   "MOL_ID": "MOL004991",
+   "molecule_name": "7-Acetoxy-2-methylisoflavone",
+   "brenk_alert": "phenol_ester"
+  },
+  {
+   "MOL_ID": "MOL013381",
+   "molecule_name": "Marmin",
+   "brenk_alert": "cumarine; isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL004945",
+   "molecule_name": "(2S)-7-hydroxy-2-(4-hydroxyphenyl)-8-(3-methylbut-2-enyl)chroman-4-one",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL000006",
+   "molecule_name": "luteolin",
+   "brenk_alert": "catechol; catechol_A(92)"
+  },
+  {
+   "MOL_ID": "MOL004053",
+   "molecule_name": "Isodalbergin",
+   "brenk_alert": "cumarine"
+  },
+  {
+   "MOL_ID": "MOL004935",
+   "molecule_name": "Sigmoidin-B",
+   "brenk_alert": "catechol; catechol_A(92); isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL004882",
+   "molecule_name": "Licocoumarone",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL004988",
+   "molecule_name": "Kanzonol F",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL004814",
+   "molecule_name": "Isotrifoliol",
+   "brenk_alert": "cumarine"
+  },
+  {
+   "MOL_ID": "MOL004805",
+   "molecule_name": "(2S)-2-[4-hydroxy-3-(3-methylbut-2-enyl)phenyl]-8,8-dimethyl-2,3-dihydropyrano[2,3-f]chromen-4-one",
+   "brenk_alert": "isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL010489",
+   "molecule_name": "Resivit",
+   "brenk_alert": "catechol; catechol_A(92)"
+  },
+  {
+   "MOL_ID": "MOL004996",
+   "molecule_name": "gadelaidic acid",
+   "brenk_alert": "Aliphatic_long_chain; isolated_alkene"
+  },
+  {
+   "MOL_ID": "MOL004702",
+   "molecule_name": "saikosaponin c_qt",
+   "brenk_alert": "isolated_alkene; saponine_derivative"
+  },
+  {
+   "MOL_ID": "MOL000490",
+   "molecule_name": "petunidin",
+   "brenk_alert": "catechol; catechol_A(92); charged_oxygen_or_sulfur_atoms"
+  }
+ ],
+ "top_promiscuous": [
+  {
+   "MOL_ID": "MOL000098",
+   "molecule_name": "quercetin",
+   "tcmsp_target_degree": 154
+  },
+  {
+   "MOL_ID": "MOL000422",
+   "molecule_name": "kaempferol",
+   "tcmsp_target_degree": 63
+  },
+  {
+   "MOL_ID": "MOL000006",
+   "molecule_name": "luteolin",
+   "tcmsp_target_degree": 57
+  },
+  {
+   "MOL_ID": "MOL003896",
+   "molecule_name": "7-Methoxy-2-methyl isoflavone",
+   "tcmsp_target_degree": 43
+  },
+  {
+   "MOL_ID": "MOL000392",
+   "molecule_name": "formononetin",
+   "tcmsp_target_degree": 39
+  },
+  {
+   "MOL_ID": "MOL000358",
+   "molecule_name": "beta-sitosterol",
+   "tcmsp_target_degree": 38
+  },
+  {
+   "MOL_ID": "MOL000354",
+   "molecule_name": "isorhamnetin",
+   "tcmsp_target_degree": 37
+  },
+  {
+   "MOL_ID": "MOL004328",
+   "molecule_name": "naringenin",
+   "tcmsp_target_degree": 37
+  },
+  {
+   "MOL_ID": "MOL005828",
+   "molecule_name": "nobiletin",
+   "tcmsp_target_degree": 35
+  },
+  {
+   "MOL_ID": "MOL002565",
+   "molecule_name": "Medicarpin",
+   "tcmsp_target_degree": 34
+  },
+  {
+   "MOL_ID": "MOL004071",
+   "molecule_name": "Hyndarin",
+   "tcmsp_target_degree": 32
+  },
+  {
+   "MOL_ID": "MOL000497",
+   "molecule_name": "licochalcone a",
+   "tcmsp_target_degree": 32
+  }
+ ]
+}

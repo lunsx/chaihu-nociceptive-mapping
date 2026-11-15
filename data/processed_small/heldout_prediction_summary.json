@@ -1,0 +1,31 @@
+{
+ "n_cohorts": 3,
+ "n_genes": 54,
+ "A_prior_literature": {
+  "TP": 69,
+  "TN": 39,
+  "FP": 36,
+  "FN": 11,
+  "accuracy": 0.6923,
+  "n": 156,
+  "binomial_p_vs_0.5": 0.0
+ },
+ "B_LOCO": {
+  "TP": 24,
+  "TN": 24,
+  "FP": 23,
+  "FN": 14,
+  "accuracy": 0.5581,
+  "n": 86,
+  "binomial_p_vs_0.5": 0.16592
+ },
+ "baseline_always_up": {
+  "TP": 84,
+  "TN": 0,
+  "FP": 77,
+  "FN": 0,
+  "accuracy": 0.5185,
+  "n": 162,
+  "binomial_p_vs_0.5": 0.34728
+ }
+}

@@ -30,7 +30,15 @@ def test_bundled_json_parses():
                  "controls_luteolin.json", "masld_summary.json",
                  "drg_summary.json", "smr_heidi_results.json",
                  "docking_ensemble_stats.json", "md_robustness.json",
-                 "framework_permutation.json", "masld_full_summary.json"]:
+                 "framework_permutation.json", "masld_full_summary.json",
+                 "structure_alert_summary.json",
+                 "neutral_universe_permutation.json",
+                 "heldout_prediction_summary.json",
+                 "pseudobulk_titration_summary.json",
+                 "independent_correlation.json",
+                 "disease_stratified_matrix.json",
+                 "lr_curation_summary.json", "mr_power_summary.json",
+                 "md_convergence_diagnostic.json"]:
         with open(small / name, encoding="utf-8") as fh:
             json.load(fh)
 

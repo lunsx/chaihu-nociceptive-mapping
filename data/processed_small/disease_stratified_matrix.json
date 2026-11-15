@@ -1,0 +1,367 @@
+{
+ "n_genes": 60,
+ "n_cross_disease_consistent": 12,
+ "rule": "clean human metabolic direction equals clean cholestatic direction; conflicts excluded",
+ "per_gene": {
+  "CREB1": {
+   "human_metabolic": "up",
+   "cholestatic": "conflicting",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "FOS": {
+   "human_metabolic": "down",
+   "cholestatic": "up",
+   "mouse": "up",
+   "cross_disease": ""
+  },
+  "IL1B": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "up",
+   "cross_disease": ""
+  },
+  "IL6": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "PTGS2": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "TNF": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "up",
+   "cross_disease": ""
+  },
+  "CALCRL": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "CCL2": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "up",
+   "cross_disease": ""
+  },
+  "CXCL2": {
+   "human_metabolic": "down",
+   "cholestatic": "conflicting",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "HMOX1": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "up",
+   "cross_disease": ""
+  },
+  "ICAM1": {
+   "human_metabolic": "up",
+   "cholestatic": "up",
+   "mouse": "up",
+   "cross_disease": "up"
+  },
+  "IL1A": {
+   "human_metabolic": "up",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": "up"
+  },
+  "PTGER3": {
+   "human_metabolic": "up",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": "up"
+  },
+  "PTGES": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "up",
+   "cross_disease": ""
+  },
+  "SPP1": {
+   "human_metabolic": "up",
+   "cholestatic": "up",
+   "mouse": "up",
+   "cross_disease": "up"
+  },
+  "NGF": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "SCN9A": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "conflicting",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "TACR1": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "TRPA1": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "TRPV1": {
+   "human_metabolic": "up",
+   "cholestatic": "down",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "ABCC1": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "ADIPOQ": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "inconclusive",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "ADRB1": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "ADRB2": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "BAD": {
+   "human_metabolic": "down",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "CCNA2": {
+   "human_metabolic": "up",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": "up"
+  },
+  "CHEK2": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "CXCL10": {
+   "human_metabolic": "down",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "CXCL11": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "DRD1": {
+   "human_metabolic": "down",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "F3": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "FOSL2": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "GJA1": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "HAS2": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "HK2": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "HSD3B1": {
+   "human_metabolic": "down",
+   "cholestatic": "down",
+   "mouse": "",
+   "cross_disease": "down"
+  },
+  "IL10": {
+   "human_metabolic": "up",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": "up"
+  },
+  "IL1R1": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "inconclusive",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "IRF1": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "LDLR": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "down",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "MAP2": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "MMP2": {
+   "human_metabolic": "down",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "MMP3": {
+   "human_metabolic": "up",
+   "cholestatic": "inconclusive",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "MMP9": {
+   "human_metabolic": "up",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": "up"
+  },
+  "MYC": {
+   "human_metabolic": "down",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "NOS3": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "NR3C2": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "down",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "ODC1": {
+   "human_metabolic": "up",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": "up"
+  },
+  "PCNA": {
+   "human_metabolic": "up",
+   "cholestatic": "conflicting",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "PLAT": {
+   "human_metabolic": "down",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "PLAU": {
+   "human_metabolic": "up",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": "up"
+  },
+  "PTGS1": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "inconclusive",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "SCN10A": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "inconclusive",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "SCN5A": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "inconclusive",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "SERPINE1": {
+   "human_metabolic": "up",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": "up"
+  },
+  "SREBF1": {
+   "human_metabolic": "down",
+   "cholestatic": "down",
+   "mouse": "",
+   "cross_disease": "down"
+  },
+  "THBD": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "TOP2A": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "up",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "TRPC3": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "inconclusive",
+   "mouse": "",
+   "cross_disease": ""
+  },
+  "TRPV3": {
+   "human_metabolic": "inconclusive",
+   "cholestatic": "inconclusive",
+   "mouse": "",
+   "cross_disease": ""
+  }
+ }
+}

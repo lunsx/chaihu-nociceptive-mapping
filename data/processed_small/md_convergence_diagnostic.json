@@ -1,0 +1,48 @@
+{
+ "traj1": {
+  "n_frames": 125,
+  "mean": -29.08,
+  "sd": 2.32,
+  "first_half_mean": -29.58,
+  "second_half_mean": -28.58,
+  "half_drift": 1.01,
+  "block_means": [
+   -29.76,
+   -29.36,
+   -28.78,
+   -29.13,
+   -28.35
+  ],
+  "block_range": 1.41,
+  "autocorr_time_tau": 1.26,
+  "effective_sample_size": 99.0,
+  "cum_start": -27.44,
+  "cum_end": -29.08
+ },
+ "traj2": {
+  "n_frames": 125,
+  "mean": -31.6,
+  "sd": 3.55,
+  "first_half_mean": -32.39,
+  "second_half_mean": -30.82,
+  "half_drift": 1.57,
+  "block_means": [
+   -31.42,
+   -35.09,
+   -30.34,
+   -28.24,
+   -32.91
+  ],
+  "block_range": 6.85,
+  "autocorr_time_tau": 8.39,
+  "effective_sample_size": 14.9,
+  "cum_start": -27.23,
+  "cum_end": -31.6
+ },
+ "cross_replicate": {
+  "mean_difference": 2.53,
+  "frame_correlation": -0.058,
+  "frame_corr_p": 0.521
+ },
+ "reading": "MM-GBSA absolute values are entropy-omitted and negatively biased; use relative/stability only"
+}

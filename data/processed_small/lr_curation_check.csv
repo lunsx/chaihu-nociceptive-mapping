@@ -1,0 +1,16 @@
+﻿mediator,receptor,curated_LR,annotation_strategy,classification,mediator_secreted,receptor_is_receptor,drg_mean_pct
+PGE2,PTGER3,metabolite_not_in_protein_DB,,,metabolite,yes,30.0
+PGE2,PTGER4,metabolite_not_in_protein_DB,,,metabolite,yes,13.7
+PGE2,PTGER2,metabolite_not_in_protein_DB,,,metabolite,yes,3.1
+PGE2,PTGER1,metabolite_not_in_protein_DB,,,metabolite,yes,0.1
+TNF,TNFRSF1A,yes,curated,Signaling by Tumor necrosis factor,yes,yes,15.6
+TNF,TNFRSF1B,yes,curated,Signaling by Tumor necrosis factor,yes,yes,4.8
+IL-1 beta,IL1R1,yes,curated,Signaling by Interleukin,yes,yes,6.7
+IL-1 beta,IL1RAP,yes,curated,Signaling by Interleukin,yes,yes,7.1
+IL-6,IL6R,yes,curated,Signaling by Interleukin,yes,yes,7.6
+IL-6,IL6ST,yes,curated,Signaling by Interleukin,yes,yes,59.3
+NGF,NTRK1,yes,curated,Signaling by Beta-nerve growth factor,yes,yes,33.8
+CGRP,CALCRL,yes,curated,Signaling by Calcitonin,yes,yes,4.2
+CGRP,RAMP1,yes,curated,Signaling by Calcitonin,yes,yes,4.3
+Substance P,TACR1,yes,curated,Signaling by Tachykinins,yes,yes,2.6
+Oncostatin M / IL-31,OSMR,yes,curated,Signaling by Oncostatin-M precursor,yes,yes,21.4

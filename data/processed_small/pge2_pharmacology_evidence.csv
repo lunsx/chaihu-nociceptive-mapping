@@ -1,0 +1,5 @@
+﻿gene,receptor,guide_target_id,uniprot_human,g_protein,endogenous_agonist,source
+PTGER1,EP1,340,P34995,Gq/G11,PGE2 (ligandId 1883),"IUPHAR/BPS Guide to Pharmacology, prostanoid receptors familyId 58"
+PTGER2,EP2,341,P43116,Gs,PGE2 (ligandId 1883),"IUPHAR/BPS Guide to Pharmacology, prostanoid receptors familyId 58"
+PTGER3,EP3,342,P43115,Gi/Go,PGE2 (ligandId 1883),"IUPHAR/BPS Guide to Pharmacology, prostanoid receptors familyId 58"
+PTGER4,EP4,343,P35408,Gs,PGE2 (ligandId 1883),"IUPHAR/BPS Guide to Pharmacology, prostanoid receptors familyId 58"
