@@ -268,6 +268,7 @@ extra = [
     ("Table 3. Cross-cohort direction voting for the candidate genes.", "Table2_方向投票.csv", 9),
     ("Table 4. Molecular docking binding energies (kcal/mol).", "Table4_对接结合能.csv", 9),
     ("Table 5. Random-effects meta-analysis effects with Benjamini-Hochberg adjusted p values.", "Table5_Meta效应BH.csv", 8.5),
+    ("Table 6. Inference ledger: evidence type, status, corresponding figure or table, and the experiment that would close each step.", "Table6_推断台账.csv", 8),
 ]
 for title, fname, fs in extra:
     p = doc.add_paragraph()

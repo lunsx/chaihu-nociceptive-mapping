@@ -1,0 +1,13 @@
+inference_step,evidence_type,status,figure_or_table,closing_experiment
+Compounds reach the liver at bioavailable levels,ADME screening with OB/DL and structural alerts,Computational only; not measured in vivo; no PAINS hits,Methods 2.2; Table 3,Pharmacokinetic and bioavailability measurement
+Compounds bind inflammatory targets,Molecular docking with multi-receptor multi-seed ensemble and MD,Docking-level ranking; MD support only for luteolin,Fig 7; Fig 8; Table 4,Binding assay and co-crystal structure
+Inflammatory cells produce IL1B TNF PTGS2 and PGE2,Single-cell expression and disease-versus-normal comparison,Supported in human single-cell collections,Fig 5; Table 3,Protein-level measurement in tissue
+Mediators are secreted,Curated secretion annotation plus expression,Biochemically established in literature; not measured in this study,Fig S5; Fig 9,Secretion assay
+Mediators are transported to the ganglion,No direct evidence,Not measured,Fig S5,In vivo pharmacokinetics and nerve concentration
+Mediators reach the ganglion at an active concentration,No direct evidence,Not measured,Fig S5,Microdialysis at the ganglion
+Nociceptors express the matching receptors,Human DRG receptor expression,Supported for PTGER3 NTRK1 IL6ST and related receptors,Fig S6; mediator mapping,Functional receptor assay
+Receptors activate and nociceptors fire,No direct evidence,Not measured,Fig S5,Electrophysiology
+Direction of change replicates across disease,Multi-cohort directional vote and disease-stratified matrix,Partially supported; only 12 genes consistent across disease entities,Fig 2; Fig 3; Table 5,Prospective tissue sampling
+Dilution contributes to small bulk effects,Controlled pseudobulk titration on two independent collections,Supported as a controlled within-gene simulation; not the sole cause,Fig 6,Matched single-cell and bulk profiling of the same samples
+Genetic causal link between targets and pain,MR colocalization and SMR,Null under whole-blood instruments; tissue mismatch dominates,Fig 9,Liver eQTL and larger abdominal pain GWAS
+Overall framework reliability,Two-background de-circularized permutation across five backgrounds,Narrow core reliable at about 16 to 24 percent precision,Fig 4,Prospective validation of predicted targets

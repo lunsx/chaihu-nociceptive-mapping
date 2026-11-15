@@ -38,7 +38,9 @@ def test_bundled_json_parses():
                  "independent_correlation.json",
                  "disease_stratified_matrix.json",
                  "lr_curation_summary.json", "mr_power_summary.json",
-                 "md_convergence_diagnostic.json"]:
+                 "md_convergence_diagnostic.json",
+                 "second_background_permutation.json",
+                 "psc_pseudobulk_titration_summary.json"]:
         with open(small / name, encoding="utf-8") as fh:
             json.load(fh)
 
