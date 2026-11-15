@@ -257,9 +257,14 @@ for e in entries:
     add_tagged_text(p, e, size=10)
 
 # ---------- additional end tables (3,4,5) ----------
+_CJK = re.compile(r"[\u4e00-\u9fff]")
 def read_csv_rows(name):
     with open(os.path.join(TABDIR, name), encoding="utf-8-sig") as f:
-        return list(csv.reader(f))
+        rows = list(csv.reader(f))
+    bad = [c for r in rows for c in r if _CJK.search(c)]
+    if bad:
+        raise ValueError("Non-English (CJK) cells found in " + name + ": " + "; ".join(bad[:5]))
+    return rows
 
 doc.add_page_break()
 extra = [
