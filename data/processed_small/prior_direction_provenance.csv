@@ -1,0 +1,53 @@
+﻿gene,prior_direction,explicit_literature,literature_reference,framework_sources,basis
+FOS,down,yes,[35],TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,literature-anchored
+IL1B,up,yes,[34],TCMSP formula targets (filtered constituents); GSE89632 differential genes; pain gene set; HERB/TTD multi-database validation; multi-cohort meta-analysis,literature-anchored
+PTGER3,up,yes,[5],TCMSP formula targets (filtered constituents); GSE89632 differential genes; pain gene set; HERB/TTD multi-database validation; multi-cohort meta-analysis,literature-anchored
+PTGES,up,yes,[5],TCMSP formula targets (filtered constituents); GSE89632 differential genes; pain gene set; HERB/TTD multi-database validation; multi-cohort meta-analysis,literature-anchored
+PTGS2,up,yes,[3][5][34],TCMSP formula targets (filtered constituents); GSE89632 differential genes; pain gene set; HERB/TTD multi-database validation; multi-cohort meta-analysis,literature-anchored
+SCN9A,down,yes,[8],multi-cohort meta-analysis,literature-anchored
+TRPV1,down,yes,[15][16][19],TCMSP formula targets (unfiltered); GSE89632 differential genes; multi-cohort meta-analysis,literature-anchored
+ABCC1,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+ADIPOQ,down,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+ADRB1,down,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+ADRB2,down,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+BAD,down,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+CALCRL,up,no,,multi-cohort meta-analysis,framework-curated
+CCL2,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+CCNA2,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+CHEK2,down,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+CREB1,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+CXCL11,down,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+CXCL2,down,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+DRD1,down,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+F3,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+FOSL2,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+GJA1,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+HAS2,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+HK2,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+HMOX1,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+HSD3B1,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+ICAM1,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+IL10,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+IL1A,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; pain gene set; HERB/TTD multi-database validation; multi-cohort meta-analysis,framework-curated
+IL6,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; pain gene set; HERB/TTD multi-database validation; multi-cohort meta-analysis,framework-curated
+IRF1,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+LDLR,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+MAP2,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+MMP2,down,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+MMP3,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+MMP9,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+MYC,down,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+NGF,down,no,,multi-cohort meta-analysis,framework-curated
+NOS3,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+NR3C2,down,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+ODC1,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+PLAT,down,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+PLAU,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+SERPINE1,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+SPP1,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+SREBF1,down,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+TACR1,up,no,,TCMSP formula targets (unfiltered); multi-cohort meta-analysis,framework-curated
+THBD,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+TNF,up,no,,TCMSP formula targets (filtered constituents); HERB/TTD multi-database validation; multi-cohort meta-analysis,framework-curated
+TOP2A,up,no,,TCMSP formula targets (filtered constituents); GSE89632 differential genes; multi-cohort meta-analysis,framework-curated
+TRPA1,up,no,,multi-cohort meta-analysis,framework-curated

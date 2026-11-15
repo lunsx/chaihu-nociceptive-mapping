@@ -1,0 +1,4 @@
+﻿cohort,contributes_to_prior,fully_held_out,note,prior_accuracy_pct
+GSE281797,yes,no,case-control and grade signs included in the vote,73.1
+GSE260666,yes,no,case-control and grade signs included in the vote,92.3
+GSE147304,no,yes,excluded from the vote as inconclusive,42.3
