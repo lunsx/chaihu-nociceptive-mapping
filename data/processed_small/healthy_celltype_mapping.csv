@@ -1,0 +1,13 @@
+author_cell_type,mapped_MASLD_label,n_cells,n_cell_suspension,n_nucleus_suspension,note
+Bcells,B,1780,1318,462,
+CentralHep,Hepatocyte,15819,4409,11410,
+Cholangiocyte,Cholangiocyte,1934,463,1471,
+Erythroid,Erythroid,66,61,5,healthy-only; no MASLD counterpart
+InfMac,Macrophage/Kupffer,1627,1011,616,
+InterHep,Hepatocyte,11059,4119,6940,
+NKTcell,T/NK,3283,1922,1361,
+NonInfMac,Macrophage/Kupffer,3044,1436,1608,
+PortalEndo,Endothelial,1558,571,987,
+PortalHep,Hepatocyte,23509,11283,12226,
+Stellate,Hepatic stellate,3240,795,2445,
+cvLSECs,Endothelial,6376,2044,4332,

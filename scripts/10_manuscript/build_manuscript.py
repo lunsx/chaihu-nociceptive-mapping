@@ -36,6 +36,8 @@ FIG_MAP = {
          "Figure 5. Single-cell localization of the core targets across human liver cell types."),
         (os.path.join(BASE, "healthy_liver"), "fig_external_healthy_reference.png",
          "Figure 10. External healthy human liver reference: expressing-cell percentages versus the MASLD donor median, with the single GSE344087 control shown for comparison."),
+        (SUPFIGDIR, "S7_suspension_sensitivity.png",
+         "Supplementary Figure S7. Whole-cell versus nuclear suspension sensitivity: the healthy-vs-disease contrast for IL1B, TNF, and PTGS2 holds in both suspensions, while FOS is strongly suspension-dependent."),
         (SUPFIGDIR, "S1_Harmony_UMAP.png",
          "Supplementary Figure S1. Harmony integration of the 20-sample MASLD collection, shown before and after batch correction."),
         (SUPFIGDIR, "S2_marker_heatmap.png",

@@ -182,7 +182,7 @@ its significance are compared, not absolute background sizes. Outputs:
 | Product | Role | Key facts |
 |---|---|---|
 | Mouse pseudobulk titration | Cross-species reuse of the controlled titration | mouse MASH LoxP/SIRT2, 21,715 cells, 14 types; 55 of 60 genes mapped (CXCL11 no ortholog), 53 producer-specific; net signal retained 1.0/0.595/0.340/0.148/0.078/0.014/0; monotone, near-linear, matching the two human collections at 0.5 |
-| External healthy human liver reference | Independent normal reference for localization | Aizarani integrated atlas `135bdd30`; 73,295 cells, 4 donors, 12 types mapped to nine MASLD labels; macrophage/Kupffer IL1B 2.95% vs 80.0%, TNF 1.07% vs 52.6%, PTGS2 1.33% vs 44.0%; descriptive, no cross-dataset p-values |
+| External healthy human liver reference | Independent normal reference for localization | Aizarani integrated atlas `135bdd30`; 73,295 cells, 4 donors, 12 author types mapped to comparable MASLD labels (the healthy atlas has no mast or plasma cells); macrophage/Kupffer IL1B 2.95% vs 80.0%, TNF 1.07% vs 52.6%, PTGS2 1.33% vs 44.0%; descriptive, no cross-dataset p-values |
 | Threshold sensitivity summary | Mechanically merged threshold table | seven rows; precision 15.79 to 24.07% across the two datasets; no hand-entered values |
 
 Outputs: `mouse_pseudobulk_titration.csv`,
@@ -192,6 +192,25 @@ Outputs: `mouse_pseudobulk_titration.csv`,
 `figures/fig_external_healthy_reference.png` (manuscript Figure 10). The large
 source h5ad files are not redistributed; they are documented above and in the
 manuscript.
+
+## 13. Fourth-round additions (suspension sensitivity, mapping files, large-file registry)
+
+| Product | Role | Key facts |
+|---|---|---|
+| Suspension-type sensitivity | Tests whether the healthy-vs-disease contrast depends on whole-cell vs nuclear suspension | nine rows; the highest whole-cell macrophage IL1B is 7.52%, still about an order of magnitude below the MASLD median of 80.0%; IL1B, TNF, and PTGS2 stay low in both suspensions; FOS is strongly suspension-dependent and is reported as such |
+| Healthy cell-type mapping | Author-to-comparable label registry | 12 author types with cell/nucleus counts and notes; documents the two labels absent from the healthy atlas (mast, plasma) |
+| Healthy per-type gene percentages | Per-type nonzero percentages for 17 genes | 12 rows covering all, cell, and nucleus percentages; supports the suspension sensitivity analysis |
+| English 60-gene list | Machine-readable target list used by the cross-species titration | 60 genes with English tier and direction; zero Chinese |
+| Large-file registry | Integrity and provenance for h5ad files that are not redistributed | source URL, size, and SHA-256 for the three large h5ad files; a config-based download script is provided |
+
+Outputs: `external_healthy_suspension_sensitivity.csv`,
+`healthy_celltype_mapping.csv`,
+`healthy_gene_pct_by_author_type.csv`, `target_gene_list_60.csv`,
+`figures/fig_suspension_sensitivity.png` (manuscript Supplementary Figure S7),
+`data/raw_external_links/large_files_manifest.csv`, and the config-based
+scripts in `scripts/07_singlecell_spatial/` and
+`scripts/09_benchmarks/threshold_sensitivity_summary.py`. The large h5ad
+source files remain outside the repository and are registered with checksums.
 
 ## Third-party licenses
 

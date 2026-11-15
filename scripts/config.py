@@ -42,10 +42,14 @@ PATHS = {
     "dock_root": DOCK_ROOT,
     "dude_bench": DOCK_ROOT / "dude_bench",
     "masld": DOCK_ROOT / "masld",
+    "psc": DOCK_ROOT / "psc",
     "md": DOCK_ROOT / "md",
+    "healthy_liver": PROJECT_ROOT / "healthy_liver",
+    "singlecell": PROJECT_ROOT / "singlecell",
     "vina": Path(os.environ.get("CHAIHU_VINA", DOCK_ROOT / "vina.exe")),
     "data": REPO_ROOT / "data",
     "processed_small": REPO_ROOT / "data" / "processed_small",
+    "figures": REPO_ROOT / "figures",
 }
 
 

@@ -30,9 +30,12 @@ those are not needed to reproduce reported results and stay in the project archi
 | 07_singlecell_spatial | all_sections_analysis.py (cloud spatial) | nine-file multi-section Visium analysis (4 PSC011 + 4 C73 + pooled e84), memory-safe backed reads, per-section fractions/Moran and group contrast; outputs 空间_全切片_*.csv |
 | 07_singlecell_spatial | mouse_case_control.py (cloud spatial) | mouse MASLD donor-level descriptive case-control (1 SD vs 2 WD); outputs 空间_小鼠病例对照_供体级.csv |
 | 07_singlecell_spatial | 10_harmony_integration.py (C:\dockwork\masld) | Harmony batch integration on the 20-sample MASLD series (sample as batch), rebuilt neighbors/UMAP, same-sample neighbor mixing metric, marker heatmap and composition stack; outputs masld_harmony_*.json/csv and figures |
+| 07_singlecell_spatial | external_healthy_reference.py, c2_healthy_comparison.py, fig10_external_healthy.py | external healthy atlas: 12-to-label mapping, per-type percentages, healthy-vs-MASLD comparison table, and Figure 10; all paths from config |
+| 07_singlecell_spatial | fig_suspension_sensitivity.py, c3_mouse_titration.py, download_large_h5ad.py | whole-cell vs nuclear suspension sensitivity (S7), cross-species mouse titration, and config-based download of the large h5ad files |
 | 08_perturbation | e63_enrichr_lincs.py, e64_summarize.py (lincs/) | Enrichr/L1000 signatures and summary |
 | 09_benchmarks | dilution_analysis.py, meta_ci_analysis.py, framework_benchmark.py | dilution, CI/TOST, framework benchmark |
 | 09_benchmarks | framework_decirculation.py | external-only reference sets, leave-one-out labels, exact permutation null (10,000 draws) |
+| 09_benchmarks | threshold_sensitivity_summary.py | mechanically merges TPM and log2 threshold runs into one redistributable table (15.79 to 24.07% precision), no hand-entered values |
 | 09_benchmarks | 05_round6_extra_stats.py | gene-set level permutation matrix (8 references x 7 strategies, 10,000 draws), direction 3x3 concordance, docking panel z-scores and per-scoring ranks |
 | 09_benchmarks | dude_download.py, dude_receptor.py, prep_receptor.py, prep_ligands.py, positive_controls.py | DUD-E prep and positive controls |
 | 09_benchmarks | analyze_masld.py, download_tar.py (C:\dockwork\masld) | early seven-sample human MASLD localization |

@@ -1,4 +1,4 @@
-﻿gene,producer_celltype,producer_fraction,cpm_mean,cpm_sd
+gene,producer_celltype,producer_fraction,cpm_mean,cpm_sd
 CREB1,dendritic cell,1.0,89.125,2.6592
 CREB1,dendritic cell,0.5,88.8066,3.9628
 CREB1,dendritic cell,0.25,88.3411,4.33
