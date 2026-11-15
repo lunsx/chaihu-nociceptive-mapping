@@ -2,7 +2,7 @@
 
 Reproducible code and data guide for the manuscript:
 
-> **A multi-omics and molecular-modeling framework maps inflammatory nociceptive signaling in Chaihu-Shugan-San**
+> **A de-circularized, evidence-graded computational framework maps Chaihu Shugan San onto the liver inflammation to pain-sensitization axis**
 > Fengkai Liu, Tianhui Gao*
 > Target journal: *Computers in Biology and Medicine* (Elsevier)
 > Affiliation: School of Pharmacy, Qilu Medical University, Zibo, Shandong, China
@@ -105,7 +105,8 @@ Ligand protonation uses **Meeko** and **Open Babel**. See `docs/workflow.md`.
   pockets. Luteolin is placed among known inhibitors, not above them.
 - The selection benchmark is reported with its residual circularity: against an
   eight-gene external reference the framework keeps 8/8 with 14.6% precision and a
-  permutation p<1e-4 (13.55x enrichment over the 664-gene universe), while the
+  permutation p=0.0001 (13.55x enrichment over the 664-gene universe; the
+  resolution limit for 10,000 permutations), while the
   degree-based and strict-intersection heuristics recover 1/8 and 0/8. Evidence
   tiers do not predict external confirmation, and the paper says so.
 - The MASLD single-cell series is complete (19 case + 1 control, 48,594 cells) but
