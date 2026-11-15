@@ -142,6 +142,20 @@ cannot be computed in this environment. See `docs/第4轮_人DRG伤害感受器�
 - harmonypy 0.0.6 (pure-Python batch correction; the 2.1.0 release needs a C++ toolchain and is not used)
 - MDTraj, SciPy (hierarchical average-linkage pose clustering)
 
+## 10. Review-response resources (data rounds 1-8)
+
+| Resource | Role | Key facts / identifier |
+|---|---|---|
+| PubChem PUG REST | Structure retrieval | 118/139 retained compounds mapped with explicit match status; parent-name and alias recovery; https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest |
+| RDKit FilterCatalog | PAINS/BRENK alerts | PAINS_A/B/C and BRENK; zero formal PAINS hits across 118 structures |
+| CellPhoneDB static data | Ligand-receptor curation | github.com/ventolab/cellphonedb-data; interaction/protein/complex/gene inputs; 11/11 protein pairs curated |
+| Guide to Pharmacology | PGE2 GPCR pharmacology | familyId 58; PGE2 ligandId 1883; EP1-EP4 = PTGER1-PTGER4 with G-protein coupling; https://www.guidetopharmacology.org |
+| eQTLGen / GTEx | Power and tissue check | eQTLGen N=31,684 for instrument R2; no liver eQTL available; multi-tissue GTEx feasibility |
+
+The 23 review-response products in `data/processed_small/` are covered by the
+regenerated SHA-256 checksum file and the automated sanity tests. Per-round
+narratives are in `docs/数据轮1-8_审稿响应/`.
+
 ## Third-party licenses
 
 Databases and tools are used under their respective public licenses. TCMSP, STRING,

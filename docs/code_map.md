@@ -43,6 +43,26 @@ those are not needed to reproduce reported results and stay in the project archi
 | 12_drg | find_cellxgene_drg.py, get_human_drg_assets.py, download_human_drg.py, explore_drg.py, check_x.py | CELLxGENE discovery, asset metadata, h5ad download, structure, normalization check |
 | 12_drg | analyze_drg.py, build_final_tables.py, plot_drg.py, check_source_genes.py | per-cluster expression, annotation/mediator tables, dot plot, ligand-source check |
 
+## Review-response scripts (data rounds 1-8)
+
+The round-generation scripts were run from the project agent workspace and write
+the redistributable products listed below into `data/processed_small/`; the
+per-round narratives are in `docs/数据轮1-8_审稿响应/`.
+
+| Round | Script family | Output products |
+|---|---|---|
+| 1 | fetch_compound_smiles, recover_smiles, run_structure_alerts, run_docking_ligand_alerts | compound_smiles_mapping, compound_filter_alerts, structure_alert_summary, docking_ligand_alerts |
+| 2 | run_neutral_universe, run_neutral_sensitivity | neutral_universe_permutation, neutral_universe_gene_list, neutral_threshold_sensitivity, label_provenance |
+| 3 | run_heldout_prediction | heldout_prediction_summary, heldout_prediction_detail |
+| 4 | run_pseudobulk_titration, run_independent_correlation | pseudobulk_titration(_summary), independent_correlation_table |
+| 5 | run_disease_matrix | disease_stratified_matrix (.csv/.json) |
+| 6 | download_cellphonedb, run_lr_curation, pge2_pharmacology_evidence | lr_curation_check, lr_curation_summary, pge2_pharmacology_evidence |
+| 7 | run_mr_power | mr_power_table, mr_power_summary |
+| 8 | run_md_convergence | md_convergence_diagnostic, md_cumulative_dg |
+
+The S5 evidence-graded redraw is produced by `redraw_s5.py` and stored as
+`figures/fig_send_receive_panels.png/.pdf`.
+
 ## Path and environment caveat
 
 The originals were written during the analysis and use absolute paths

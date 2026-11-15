@@ -15,23 +15,23 @@ TABDIR = os.path.join(BASE, "投稿表格")
 OUTDIR = os.path.join(BASE, "论文写作", "CBM_初审上传包_单独存放")
 
 FIG_MAP = {
-    "2.1 Overall design": [
+    "Overall design": [
         (FIGDIR, "Fig1_技术路线图.png",
          "Figure 1. Layered computational workflow, from compound and target cataloging through independent human validation, network and pathway analysis, cellular and spatial localization, structural simulation, and in silico perturbation."),
     ],
-    "3.2 Core intersection": [
+    "Core intersection": [
         (FIGDIR, "Fig4_PPI与富集.png",
          "Figure 4. Protein-protein interaction network and functional enrichment of the core targets."),
     ],
-    "3.4 Cross-cohort direction": [
+    "Cross-cohort direction": [
         (FIGDIR, "Fig2_多队列方向矩阵.png",
          "Figure 2. Multi-cohort direction matrix for the candidate genes across the five independent human cohorts."),
     ],
-    "3.5 Meta-analysis": [
+    "Meta-analysis, dilution": [
         (FIGDIR, "Fig3_Meta森林图拼版.png",
          "Figure 3. Random-effects meta-analysis forest plots for the core pain-related genes."),
     ],
-    "3.7 Single-cell localization": [
+    "Single-cell localization": [
         (FIGDIR, "Fig5_单细胞定位.png",
          "Figure 5. Single-cell localization of the core targets across human liver cell types."),
         (SUPFIGDIR, "S1_Harmony_UMAP.png",
@@ -41,27 +41,27 @@ FIG_MAP = {
         (SUPFIGDIR, "S3_composition_stacked.png",
          "Supplementary Figure S3. Donor-level cell-type composition across the 20 samples, presented without inferential p-values."),
     ],
-    "3.8 Spatial": [
+    "Spatial transcriptomics": [
         (FIGDIR, "Fig6_空间转录组.png",
          "Figure 6. Spatial transcriptomic localization of the target signals in human and mouse liver."),
     ],
-    "3.9 Molecular docking": [
+    "Molecular docking": [
         (FIGDIR, "Fig7_分子对接.png",
          "Figure 7. Molecular docking poses and binding energies of the leading compounds."),
     ],
-    "3.10 Molecular dynamics": [
+    "Molecular dynamics": [
         (FIGDIR, "Fig8_MD稳定性.png",
          "Figure 8. Molecular dynamics stability of the 5KIR-luteolin complex over the production trajectory."),
         (SUPFIGDIR, "S4_pose_clustering.png",
          "Supplementary Figure S4. Backbone and ligand pose clustering, showing a single protein cluster and six ligand clusters."),
     ],
-    "3.11 In silico perturbation": [
+    "In silico perturbation": [
         (FIGDIR, "Fig9_因果扰动.png",
          "Figure 9. In silico causal perturbation effects of transcription factor knockout and overexpression."),
     ],
-    "3.12 The sender-to-receiver": [
+    "The sender-to-receiver": [
         (SUPFIGDIR, "S5_send_receive.png",
-         "Supplementary Figure S5. Sender-to-receiver panels linking liver mediators to their sensory-neuron receptors."),
+         "Supplementary Figure S5. Sender-to-receiver panels linking liver mediators to their sensory-neuron receptors, with edge evidence graded."),
         (SUPFIGDIR, "S6_drg_dotplot.png",
          "Supplementary Figure S6. Receptor-expression dot plot across the human dorsal root ganglion clusters."),
     ],
@@ -195,7 +195,7 @@ while i < len(body_lines):
         p.paragraph_format.space_before = Pt(10); p.paragraph_format.space_after = Pt(4)
         match_head = re.sub(r'^(\d+(?:\.\d+)*)\.\s+', r'\1 ', head)
         for key, val in FIG_MAP.items():
-            if match_head.startswith(key):
+            if key in match_head:
                 pending_fig = list(val)
         in_author_block = False
     elif s.startswith("## "):

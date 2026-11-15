@@ -54,6 +54,38 @@ are configured at the top of each script.
     quantify per-cluster receptor/channel expression, build annotation and
     mediator-receptor tables, and render the receptor dot plot.
 
+## Review-response stage: data rounds 1-8
+
+After the internal review, eight additional computational rounds addressed the
+reviewer problems that can be strengthened without wet experiments. The outputs
+are in `data/processed_small/` and the per-round narratives are in
+`docs/数据轮1-8_审稿响应/`.
+
+1. **Structure alerts and promiscuity (reviewer problem 8).** PubChem PUG REST
+   structures for 118/139 retained compounds; RDKit PAINS_A/B/C and BRENK,
+   zero formal PAINS hits, BRENK 64; TCMSP target-degree median 15.
+2. **Neutral-background permutation (problem 9).** Gene-set permutation on the
+   664 formula genes and a 13,981-gene neutral liver background, precision
+   0.163 and 0.167, both p<1e-4, with TPM threshold sensitivity and label
+   provenance.
+3. **Held-out direction prediction (problem 10).** A literature-fixed direction
+   correct on 69.2% (p<0.0001); a data-driven leave-one-cohort prediction
+   55.8% (p=0.166, not significant).
+4. **Pseudobulk titration (problem 4).** Fixed 1,000-cell pseudobulk with the
+   producer fraction varied, near-linear net signal (9.5% retained at 10%
+   producers), 53 producer-specific and five broad genes.
+5. **Disease-stratified matrix (problem 2).** Per-disease labels for metabolic
+   and cholestatic disease, 12 cross-disease-consistent genes, with FOS and
+   TRPV1 marked as genuine conflicts.
+6. **Ligand-receptor curation (problem 1).** 11/11 protein pairs curated,
+   four PGE2 pairs verified against GPCR pharmacology, release/transport/
+   activation kept as unmeasured links.
+7. **MR power (problem 5).** Non-central chi-square power, MDE80 median 0.031,
+   showing tissue mismatch rather than low power drives the null.
+8. **MD convergence (problems 6/7).** Two-trajectory convergence diagnostics
+   confirm non-convergence; MM-GBSA used only relatively, only luteolin labeled
+   MD-supported.
+
 ## Figure mapping
 
 | Figure | Content | Producing module |
@@ -76,7 +108,7 @@ Supplementary figures (files in `figures/`, copied to `投稿图集/补充图/`)
 | Fig S2 | 9 MASLD cell types by marker-gene z-score | 07_singlecell_spatial (figures/masld_marker_heatmap.png) |
 | Fig S3 | 20 donor cell-type composition stack | 07_singlecell_spatial (figures/masld_composition_stacked.png) |
 | Fig S4 | Backbone and ligand pose clustering | 05_md_mmgbsa (figures/md_pose_clustering.png) |
-| Fig S5 | Sender-to-receiver liver mediator to neuron receptor panels | 12_drg (figures/fig_send_receive_panels.png) |
+| Fig S5 | Evidence-graded sender-to-receiver panels (curated protein pairs, PGE2 pairs, unmeasured links) | 12_drg + redraw (figures/fig_send_receive_panels.png) |
 | Fig S6 | Receptor/channel expression across 15 DRG clusters | 12_drg (figures/drg_receptor_dotplot.png) |
 
 ## Table mapping
