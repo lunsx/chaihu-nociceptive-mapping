@@ -163,17 +163,19 @@ merely asserting it.
 
 | Product | Role | Key facts |
 |---|---|---|
-| GSE89632 second neutral background | Independent de-circularized background | Illumina GPL14951; probes collapsed to genes; log2 detection at 8/9/10 in >=50% of samples gives 19,670/15,003/11,503-gene backgrounds; precision 24.1%/19.6%/15.8%, all empirical p < 1e-4 |
+| GSE89632 second neutral background | Independent de-circularized background | Illumina GPL14951; probes collapsed to genes; log2 detection at 8/9/10 in >=50% of samples gives 19,670/15,003/11,503-gene background definitions (nested, not independent); precision 24.1%/19.6%/15.8%, all empirical p = 0.0001 (resolution limit) |
 | PSC/PBC independent titration | Reuse of the controlled titration | CELLxGENE `ff713455`; 89,637 cells, 27 types; 60 genes, 58 producer-specific; net signal retained 1.0/0.592/0.326/0.14/0.068/0.017/0 across the same fractions; monotone, near-linear |
 | Inference ledger | Evidence hierarchy | `inference_ledger.csv` (manuscript Table 6): each inference step with evidence type, status, figure/table, and the closing experiment |
 
-Across the two datasets the five backgrounds are the 664 conditional set, the
-GSE130970 neutral set, and the three GSE89632 log2 thresholds; precision stays
-within 16 to 24% and does not collapse. Because the platforms and detection
-rules differ, only precision and its significance are compared, not absolute
-background sizes. Outputs: `second_background_gene_list.csv`,
-`second_background_permutation.json`, `psc_pseudobulk_titration.csv`,
-`psc_pseudobulk_titration_summary.json`, and `inference_ledger.csv`.
+Across the two datasets the five background definitions are the 664 conditional
+set, the GSE130970 neutral set, and the three nested GSE89632 log2 thresholds;
+the two datasets are the independent units and the three thresholds are nested
+variants of one background. Precision stays within 16 to 24% and does not
+collapse. Because the platforms and detection rules differ, only precision and
+its significance are compared, not absolute background sizes. Outputs:
+`second_background_gene_list.csv`, `second_background_permutation.json`,
+`psc_pseudobulk_titration.csv`, `psc_pseudobulk_titration_summary.json`,
+`severity_correlation_verified.csv`, and `inference_ledger.csv`.
 
 ## Third-party licenses
 

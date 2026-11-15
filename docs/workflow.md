@@ -92,10 +92,13 @@ The two reusable bias-control procedures are rerun on independent collections to
 show they transfer rather than merely asserting it.
 
 1. **Second neutral background (GSE89632).** Probes collapsed to genes on the
-   Illumina platform; three log2-detection thresholds (8/9/10 in >=50% of samples)
-   give 19,670/15,003/11,503-gene backgrounds, precision 24.1%/19.6%/15.8%, all
-   empirical p < 1e-4. With the 664 conditional and GSE130970 neutral sets this
-   makes five backgrounds, and precision stays within 16 to 24%.
+   Illumina platform; three nested log2-detection thresholds (8/9/10 in >=50% of
+   samples) give 19,670/15,003/11,503-gene background definitions, precision
+   24.1%/19.6%/15.8%, all empirical p = 0.0001 (the resolution limit). With the
+   664 conditional and GSE130970 neutral sets this makes five background
+   definitions across two independent datasets (the GSE89632 thresholds are
+   nested variants, not independent confirmations), and precision stays within
+   16 to 24%.
 2. **Independent titration (PSC/PBC).** The identical controlled titration on
    89,637 cells across 27 types: 60 genes, 58 producer-specific, net signal
    retained 1.0/0.592/0.326/0.14/0.068/0.017/0, again monotone and near-linear.
