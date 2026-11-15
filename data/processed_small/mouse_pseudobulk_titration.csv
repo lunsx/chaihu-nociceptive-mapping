@@ -1,0 +1,386 @@
+﻿gene,producer_celltype,producer_fraction,cpm_mean,cpm_sd
+CREB1,dendritic cell,1.0,89.125,2.6592
+CREB1,dendritic cell,0.5,88.8066,3.9628
+CREB1,dendritic cell,0.25,88.3411,4.33
+CREB1,dendritic cell,0.1,88.1011,5.1856
+CREB1,dendritic cell,0.05,87.4956,4.0214
+CREB1,dendritic cell,0.01,87.6435,4.9145
+CREB1,dendritic cell,0.0,88.3727,4.3123
+FOS,cholangiocyte,1.0,1244.2528,102.2637
+FOS,cholangiocyte,0.5,1039.9721,85.254
+FOS,cholangiocyte,0.25,868.3675,53.1802
+FOS,cholangiocyte,0.1,724.0241,50.4986
+FOS,cholangiocyte,0.05,672.2771,49.9626
+FOS,cholangiocyte,0.01,631.1587,37.6239
+FOS,cholangiocyte,0.0,606.3005,40.1207
+IL1B,macrophage,1.0,2088.2028,56.5643
+IL1B,macrophage,0.5,1672.9943,86.5798
+IL1B,macrophage,0.25,1394.1451,87.3645
+IL1B,macrophage,0.1,1118.2256,80.4582
+IL1B,macrophage,0.05,1052.7337,96.5432
+IL1B,macrophage,0.01,958.7413,76.7728
+IL1B,macrophage,0.0,944.2507,76.4917
+IL6,neuron associated cell,1.0,1287.3167,55.7631
+IL6,neuron associated cell,0.5,493.2906,29.0395
+IL6,neuron associated cell,0.25,223.9142,18.9729
+IL6,neuron associated cell,0.1,85.8397,13.5883
+IL6,neuron associated cell,0.05,46.0409,5.4467
+IL6,neuron associated cell,0.01,12.9523,3.2006
+IL6,neuron associated cell,0.0,5.3197,1.8146
+PTGS2,neuron associated cell,1.0,889.1862,69.7856
+PTGS2,neuron associated cell,0.5,415.5417,33.7383
+PTGS2,neuron associated cell,0.25,244.4923,28.5448
+PTGS2,neuron associated cell,0.1,155.5968,18.7353
+PTGS2,neuron associated cell,0.05,135.1772,13.3939
+PTGS2,neuron associated cell,0.01,112.0126,14.2577
+PTGS2,neuron associated cell,0.0,110.0122,10.8681
+TNF,macrophage,1.0,117.1613,4.799
+TNF,macrophage,0.5,84.7123,5.4387
+TNF,macrophage,0.25,61.78,5.3926
+TNF,macrophage,0.1,41.5274,4.0266
+TNF,macrophage,0.05,34.2289,5.1863
+TNF,macrophage,0.01,27.5949,4.1453
+TNF,macrophage,0.0,26.6439,3.0864
+CALCRL,endothelial cell,1.0,693.4881,14.0083
+CALCRL,endothelial cell,0.5,332.1535,13.9105
+CALCRL,endothelial cell,0.25,167.8017,8.2113
+CALCRL,endothelial cell,0.1,73.3852,4.9697
+CALCRL,endothelial cell,0.05,42.7531,3.9027
+CALCRL,endothelial cell,0.01,19.9425,2.8229
+CALCRL,endothelial cell,0.0,13.4156,1.7514
+CCL2,Kupffer cell,1.0,149.5638,12.3863
+CCL2,Kupffer cell,0.5,102.1777,5.9103
+CCL2,Kupffer cell,0.25,70.1159,9.2831
+CCL2,Kupffer cell,0.1,41.8126,9.8825
+CCL2,Kupffer cell,0.05,26.1545,7.754
+CCL2,Kupffer cell,0.01,18.3429,7.5199
+CCL2,Kupffer cell,0.0,16.7856,7.8444
+CXCL2,macrophage,1.0,1994.9028,74.8798
+CXCL2,macrophage,0.5,1424.6676,86.535
+CXCL2,macrophage,0.25,1000.3436,94.9441
+CXCL2,macrophage,0.1,633.7164,81.8936
+CXCL2,macrophage,0.05,508.7266,66.14
+CXCL2,macrophage,0.01,375.4395,63.5556
+CXCL2,macrophage,0.0,351.841,52.3229
+HMOX1,Kupffer cell,1.0,1641.3193,60.904
+HMOX1,Kupffer cell,0.5,1109.2322,32.8861
+HMOX1,Kupffer cell,0.25,682.1325,47.1638
+HMOX1,Kupffer cell,0.1,349.7109,42.0865
+HMOX1,Kupffer cell,0.05,222.9762,38.3111
+HMOX1,Kupffer cell,0.01,111.0075,21.1144
+HMOX1,Kupffer cell,0.0,81.8596,11.0753
+ICAM1,cholangiocyte,1.0,215.5665,21.6223
+ICAM1,cholangiocyte,0.5,193.1114,19.8847
+ICAM1,cholangiocyte,0.25,170.016,14.8267
+ICAM1,cholangiocyte,0.1,144.0379,11.6646
+ICAM1,cholangiocyte,0.05,140.012,11.685
+ICAM1,cholangiocyte,0.01,133.0338,10.9723
+ICAM1,cholangiocyte,0.0,132.8339,10.3205
+IL1A,Kupffer cell,1.0,128.13,7.9467
+IL1A,Kupffer cell,0.5,93.428,3.891
+IL1A,Kupffer cell,0.25,66.7366,5.3695
+IL1A,Kupffer cell,0.1,42.4499,5.6538
+IL1A,Kupffer cell,0.05,36.5035,5.2004
+IL1A,Kupffer cell,0.01,28.6788,4.5571
+IL1A,Kupffer cell,0.0,27.6196,3.5835
+PTGER3,neuron associated cell,1.0,60.1529,3.2625
+PTGER3,neuron associated cell,0.5,23.4327,2.2979
+PTGER3,neuron associated cell,0.25,10.4106,1.6439
+PTGER3,neuron associated cell,0.1,4.1118,0.9158
+PTGER3,neuron associated cell,0.05,2.1755,0.5062
+PTGER3,neuron associated cell,0.01,0.6444,0.3823
+PTGER3,neuron associated cell,0.0,0.1548,0.1795
+PTGES,hematopoietic cell,1.0,2.4014,0.3488
+PTGES,hematopoietic cell,0.5,1.8326,0.3903
+PTGES,hematopoietic cell,0.25,1.3731,0.3444
+PTGES,hematopoietic cell,0.1,0.8298,0.345
+PTGES,hematopoietic cell,0.05,0.6732,0.3002
+PTGES,hematopoietic cell,0.01,0.3086,0.2072
+PTGES,hematopoietic cell,0.0,0.2524,0.1458
+SPP1,cholangiocyte,1.0,21842.9069,337.1699
+SPP1,cholangiocyte,0.5,14412.123,427.9779
+SPP1,cholangiocyte,0.25,8663.1913,271.9428
+SPP1,cholangiocyte,0.1,3995.8772,245.4006
+SPP1,cholangiocyte,0.05,2159.5862,221.7619
+SPP1,cholangiocyte,0.01,633.2697,135.4901
+SPP1,cholangiocyte,0.0,215.5473,103.0655
+NGF,cholangiocyte,1.0,91.521,3.916
+NGF,cholangiocyte,0.5,60.4395,2.7975
+NGF,cholangiocyte,0.25,35.7037,2.246
+NGF,cholangiocyte,0.1,16.06,1.8309
+NGF,cholangiocyte,0.05,8.2639,1.511
+NGF,cholangiocyte,0.01,1.8804,0.7863
+NGF,cholangiocyte,0.0,0.0915,0.1279
+SCN9A,cholangiocyte,1.0,7.2489,0.7697
+SCN9A,cholangiocyte,0.5,4.7926,0.9525
+SCN9A,cholangiocyte,0.25,2.7546,0.5007
+SCN9A,cholangiocyte,0.1,1.2193,0.4453
+SCN9A,cholangiocyte,0.05,0.7235,0.376
+SCN9A,cholangiocyte,0.01,0.1225,0.2183
+SCN9A,cholangiocyte,0.0,0.0,0.0
+TACR1,hematopoietic cell,1.0,0.2231,0.1043
+TACR1,hematopoietic cell,0.5,0.1801,0.1011
+TACR1,hematopoietic cell,0.25,0.1079,0.0879
+TACR1,hematopoietic cell,0.1,0.0743,0.0639
+TACR1,hematopoietic cell,0.05,0.0565,0.082
+TACR1,hematopoietic cell,0.01,0.0156,0.0469
+TACR1,hematopoietic cell,0.0,0.0122,0.0429
+TRPA1,dendritic cell,1.0,0.3434,0.1283
+TRPA1,dendritic cell,0.5,0.1985,0.1143
+TRPA1,dendritic cell,0.25,0.138,0.1229
+TRPA1,dendritic cell,0.1,0.0499,0.0791
+TRPA1,dendritic cell,0.05,0.0245,0.0688
+TRPA1,dendritic cell,0.01,0.004,0.0251
+TRPA1,dendritic cell,0.0,0.0,0.0
+ABCC1,Kupffer cell,1.0,49.793,2.267
+ABCC1,Kupffer cell,0.5,40.0843,1.2404
+ABCC1,Kupffer cell,0.25,33.8271,2.1192
+ABCC1,Kupffer cell,0.1,27.443,2.3598
+ABCC1,Kupffer cell,0.05,25.7788,2.1976
+ABCC1,Kupffer cell,0.01,24.0073,2.5705
+ABCC1,Kupffer cell,0.0,23.2796,1.8222
+ADIPOQ,dendritic cell,1.0,0.2911,0.13
+ADIPOQ,dendritic cell,0.5,0.2218,0.1517
+ADIPOQ,dendritic cell,0.25,0.0994,0.1373
+ADIPOQ,dendritic cell,0.1,0.0879,0.1128
+ADIPOQ,dendritic cell,0.05,0.0398,0.0776
+ADIPOQ,dendritic cell,0.01,0.029,0.063
+ADIPOQ,dendritic cell,0.0,0.029,0.073
+ADRB1,Kupffer cell,1.0,109.8472,3.8639
+ADRB1,Kupffer cell,0.5,74.6536,1.9667
+ADRB1,Kupffer cell,0.25,47.4898,2.9454
+ADRB1,Kupffer cell,0.1,26.5191,3.1024
+ADRB1,Kupffer cell,0.05,19.0578,2.9891
+ADRB1,Kupffer cell,0.01,11.1606,1.9737
+ADRB1,Kupffer cell,0.0,9.0972,1.7284
+ADRB2,Kupffer cell,1.0,117.2803,5.2102
+ADRB2,Kupffer cell,0.5,85.86,2.9642
+ADRB2,Kupffer cell,0.25,63.0381,4.6303
+ADRB2,Kupffer cell,0.1,44.8322,3.3841
+ADRB2,Kupffer cell,0.05,36.8904,3.9999
+ADRB2,Kupffer cell,0.01,30.8107,2.637
+ADRB2,Kupffer cell,0.0,29.6843,3.7712
+BAD,cholangiocyte,1.0,67.4301,2.3999
+BAD,cholangiocyte,0.5,51.8553,2.9709
+BAD,cholangiocyte,0.25,39.2204,1.787
+BAD,cholangiocyte,0.1,30.3913,2.2516
+BAD,cholangiocyte,0.05,26.1032,2.164
+BAD,cholangiocyte,0.01,22.8976,2.1214
+BAD,cholangiocyte,0.0,21.7905,1.8309
+CCNA2,dendritic cell,1.0,14.7492,1.5289
+CCNA2,dendritic cell,0.5,10.7614,1.5829
+CCNA2,dendritic cell,0.25,7.0534,2.3071
+CCNA2,dendritic cell,0.1,4.2307,1.6971
+CCNA2,dendritic cell,0.05,3.6019,1.7038
+CCNA2,dendritic cell,0.01,2.2779,1.3994
+CCNA2,dendritic cell,0.0,1.7548,1.1673
+CHEK2,macrophage,1.0,8.6679,0.5314
+CHEK2,macrophage,0.5,7.5339,0.77
+CHEK2,macrophage,0.25,6.7201,0.8509
+CHEK2,macrophage,0.1,5.9248,1.1004
+CHEK2,macrophage,0.05,5.6107,1.1475
+CHEK2,macrophage,0.01,5.3997,1.1442
+CHEK2,macrophage,0.0,5.6913,1.0234
+CXCL10,hematopoietic cell,1.0,51.1386,8.0009
+CXCL10,hematopoietic cell,0.5,52.022,11.9104
+CXCL10,hematopoietic cell,0.25,55.3525,12.7537
+CXCL10,hematopoietic cell,0.1,54.6525,10.7014
+CXCL10,hematopoietic cell,0.05,55.5923,10.1527
+CXCL10,hematopoietic cell,0.01,55.183,15.8759
+CXCL10,hematopoietic cell,0.0,55.5754,14.7426
+F3,cholangiocyte,1.0,116.0091,6.1467
+F3,cholangiocyte,0.5,75.6177,7.681
+F3,cholangiocyte,0.25,46.1853,4.3227
+F3,cholangiocyte,0.1,21.9814,3.5904
+F3,cholangiocyte,0.05,11.9388,3.1601
+F3,cholangiocyte,0.01,3.4398,1.3887
+F3,cholangiocyte,0.0,1.4702,0.6473
+FOSL2,monocyte,1.0,576.3927,10.3359
+FOSL2,monocyte,0.5,448.6573,12.7482
+FOSL2,monocyte,0.25,371.9506,19.7565
+FOSL2,monocyte,0.1,314.2138,17.1997
+FOSL2,monocyte,0.05,297.8494,13.2002
+FOSL2,monocyte,0.01,279.754,15.1492
+FOSL2,monocyte,0.0,275.8403,12.3
+GJA1,endothelial cell,1.0,259.6111,8.8814
+GJA1,endothelial cell,0.5,124.6766,6.62
+GJA1,endothelial cell,0.25,61.7865,4.3915
+GJA1,endothelial cell,0.1,27.9418,2.9418
+GJA1,endothelial cell,0.05,17.2806,2.8222
+GJA1,endothelial cell,0.01,9.0102,1.9284
+GJA1,endothelial cell,0.0,6.3821,2.1096
+HK2,Kupffer cell,1.0,110.0295,5.1262
+HK2,Kupffer cell,0.5,84.9459,2.6586
+HK2,Kupffer cell,0.25,66.4719,3.2508
+HK2,Kupffer cell,0.1,49.5963,4.7181
+HK2,Kupffer cell,0.05,44.7828,3.7444
+HK2,Kupffer cell,0.01,40.9308,3.7126
+HK2,Kupffer cell,0.0,39.3503,3.4128
+IL10,Kupffer cell,1.0,111.2264,8.6762
+IL10,Kupffer cell,0.5,76.778,4.0826
+IL10,Kupffer cell,0.25,48.5731,7.7822
+IL10,Kupffer cell,0.1,30.7439,5.4974
+IL10,Kupffer cell,0.05,21.3179,6.1156
+IL10,Kupffer cell,0.01,15.4239,4.292
+IL10,Kupffer cell,0.0,13.3267,3.548
+IL1R1,cholangiocyte,1.0,31.5831,1.5758
+IL1R1,cholangiocyte,0.5,23.7696,1.7245
+IL1R1,cholangiocyte,0.25,17.8477,1.5746
+IL1R1,cholangiocyte,0.1,13.224,1.5525
+IL1R1,cholangiocyte,0.05,10.6751,1.4591
+IL1R1,cholangiocyte,0.01,9.2413,1.7251
+IL1R1,cholangiocyte,0.0,9.0788,1.4754
+IRF1,cholangiocyte,1.0,205.7563,14.5405
+IRF1,cholangiocyte,0.5,181.3688,16.8949
+IRF1,cholangiocyte,0.25,163.4732,10.281
+IRF1,cholangiocyte,0.1,145.1202,12.5546
+IRF1,cholangiocyte,0.05,141.9928,8.6972
+IRF1,cholangiocyte,0.01,135.7469,8.9079
+IRF1,cholangiocyte,0.0,131.9168,8.4661
+LDLR,monocyte,1.0,160.2019,3.7291
+LDLR,monocyte,0.5,105.3959,6.1476
+LDLR,monocyte,0.25,70.0122,4.9924
+LDLR,monocyte,0.1,47.0218,3.5013
+LDLR,monocyte,0.05,37.9262,4.0247
+LDLR,monocyte,0.01,31.0058,4.0366
+LDLR,monocyte,0.0,30.6076,3.7393
+MAP2,cholangiocyte,1.0,46.6258,2.0998
+MAP2,cholangiocyte,0.5,30.5456,2.0842
+MAP2,cholangiocyte,0.25,18.9745,1.3112
+MAP2,cholangiocyte,0.1,9.018,1.2531
+MAP2,cholangiocyte,0.05,5.2779,0.8649
+MAP2,cholangiocyte,0.01,1.7657,0.7335
+MAP2,cholangiocyte,0.0,0.9027,0.4506
+MMP2,macrophage,1.0,5.2968,0.5172
+MMP2,macrophage,0.5,3.8633,0.5733
+MMP2,macrophage,0.25,2.5198,0.7342
+MMP2,macrophage,0.1,1.1586,0.513
+MMP2,macrophage,0.05,0.9463,0.4753
+MMP2,macrophage,0.01,0.4216,0.3415
+MMP2,macrophage,0.0,0.3373,0.2765
+MMP3,B cell,1.0,0.08,0.1154
+MMP3,B cell,0.5,0.0318,0.069
+MMP3,B cell,0.25,0.0079,0.0346
+MMP3,B cell,0.1,0.0038,0.0238
+MMP3,B cell,0.05,0.0,0.0
+MMP3,B cell,0.01,0.0,0.0
+MMP3,B cell,0.0,0.0,0.0
+MMP9,interneuron,1.0,1743.7702,33.3097
+MMP9,interneuron,0.5,603.2169,26.6674
+MMP9,interneuron,0.25,264.0011,21.2427
+MMP9,interneuron,0.1,101.1191,11.9379
+MMP9,interneuron,0.05,51.5831,8.3651
+MMP9,interneuron,0.01,12.7315,4.3987
+MMP9,interneuron,0.0,4.2401,1.5134
+MYC,B cell,1.0,145.0249,12.4041
+MYC,B cell,0.5,66.4717,6.9917
+MYC,B cell,0.25,40.5741,5.0284
+MYC,B cell,0.1,29.118,3.9868
+MYC,B cell,0.05,25.4843,2.7938
+MYC,B cell,0.01,23.2855,3.1823
+MYC,B cell,0.0,21.3417,2.5765
+NOS3,endothelial cell,1.0,77.3992,3.377
+NOS3,endothelial cell,0.5,36.7764,2.5989
+NOS3,endothelial cell,0.25,17.9688,1.792
+NOS3,endothelial cell,0.1,7.7186,1.152
+NOS3,endothelial cell,0.05,4.3227,0.9739
+NOS3,endothelial cell,0.01,1.4482,0.5271
+NOS3,endothelial cell,0.0,0.9167,0.4698
+NR3C2,cholangiocyte,1.0,12.2276,0.8406
+NR3C2,cholangiocyte,0.5,9.4731,0.9657
+NR3C2,cholangiocyte,0.25,7.644,0.6756
+NR3C2,cholangiocyte,0.1,6.0618,0.9382
+NR3C2,cholangiocyte,0.05,5.1156,0.8791
+NR3C2,cholangiocyte,0.01,4.4522,1.1966
+NR3C2,cholangiocyte,0.0,4.4813,0.7644
+ODC1,"CD4-positive, alpha-beta T cell",1.0,1289.0654,48.0994
+ODC1,"CD4-positive, alpha-beta T cell",0.5,639.3588,26.8985
+ODC1,"CD4-positive, alpha-beta T cell",0.25,423.2731,21.5315
+ODC1,"CD4-positive, alpha-beta T cell",0.1,306.6296,18.5604
+ODC1,"CD4-positive, alpha-beta T cell",0.05,273.9366,16.0017
+ODC1,"CD4-positive, alpha-beta T cell",0.01,244.9511,17.3185
+ODC1,"CD4-positive, alpha-beta T cell",0.0,238.8803,14.2619
+PCNA,macrophage,1.0,182.9515,4.0132
+PCNA,macrophage,0.5,169.0543,5.4041
+PCNA,macrophage,0.25,156.8305,6.6162
+PCNA,macrophage,0.1,146.2447,6.6573
+PCNA,macrophage,0.05,143.4207,9.0018
+PCNA,macrophage,0.01,139.5263,7.7249
+PCNA,macrophage,0.0,140.2432,6.1514
+PLAT,dendritic cell,1.0,11.1944,1.3525
+PLAT,dendritic cell,0.5,8.0588,1.4015
+PLAT,dendritic cell,0.25,5.5326,1.7048
+PLAT,dendritic cell,0.1,3.8629,1.2902
+PLAT,dendritic cell,0.05,2.9811,1.1783
+PLAT,dendritic cell,0.01,2.2538,1.0541
+PLAT,dendritic cell,0.0,1.817,0.8774
+PLAU,macrophage,1.0,23.7042,1.4001
+PLAU,macrophage,0.5,17.2455,1.3229
+PLAU,macrophage,0.25,11.9242,1.5766
+PLAU,macrophage,0.1,8.4456,1.553
+PLAU,macrophage,0.05,6.7492,1.4227
+PLAU,macrophage,0.01,5.4403,1.4367
+PLAU,macrophage,0.0,5.1243,1.1189
+PTGS1,Kupffer cell,1.0,578.1601,9.8999
+PTGS1,Kupffer cell,0.5,405.9553,7.6026
+PTGS1,Kupffer cell,0.25,272.1573,8.6733
+PTGS1,Kupffer cell,0.1,164.3953,12.926
+PTGS1,Kupffer cell,0.05,123.2138,10.72
+PTGS1,Kupffer cell,0.01,86.2821,7.5658
+PTGS1,Kupffer cell,0.0,77.4561,8.186
+SCN10A,"CD8-positive, alpha-beta T cell",1.0,0.1535,0.1476
+SCN10A,"CD8-positive, alpha-beta T cell",0.5,0.0719,0.0965
+SCN10A,"CD8-positive, alpha-beta T cell",0.25,0.0552,0.0901
+SCN10A,"CD8-positive, alpha-beta T cell",0.1,0.0302,0.0691
+SCN10A,"CD8-positive, alpha-beta T cell",0.05,0.0153,0.0459
+SCN10A,"CD8-positive, alpha-beta T cell",0.01,0.0109,0.0384
+SCN10A,"CD8-positive, alpha-beta T cell",0.0,0.0225,0.0632
+SCN5A,hematopoietic cell,1.0,0.2546,0.0971
+SCN5A,hematopoietic cell,0.5,0.1694,0.0966
+SCN5A,hematopoietic cell,0.25,0.1292,0.0956
+SCN5A,hematopoietic cell,0.1,0.068,0.0647
+SCN5A,hematopoietic cell,0.05,0.0425,0.065
+SCN5A,hematopoietic cell,0.01,0.0193,0.051
+SCN5A,hematopoietic cell,0.0,0.0198,0.0523
+SERPINE1,macrophage,1.0,103.5269,6.5412
+SERPINE1,macrophage,0.5,68.4455,7.7322
+SERPINE1,macrophage,0.25,41.3902,6.1206
+SERPINE1,macrophage,0.1,21.3783,4.8903
+SERPINE1,macrophage,0.05,15.3735,5.2749
+SERPINE1,macrophage,0.01,6.9914,3.1435
+SERPINE1,macrophage,0.0,4.6358,2.4784
+SREBF1,cholangiocyte,1.0,74.4631,2.7027
+SREBF1,cholangiocyte,0.5,55.9652,2.4905
+SREBF1,cholangiocyte,0.25,41.1152,1.9757
+SREBF1,cholangiocyte,0.1,28.8942,2.0434
+SREBF1,cholangiocyte,0.05,24.6913,1.9944
+SREBF1,cholangiocyte,0.01,20.0201,2.0914
+SREBF1,cholangiocyte,0.0,19.8552,1.954
+THBD,endothelial cell,1.0,254.5504,10.7927
+THBD,endothelial cell,0.5,140.6791,9.5847
+THBD,endothelial cell,0.25,85.8251,7.0942
+THBD,endothelial cell,0.1,56.747,5.0869
+THBD,endothelial cell,0.05,46.0498,4.6168
+THBD,endothelial cell,0.01,39.5151,6.054
+THBD,endothelial cell,0.0,37.3788,4.0792
+TOP2A,dendritic cell,1.0,85.5283,6.372
+TOP2A,dendritic cell,0.5,60.9988,6.8603
+TOP2A,dendritic cell,0.25,42.4425,10.243
+TOP2A,dendritic cell,0.1,23.5707,7.9798
+TOP2A,dendritic cell,0.05,18.507,6.3619
+TOP2A,dendritic cell,0.01,11.4771,4.0296
+TOP2A,dendritic cell,0.0,11.4211,3.9159
+TRPC3,endothelial cell,1.0,20.9654,1.8799
+TRPC3,endothelial cell,0.5,10.0539,1.4049
+TRPC3,endothelial cell,0.25,4.5663,0.7296
+TRPC3,endothelial cell,0.1,2.063,0.4391
+TRPC3,endothelial cell,0.05,0.9058,0.3838
+TRPC3,endothelial cell,0.01,0.2923,0.2721
+TRPC3,endothelial cell,0.0,0.0184,0.0488
+TRPV3,endothelial cell,1.0,1.7123,0.5078
+TRPV3,endothelial cell,0.5,0.7772,0.2825
+TRPV3,endothelial cell,0.25,0.4318,0.2242
+TRPV3,endothelial cell,0.1,0.172,0.1446
+TRPV3,endothelial cell,0.05,0.1076,0.1202
+TRPV3,endothelial cell,0.01,0.0378,0.0656
+TRPV3,endothelial cell,0.0,0.0147,0.0441

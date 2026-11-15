@@ -177,6 +177,22 @@ its significance are compared, not absolute background sizes. Outputs:
 `psc_pseudobulk_titration.csv`, `psc_pseudobulk_titration_summary.json`,
 `severity_correlation_verified.csv`, and `inference_ledger.csv`.
 
+## 12. Third-round additions (cross-species, external healthy reference, threshold summary)
+
+| Product | Role | Key facts |
+|---|---|---|
+| Mouse pseudobulk titration | Cross-species reuse of the controlled titration | mouse MASH LoxP/SIRT2, 21,715 cells, 14 types; 55 of 60 genes mapped (CXCL11 no ortholog), 53 producer-specific; net signal retained 1.0/0.595/0.340/0.148/0.078/0.014/0; monotone, near-linear, matching the two human collections at 0.5 |
+| External healthy human liver reference | Independent normal reference for localization | Aizarani integrated atlas `135bdd30`; 73,295 cells, 4 donors, 12 types mapped to nine MASLD labels; macrophage/Kupffer IL1B 2.95% vs 80.0%, TNF 1.07% vs 52.6%, PTGS2 1.33% vs 44.0%; descriptive, no cross-dataset p-values |
+| Threshold sensitivity summary | Mechanically merged threshold table | seven rows; precision 15.79 to 24.07% across the two datasets; no hand-entered values |
+
+Outputs: `mouse_pseudobulk_titration.csv`,
+`mouse_pseudobulk_titration_summary.json`,
+`external_healthy_reference_comparison.csv`,
+`threshold_sensitivity_summary.csv`, and the figure
+`figures/fig_external_healthy_reference.png` (manuscript Figure 10). The large
+source h5ad files are not redistributed; they are documented above and in the
+manuscript.
+
 ## Third-party licenses
 
 Databases and tools are used under their respective public licenses. TCMSP, STRING,

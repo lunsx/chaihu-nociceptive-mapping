@@ -1,0 +1,2375 @@
+{
+ "collection": "mouse MASH LoxP/SIRT2 (MASH_liver.h5ad)",
+ "n_cells": 21715,
+ "n_genes": 55,
+ "n_producer_specific": 53,
+ "excluded_no_ortholog": [
+  "CXCL11"
+ ],
+ "not_specific": [
+  "CREB1",
+  "CXCL10"
+ ],
+ "mix_size": 1000,
+ "n_draws": 40,
+ "mean_net_signal_retained": {
+  "1.0": 1.0,
+  "0.5": 0.595,
+  "0.25": 0.34,
+  "0.1": 0.148,
+  "0.05": 0.078,
+  "0.01": 0.014,
+  "0.0": 0.0
+ },
+ "per_gene": {
+  "CREB1": {
+   "producer_celltype": "dendritic cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 89.125
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 88.807
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 88.341
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 88.101
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 87.496
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 87.643
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 88.373
+    }
+   ],
+   "net_signal_retained": null,
+   "specificity": "not_producer_specific"
+  },
+  "FOS": {
+   "producer_celltype": "cholangiocyte",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 1244.253
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 1039.972
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 868.367
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 724.024
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 672.277
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 631.159
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 606.301
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.68,
+    "0.25": 0.411,
+    "0.1": 0.185,
+    "0.05": 0.103,
+    "0.01": 0.039,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "IL1B": {
+   "producer_celltype": "macrophage",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 2088.203
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 1672.994
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 1394.145
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 1118.226
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 1052.734
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 958.741
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 944.251
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.637,
+    "0.25": 0.393,
+    "0.1": 0.152,
+    "0.05": 0.095,
+    "0.01": 0.013,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "IL6": {
+   "producer_celltype": "neuron associated cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 1287.317
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 493.291
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 223.914
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 85.84
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 46.041
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 12.952
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 5.32
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.381,
+    "0.25": 0.171,
+    "0.1": 0.063,
+    "0.05": 0.032,
+    "0.01": 0.006,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "PTGS2": {
+   "producer_celltype": "neuron associated cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 889.186
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 415.542
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 244.492
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 155.597
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 135.177
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 112.013
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 110.012
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.392,
+    "0.25": 0.173,
+    "0.1": 0.059,
+    "0.05": 0.032,
+    "0.01": 0.003,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "TNF": {
+   "producer_celltype": "macrophage",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 117.161
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 84.712
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 61.78
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 41.527
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 34.229
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 27.595
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 26.644
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.642,
+    "0.25": 0.388,
+    "0.1": 0.164,
+    "0.05": 0.084,
+    "0.01": 0.011,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "CALCRL": {
+   "producer_celltype": "endothelial cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 693.488
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 332.154
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 167.802
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 73.385
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 42.753
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 19.942
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 13.416
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.469,
+    "0.25": 0.227,
+    "0.1": 0.088,
+    "0.05": 0.043,
+    "0.01": 0.01,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "CCL2": {
+   "producer_celltype": "Kupffer cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 149.564
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 102.178
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 70.116
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 41.813
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 26.154
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 18.343
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 16.786
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.643,
+    "0.25": 0.402,
+    "0.1": 0.188,
+    "0.05": 0.071,
+    "0.01": 0.012,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "CXCL2": {
+   "producer_celltype": "macrophage",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 1994.903
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 1424.668
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 1000.344
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 633.716
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 508.727
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 375.44
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 351.841
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.653,
+    "0.25": 0.395,
+    "0.1": 0.172,
+    "0.05": 0.095,
+    "0.01": 0.014,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "HMOX1": {
+   "producer_celltype": "Kupffer cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 1641.319
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 1109.232
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 682.132
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 349.711
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 222.976
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 111.008
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 81.86
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.659,
+    "0.25": 0.385,
+    "0.1": 0.172,
+    "0.05": 0.09,
+    "0.01": 0.019,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "ICAM1": {
+   "producer_celltype": "cholangiocyte",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 215.566
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 193.111
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 170.016
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 144.038
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 140.012
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 133.034
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 132.834
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.729,
+    "0.25": 0.449,
+    "0.1": 0.135,
+    "0.05": 0.087,
+    "0.01": 0.002,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "IL1A": {
+   "producer_celltype": "Kupffer cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 128.13
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 93.428
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 66.737
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 42.45
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 36.504
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 28.679
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 27.62
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.655,
+    "0.25": 0.389,
+    "0.1": 0.148,
+    "0.05": 0.088,
+    "0.01": 0.011,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "PTGER3": {
+   "producer_celltype": "neuron associated cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 60.153
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 23.433
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 10.411
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 4.112
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 2.176
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 0.644
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 0.155
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.388,
+    "0.25": 0.171,
+    "0.1": 0.066,
+    "0.05": 0.034,
+    "0.01": 0.008,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "PTGES": {
+   "producer_celltype": "hematopoietic cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 2.401
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 1.833
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 1.373
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 0.83
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 0.673
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 0.309
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 0.252
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.735,
+    "0.25": 0.522,
+    "0.1": 0.269,
+    "0.05": 0.196,
+    "0.01": 0.026,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "SPP1": {
+   "producer_celltype": "cholangiocyte",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 21842.907
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 14412.123
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 8663.191
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 3995.877
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 2159.586
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 633.27
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 215.547
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.656,
+    "0.25": 0.391,
+    "0.1": 0.175,
+    "0.05": 0.09,
+    "0.01": 0.019,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "NGF": {
+   "producer_celltype": "cholangiocyte",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 91.521
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 60.44
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 35.704
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 16.06
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 8.264
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 1.88
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 0.092
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.66,
+    "0.25": 0.39,
+    "0.1": 0.175,
+    "0.05": 0.089,
+    "0.01": 0.02,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "SCN9A": {
+   "producer_celltype": "cholangiocyte",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 7.249
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 4.793
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 2.755
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 1.219
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 0.723
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 0.122
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 0.0
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.661,
+    "0.25": 0.38,
+    "0.1": 0.168,
+    "0.05": 0.1,
+    "0.01": 0.017,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "TACR1": {
+   "producer_celltype": "hematopoietic cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 0.223
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 0.18
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 0.108
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 0.074
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 0.057
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 0.016
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 0.012
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.796,
+    "0.25": 0.454,
+    "0.1": 0.294,
+    "0.05": 0.21,
+    "0.01": 0.016,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "TRPA1": {
+   "producer_celltype": "dendritic cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 0.343
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 0.199
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 0.138
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 0.05
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 0.025
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 0.004
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 0.0
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.578,
+    "0.25": 0.402,
+    "0.1": 0.145,
+    "0.05": 0.071,
+    "0.01": 0.012,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "ABCC1": {
+   "producer_celltype": "Kupffer cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 49.793
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 40.084
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 33.827
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 27.443
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 25.779
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 24.007
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 23.28
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.634,
+    "0.25": 0.398,
+    "0.1": 0.157,
+    "0.05": 0.094,
+    "0.01": 0.027,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "ADIPOQ": {
+   "producer_celltype": "dendritic cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 0.291
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 0.222
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 0.099
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 0.088
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 0.04
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 0.029
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 0.029
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.735,
+    "0.25": 0.268,
+    "0.1": 0.224,
+    "0.05": 0.041,
+    "0.01": 0.0,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "ADRB1": {
+   "producer_celltype": "Kupffer cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 109.847
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 74.654
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 47.49
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 26.519
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 19.058
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 11.161
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 9.097
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.651,
+    "0.25": 0.381,
+    "0.1": 0.173,
+    "0.05": 0.099,
+    "0.01": 0.02,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "ADRB2": {
+   "producer_celltype": "Kupffer cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 117.28
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 85.86
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 63.038
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 44.832
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 36.89
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 30.811
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 29.684
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.641,
+    "0.25": 0.381,
+    "0.1": 0.173,
+    "0.05": 0.082,
+    "0.01": 0.013,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "BAD": {
+   "producer_celltype": "cholangiocyte",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 67.43
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 51.855
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 39.22
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 30.391
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 26.103
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 22.898
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 21.791
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.659,
+    "0.25": 0.382,
+    "0.1": 0.188,
+    "0.05": 0.094,
+    "0.01": 0.024,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "CCNA2": {
+   "producer_celltype": "dendritic cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 14.749
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 10.761
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 7.053
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 4.231
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 3.602
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 2.278
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 1.755
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.693,
+    "0.25": 0.408,
+    "0.1": 0.191,
+    "0.05": 0.142,
+    "0.01": 0.04,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "CHEK2": {
+   "producer_celltype": "macrophage",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 8.668
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 7.534
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 6.72
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 5.925
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 5.611
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 5.4
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 5.691
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.619,
+    "0.25": 0.346,
+    "0.1": 0.078,
+    "0.05": 0.0,
+    "0.01": 0.0,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "CXCL10": {
+   "producer_celltype": "hematopoietic cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 51.139
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 52.022
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 55.353
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 54.653
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 55.592
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 55.183
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 55.575
+    }
+   ],
+   "net_signal_retained": null,
+   "specificity": "not_producer_specific"
+  },
+  "F3": {
+   "producer_celltype": "cholangiocyte",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 116.009
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 75.618
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 46.185
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 21.981
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 11.939
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 3.44
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 1.47
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.647,
+    "0.25": 0.39,
+    "0.1": 0.179,
+    "0.05": 0.091,
+    "0.01": 0.017,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "FOSL2": {
+   "producer_celltype": "monocyte",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 576.393
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 448.657
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 371.951
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 314.214
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 297.849
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 279.754
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 275.84
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.575,
+    "0.25": 0.32,
+    "0.1": 0.128,
+    "0.05": 0.073,
+    "0.01": 0.013,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "GJA1": {
+   "producer_celltype": "endothelial cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 259.611
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 124.677
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 61.787
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 27.942
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 17.281
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 9.01
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 6.382
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.467,
+    "0.25": 0.219,
+    "0.1": 0.085,
+    "0.05": 0.043,
+    "0.01": 0.01,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "HK2": {
+   "producer_celltype": "Kupffer cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 110.03
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 84.946
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 66.472
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 49.596
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 44.783
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 40.931
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 39.35
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.645,
+    "0.25": 0.384,
+    "0.1": 0.145,
+    "0.05": 0.077,
+    "0.01": 0.022,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "IL10": {
+   "producer_celltype": "Kupffer cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 111.226
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 76.778
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 48.573
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 30.744
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 21.318
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 15.424
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 13.327
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.648,
+    "0.25": 0.36,
+    "0.1": 0.178,
+    "0.05": 0.082,
+    "0.01": 0.021,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "IL1R1": {
+   "producer_celltype": "cholangiocyte",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 31.583
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 23.77
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 17.848
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 13.224
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 10.675
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 9.241
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 9.079
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.653,
+    "0.25": 0.39,
+    "0.1": 0.184,
+    "0.05": 0.071,
+    "0.01": 0.007,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "IRF1": {
+   "producer_celltype": "cholangiocyte",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 205.756
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 181.369
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 163.473
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 145.12
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 141.993
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 135.747
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 131.917
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.67,
+    "0.25": 0.427,
+    "0.1": 0.179,
+    "0.05": 0.136,
+    "0.01": 0.052,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "LDLR": {
+   "producer_celltype": "monocyte",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 160.202
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 105.396
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 70.012
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 47.022
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 37.926
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 31.006
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 30.608
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.577,
+    "0.25": 0.304,
+    "0.1": 0.127,
+    "0.05": 0.056,
+    "0.01": 0.003,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "MAP2": {
+   "producer_celltype": "cholangiocyte",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 46.626
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 30.546
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 18.974
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 9.018
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 5.278
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 1.766
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 0.903
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.648,
+    "0.25": 0.395,
+    "0.1": 0.177,
+    "0.05": 0.096,
+    "0.01": 0.019,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "MMP2": {
+   "producer_celltype": "macrophage",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 5.297
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 3.863
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 2.52
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 1.159
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 0.946
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 0.422
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 0.337
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.711,
+    "0.25": 0.44,
+    "0.1": 0.166,
+    "0.05": 0.123,
+    "0.01": 0.017,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "MMP3": {
+   "producer_celltype": "B cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 0.08
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 0.032
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 0.008
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 0.004
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 0.0
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 0.0
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 0.0
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.397,
+    "0.25": 0.099,
+    "0.1": 0.048,
+    "0.05": 0.0,
+    "0.01": 0.0,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "MMP9": {
+   "producer_celltype": "interneuron",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 1743.77
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 603.217
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 264.001
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 101.119
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 51.583
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 12.732
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 4.24
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.344,
+    "0.25": 0.149,
+    "0.1": 0.056,
+    "0.05": 0.027,
+    "0.01": 0.005,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "MYC": {
+   "producer_celltype": "B cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 145.025
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 66.472
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 40.574
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 29.118
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 25.484
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 23.285
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 21.342
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.365,
+    "0.25": 0.155,
+    "0.1": 0.063,
+    "0.05": 0.033,
+    "0.01": 0.016,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "NOS3": {
+   "producer_celltype": "endothelial cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 77.399
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 36.776
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 17.969
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 7.719
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 4.323
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 1.448
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 0.917
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.469,
+    "0.25": 0.223,
+    "0.1": 0.089,
+    "0.05": 0.045,
+    "0.01": 0.007,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "NR3C2": {
+   "producer_celltype": "cholangiocyte",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 12.228
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 9.473
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 7.644
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 6.062
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 5.116
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 4.452
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 4.481
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.644,
+    "0.25": 0.408,
+    "0.1": 0.204,
+    "0.05": 0.082,
+    "0.01": 0.0,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "ODC1": {
+   "producer_celltype": "CD4-positive, alpha-beta T cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 1289.065
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 639.359
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 423.273
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 306.63
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 273.937
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 244.951
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 238.88
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.381,
+    "0.25": 0.176,
+    "0.1": 0.065,
+    "0.05": 0.033,
+    "0.01": 0.006,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "PCNA": {
+   "producer_celltype": "macrophage",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 182.952
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 169.054
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 156.831
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 146.245
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 143.421
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 139.526
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 140.243
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.675,
+    "0.25": 0.388,
+    "0.1": 0.141,
+    "0.05": 0.074,
+    "0.01": 0.0,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "PLAT": {
+   "producer_celltype": "dendritic cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 11.194
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 8.059
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 5.533
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 3.863
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 2.981
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 2.254
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 1.817
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.666,
+    "0.25": 0.396,
+    "0.1": 0.218,
+    "0.05": 0.124,
+    "0.01": 0.047,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "PLAU": {
+   "producer_celltype": "macrophage",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 23.704
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 17.245
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 11.924
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 8.446
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 6.749
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 5.44
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 5.124
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.652,
+    "0.25": 0.366,
+    "0.1": 0.179,
+    "0.05": 0.087,
+    "0.01": 0.017,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "PTGS1": {
+   "producer_celltype": "Kupffer cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 578.16
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 405.955
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 272.157
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 164.395
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 123.214
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 86.282
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 77.456
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.656,
+    "0.25": 0.389,
+    "0.1": 0.174,
+    "0.05": 0.091,
+    "0.01": 0.018,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "SCN10A": {
+   "producer_celltype": "CD8-positive, alpha-beta T cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 0.153
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 0.072
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 0.055
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 0.03
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 0.015
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 0.011
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 0.022
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.377,
+    "0.25": 0.25,
+    "0.1": 0.059,
+    "0.05": 0.0,
+    "0.01": 0.0,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "SCN5A": {
+   "producer_celltype": "hematopoietic cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 0.255
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 0.169
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 0.129
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 0.068
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 0.043
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 0.019
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 0.02
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.637,
+    "0.25": 0.466,
+    "0.1": 0.205,
+    "0.05": 0.097,
+    "0.01": 0.0,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "SERPINE1": {
+   "producer_celltype": "macrophage",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 103.527
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 68.446
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 41.39
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 21.378
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 15.373
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 6.991
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 4.636
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.645,
+    "0.25": 0.372,
+    "0.1": 0.169,
+    "0.05": 0.109,
+    "0.01": 0.024,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "SREBF1": {
+   "producer_celltype": "cholangiocyte",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 74.463
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 55.965
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 41.115
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 28.894
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 24.691
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 20.02
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 19.855
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.661,
+    "0.25": 0.389,
+    "0.1": 0.166,
+    "0.05": 0.089,
+    "0.01": 0.003,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "THBD": {
+   "producer_celltype": "endothelial cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 254.55
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 140.679
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 85.825
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 56.747
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 46.05
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 39.515
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 37.379
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.476,
+    "0.25": 0.223,
+    "0.1": 0.089,
+    "0.05": 0.04,
+    "0.01": 0.01,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "TOP2A": {
+   "producer_celltype": "dendritic cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 85.528
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 60.999
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 42.442
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 23.571
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 18.507
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 11.477
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 11.421
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.669,
+    "0.25": 0.419,
+    "0.1": 0.164,
+    "0.05": 0.096,
+    "0.01": 0.001,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "TRPC3": {
+   "producer_celltype": "endothelial cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 20.965
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 10.054
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 4.566
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 2.063
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 0.906
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 0.292
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 0.018
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.479,
+    "0.25": 0.217,
+    "0.1": 0.098,
+    "0.05": 0.042,
+    "0.01": 0.013,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  },
+  "TRPV3": {
+   "producer_celltype": "endothelial cell",
+   "points": [
+    {
+     "fraction": 1.0,
+     "cpm": 1.712
+    },
+    {
+     "fraction": 0.5,
+     "cpm": 0.777
+    },
+    {
+     "fraction": 0.25,
+     "cpm": 0.432
+    },
+    {
+     "fraction": 0.1,
+     "cpm": 0.172
+    },
+    {
+     "fraction": 0.05,
+     "cpm": 0.108
+    },
+    {
+     "fraction": 0.01,
+     "cpm": 0.038
+    },
+    {
+     "fraction": 0.0,
+     "cpm": 0.015
+    }
+   ],
+   "net_signal_retained": {
+    "1.0": 1.0,
+    "0.5": 0.449,
+    "0.25": 0.246,
+    "0.1": 0.093,
+    "0.05": 0.055,
+    "0.01": 0.014,
+    "0.0": 0.0
+   },
+   "specificity": "producer_specific"
+  }
+ }
+}

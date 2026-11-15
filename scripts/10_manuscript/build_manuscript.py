@@ -15,25 +15,27 @@ TABDIR = os.path.join(BASE, "投稿表格")
 OUTDIR = os.path.join(BASE, "论文写作", "CBM_初审上传包_单独存放")
 
 FIG_MAP = {
-    "Overall design": [
+    "2.1": [
         (FIGDIR, "Fig1_技术路线图.png",
          "Figure 1. Layered computational workflow, from compound and target cataloging through independent human validation, network and pathway analysis, cellular and spatial localization, structural simulation, and in silico perturbation."),
     ],
-    "Core intersection": [
+    "3.2": [
         (FIGDIR, "Fig4_PPI与富集.png",
          "Figure 4. Protein-protein interaction network and functional enrichment of the core targets."),
     ],
-    "Cross-cohort direction": [
+    "3.4": [
         (FIGDIR, "Fig2_多队列方向矩阵.png",
          "Figure 2. Multi-cohort direction matrix for the candidate genes across the five independent human cohorts."),
     ],
-    "Meta-analysis, dilution": [
+    "3.5": [
         (FIGDIR, "Fig3_Meta森林图拼版.png",
          "Figure 3. Random-effects meta-analysis forest plots for the core pain-related genes."),
     ],
-    "Single-cell localization": [
+    "3.6": [
         (FIGDIR, "Fig5_单细胞定位.png",
          "Figure 5. Single-cell localization of the core targets across human liver cell types."),
+        (os.path.join(BASE, "healthy_liver"), "fig_external_healthy_reference.png",
+         "Figure 10. External healthy human liver reference: expressing-cell percentages versus the MASLD donor median, with the single GSE344087 control shown for comparison."),
         (SUPFIGDIR, "S1_Harmony_UMAP.png",
          "Supplementary Figure S1. Harmony integration of the 20-sample MASLD collection, shown before and after batch correction."),
         (SUPFIGDIR, "S2_marker_heatmap.png",
@@ -41,25 +43,23 @@ FIG_MAP = {
         (SUPFIGDIR, "S3_composition_stacked.png",
          "Supplementary Figure S3. Donor-level cell-type composition across the 20 samples, presented without inferential p-values."),
     ],
-    "Spatial transcriptomics": [
+    "3.7": [
         (FIGDIR, "Fig6_空间转录组.png",
          "Figure 6. Spatial transcriptomic localization of the target signals in human and mouse liver."),
     ],
-    "Molecular docking": [
+    "3.8": [
         (FIGDIR, "Fig7_分子对接.png",
          "Figure 7. Molecular docking poses and binding energies of the leading compounds."),
-    ],
-    "Molecular dynamics": [
         (FIGDIR, "Fig8_MD稳定性.png",
          "Figure 8. Molecular dynamics stability of the 5KIR-luteolin complex over the production trajectory."),
         (SUPFIGDIR, "S4_pose_clustering.png",
          "Supplementary Figure S4. Backbone and ligand pose clustering, showing a single protein cluster and six ligand clusters."),
     ],
-    "In silico perturbation": [
+    "3.9": [
         (FIGDIR, "Fig9_因果扰动.png",
          "Figure 9. In silico causal perturbation effects of transcription factor knockout and overexpression."),
     ],
-    "The sender-to-receiver": [
+    "3.10": [
         (SUPFIGDIR, "S5_send_receive.png",
          "Supplementary Figure S5. Sender-to-receiver panels linking liver mediators to their sensory-neuron receptors, with edge evidence graded."),
         (SUPFIGDIR, "S6_drg_dotplot.png",
@@ -193,10 +193,9 @@ while i < len(body_lines):
         p = doc.add_paragraph()
         run = p.add_run(head); set_run_font(run, size=12, bold=True)
         p.paragraph_format.space_before = Pt(10); p.paragraph_format.space_after = Pt(4)
-        match_head = re.sub(r'^(\d+(?:\.\d+)*)\.\s+', r'\1 ', head)
-        for key, val in FIG_MAP.items():
-            if key in match_head:
-                pending_fig = list(val)
+        sec_num = re.match(r'^(\d+(?:\.\d+)*)\.', head)
+        if sec_num and sec_num.group(1) in FIG_MAP:
+            pending_fig = list(FIG_MAP[sec_num.group(1)])
         in_author_block = False
     elif s.startswith("## "):
         flush_figure()

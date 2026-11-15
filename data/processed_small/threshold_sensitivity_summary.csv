@@ -1,0 +1,8 @@
+﻿dataset,threshold_rule,background_size,precision_pct,empirical_p
+GSE130970,TPM >= 0.5,13981,16.67,0.0005
+GSE130970,TPM >= 1.0,13981,16.67,0.0005
+GSE130970,TPM >= 2.0,12593,19.35,0.0005
+GSE89632,log2 intensity >= 8,19670,24.07,0.0001
+GSE89632,log2 intensity >= 9,15003,19.57,0.0001
+GSE89632,log2 intensity >= 10,11503,15.79,0.0001
+formula,formula-derived 664 background,664,16.33,0.0001
