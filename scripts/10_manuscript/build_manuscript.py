@@ -10,28 +10,61 @@ from docx.oxml import OxmlElement
 BASE = r"C:\Users\Administrator\Desktop\草药\新选题_醋香附胁痛\计算分析"
 MD = os.path.join(BASE, "论文写作", "paper_CBM_submission.md")
 FIGDIR = os.path.join(BASE, "投稿图集")
+SUPFIGDIR = os.path.join(BASE, "投稿图集", "补充图")
 TABDIR = os.path.join(BASE, "投稿表格")
 OUTDIR = os.path.join(BASE, "论文写作", "CBM_初审上传包_单独存放")
 
 FIG_MAP = {
-    "2.1 Overall design": ("Fig1_技术路线图.png",
-        "Figure 1. Layered computational workflow, from compound and target cataloging through independent human validation, network and pathway analysis, cellular and spatial localization, structural simulation, and in silico perturbation."),
-    "3.2 Core intersection": ("Fig4_PPI与富集.png",
-        "Figure 4. Protein-protein interaction network and functional enrichment of the core targets."),
-    "3.3 Cross-cohort direction": ("Fig2_多队列方向矩阵.png",
-        "Figure 2. Multi-cohort direction matrix for the candidate genes across the five independent human cohorts."),
-    "3.4 Transcriptomic meta-analysis": ("Fig3_Meta森林图拼版.png",
-        "Figure 3. Random-effects meta-analysis forest plots for the core pain-related genes."),
-    "3.6 Single-cell localization": ("Fig5_单细胞定位.png",
-        "Figure 5. Single-cell localization of the core targets across human liver cell types."),
-    "3.7 Spatial transcriptomics": ("Fig6_空间转录组.png",
-        "Figure 6. Spatial transcriptomic localization of the target signals in human and mouse liver."),
-    "3.8 Molecular docking": ("Fig7_分子对接.png",
-        "Figure 7. Molecular docking poses and binding energies of the leading compounds."),
-    "3.9 Molecular dynamics": ("Fig8_MD稳定性.png",
-        "Figure 8. Molecular dynamics stability of the 5KIR-luteolin complex over the production trajectory."),
-    "3.10 In silico perturbation": ("Fig9_因果扰动.png",
-        "Figure 9. In silico causal perturbation effects of transcription factor knockout and overexpression."),
+    "2.1 Overall design": [
+        (FIGDIR, "Fig1_技术路线图.png",
+         "Figure 1. Layered computational workflow, from compound and target cataloging through independent human validation, network and pathway analysis, cellular and spatial localization, structural simulation, and in silico perturbation."),
+    ],
+    "3.2 Core intersection": [
+        (FIGDIR, "Fig4_PPI与富集.png",
+         "Figure 4. Protein-protein interaction network and functional enrichment of the core targets."),
+    ],
+    "3.4 Cross-cohort direction": [
+        (FIGDIR, "Fig2_多队列方向矩阵.png",
+         "Figure 2. Multi-cohort direction matrix for the candidate genes across the five independent human cohorts."),
+    ],
+    "3.5 Meta-analysis": [
+        (FIGDIR, "Fig3_Meta森林图拼版.png",
+         "Figure 3. Random-effects meta-analysis forest plots for the core pain-related genes."),
+    ],
+    "3.7 Single-cell localization": [
+        (FIGDIR, "Fig5_单细胞定位.png",
+         "Figure 5. Single-cell localization of the core targets across human liver cell types."),
+        (SUPFIGDIR, "S1_Harmony_UMAP.png",
+         "Supplementary Figure S1. Harmony integration of the 20-sample MASLD collection, shown before and after batch correction."),
+        (SUPFIGDIR, "S2_marker_heatmap.png",
+         "Supplementary Figure S2. Marker-gene heatmap confirming the nine cell-type annotations in the MASLD collection."),
+        (SUPFIGDIR, "S3_composition_stacked.png",
+         "Supplementary Figure S3. Donor-level cell-type composition across the 20 samples, presented without inferential p-values."),
+    ],
+    "3.8 Spatial": [
+        (FIGDIR, "Fig6_空间转录组.png",
+         "Figure 6. Spatial transcriptomic localization of the target signals in human and mouse liver."),
+    ],
+    "3.9 Molecular docking": [
+        (FIGDIR, "Fig7_分子对接.png",
+         "Figure 7. Molecular docking poses and binding energies of the leading compounds."),
+    ],
+    "3.10 Molecular dynamics": [
+        (FIGDIR, "Fig8_MD稳定性.png",
+         "Figure 8. Molecular dynamics stability of the 5KIR-luteolin complex over the production trajectory."),
+        (SUPFIGDIR, "S4_pose_clustering.png",
+         "Supplementary Figure S4. Backbone and ligand pose clustering, showing a single protein cluster and six ligand clusters."),
+    ],
+    "3.11 In silico perturbation": [
+        (FIGDIR, "Fig9_因果扰动.png",
+         "Figure 9. In silico causal perturbation effects of transcription factor knockout and overexpression."),
+    ],
+    "3.12 The sender-to-receiver": [
+        (SUPFIGDIR, "S5_send_receive.png",
+         "Supplementary Figure S5. Sender-to-receiver panels linking liver mediators to their sensory-neuron receptors."),
+        (SUPFIGDIR, "S6_drg_dotplot.png",
+         "Supplementary Figure S6. Receptor-expression dot plot across the human dorsal root ganglion clusters."),
+    ],
 }
 
 # ---------- low-level helpers ----------
@@ -112,8 +145,8 @@ def build_table(doc, rows, widths=None, fontsize=9.5):
             p.alignment = WD_ALIGN_PARAGRAPH.CENTER if ri == 0 else WD_ALIGN_PARAGRAPH.LEFT
     return t
 
-def add_figure(doc, file, caption):
-    path = os.path.join(FIGDIR, file)
+def add_figure(doc, directory, file, caption):
+    path = os.path.join(directory, file)
     p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p.paragraph_format.space_before = Pt(8); p.paragraph_format.space_after = Pt(2)
     run = p.add_run()
@@ -140,11 +173,12 @@ ref_idx = next(i for i,l in enumerate(lines) if l.strip() == "## References")
 body_lines = lines[:ref_idx]
 ref_lines = lines[ref_idx+1:]
 
-pending_fig = None
+pending_fig = []
 def flush_figure():
     global pending_fig
-    if pending_fig:
-        add_figure(doc, pending_fig[0], pending_fig[1]); pending_fig = None
+    for directory, file, caption in pending_fig:
+        add_figure(doc, directory, file, caption)
+    pending_fig = []
 
 i = 0
 in_author_block = True
@@ -159,9 +193,10 @@ while i < len(body_lines):
         p = doc.add_paragraph()
         run = p.add_run(head); set_run_font(run, size=12, bold=True)
         p.paragraph_format.space_before = Pt(10); p.paragraph_format.space_after = Pt(4)
+        match_head = re.sub(r'^(\d+(?:\.\d+)*)\.\s+', r'\1 ', head)
         for key, val in FIG_MAP.items():
-            if head.startswith(key):
-                pending_fig = val
+            if match_head.startswith(key):
+                pending_fig = list(val)
         in_author_block = False
     elif s.startswith("## "):
         flush_figure()
@@ -228,16 +263,18 @@ def read_csv_rows(name):
 
 doc.add_page_break()
 extra = [
-    ("Table 3. Cross-cohort direction voting for the candidate genes.", "Table2_方向投票.csv"),
-    ("Table 4. Molecular docking binding energies (kcal/mol).", "Table4_对接结合能.csv"),
-    ("Table 5. Random-effects meta-analysis effects with Benjamini-Hochberg adjusted p values.", "Table5_Meta效应BH.csv"),
+    ("Table 1. Cohort characteristics and the role each dataset played in the analysis.", "Table1_队列特征.csv", 9),
+    ("Table 2. Evidence-tier classification of the candidate targets.", "Table3_靶点证据分级.csv", 8.5),
+    ("Table 3. Cross-cohort direction voting for the candidate genes.", "Table2_方向投票.csv", 9),
+    ("Table 4. Molecular docking binding energies (kcal/mol).", "Table4_对接结合能.csv", 9),
+    ("Table 5. Random-effects meta-analysis effects with Benjamini-Hochberg adjusted p values.", "Table5_Meta效应BH.csv", 8.5),
 ]
-for title, fname in extra:
+for title, fname, fs in extra:
     p = doc.add_paragraph()
     run = p.add_run(title); set_run_font(run, size=11, bold=True)
     p.paragraph_format.space_before = Pt(6); p.paragraph_format.space_after = Pt(4)
     rows = read_csv_rows(fname)
-    build_table(doc, rows, fontsize=8.5 if fname.startswith("Table5") else 9)
+    build_table(doc, rows, fontsize=fs)
     doc.add_paragraph().paragraph_format.space_after = Pt(6)
 
 out = os.path.join(OUTDIR, "Manuscript_CBM.docx")

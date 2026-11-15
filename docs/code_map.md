@@ -35,7 +35,7 @@ those are not needed to reproduce reported results and stay in the project archi
 | 09_benchmarks | 05_round6_extra_stats.py | gene-set level permutation matrix (8 references x 7 strategies, 10,000 draws), direction 3x3 concordance, docking panel z-scores and per-scoring ranks |
 | 09_benchmarks | dude_download.py, dude_receptor.py, prep_receptor.py, prep_ligands.py, positive_controls.py | DUD-E prep and positive controls |
 | 09_benchmarks | analyze_masld.py, download_tar.py (C:\dockwork\masld) | early seven-sample human MASLD localization |
-| 10_manuscript | build_manuscript.py, build_letter_highlights.py, build_target_list.py | Word manuscript, letter, highlights, target list |
+| 10_manuscript | build_manuscript.py, build_letter_highlights.py, build_target_list.py | Word manuscript, letter, highlights, target list; build_manuscript inserts Figures 1-9 and Supplementary Figures S1-S6 and all five end tables |
 | 10_manuscript | plot_send_receive_panels.py | three-panel send/receive figure (numbers pulled from tables, not hard-coded) |
 | 11_mr | step1_instruments.py, step2_classify_cis.py, step3_harmonize_mr.py, step4_coloc.py, step5_export_tables.py (cloud mr3) | eQTLGen instruments, cis/trans, MR estimators, ABF colocalization, CSV export |
 | 11_mr | og_client.py, mr_methods.py, coloc.py | OpenGWAS client (token from env), pure-Python MR, Wakefield ABF |

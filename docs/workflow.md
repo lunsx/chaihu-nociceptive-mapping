@@ -67,10 +67,17 @@ are configured at the top of each script.
 | Fig 7 | Docking poses/energies | 04_docking |
 | Fig 8 | Molecular dynamics | 05_md_mmgbsa |
 | Fig 9 | Causal perturbation | 08_perturbation |
-| DRG dot plot | Receptor/channel expression across 15 DRG clusters | 12_drg (figures/drg_receptor_dotplot.png) |
-| Harmony UMAP | MASLD pre/post-correction UMAP by sample and condition | 07_singlecell_spatial (figures/masld_harmony_umap.png) |
-| Marker heatmap | 9 MASLD cell types by marker-gene z-score | 07_singlecell_spatial (figures/masld_marker_heatmap.png) |
-| Composition stack | 20 donor cell-type composition | 07_singlecell_spatial (figures/masld_composition_stacked.png) |
+
+Supplementary figures (files in `figures/`, copied to `投稿图集/补充图/`):
+
+| Figure | Content | Producing module |
+|---|---|---|
+| Fig S1 | MASLD Harmony UMAP before/after correction | 07_singlecell_spatial (figures/masld_harmony_umap.png) |
+| Fig S2 | 9 MASLD cell types by marker-gene z-score | 07_singlecell_spatial (figures/masld_marker_heatmap.png) |
+| Fig S3 | 20 donor cell-type composition stack | 07_singlecell_spatial (figures/masld_composition_stacked.png) |
+| Fig S4 | Backbone and ligand pose clustering | 05_md_mmgbsa (figures/md_pose_clustering.png) |
+| Fig S5 | Sender-to-receiver liver mediator to neuron receptor panels | 12_drg (figures/fig_send_receive_panels.png) |
+| Fig S6 | Receptor/channel expression across 15 DRG clusters | 12_drg (figures/drg_receptor_dotplot.png) |
 
 ## Table mapping
 
