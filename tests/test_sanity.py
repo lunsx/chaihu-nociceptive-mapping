@@ -60,15 +60,36 @@ def test_checksums_validate():
 
 
 def test_required_docs_exist():
-    for rel in ["README.md", "LICENSE", "requirements.txt",
+    for rel in ["README.md", "LICENSE", "requirements.txt", "pyproject.toml",
                 "docs/workflow.md", "docs/code_map.md", "docs/data_sources.md"]:
         assert (ROOT / rel).is_file(), f"missing {rel}"
+
+
+def test_packaged_data_matches_repo():
+    import hashlib
+    small = ROOT / "data" / "processed_small"
+    bundled = ROOT / "src" / "decimap" / "data"
+    names = [
+        "external_pain_gene_set.csv",
+        "gse89632_significant_DEG.csv",
+        "chaihu_filtered_gene_universe.csv",
+        "jinling_filtered_gene_universe.csv",
+    ]
+    for name in names:
+        def digest(path):
+            h = hashlib.sha256()
+            with open(path, "rb") as fh:
+                for chunk in iter(lambda: fh.read(65536), b""):
+                    h.update(chunk)
+            return h.hexdigest()
+        assert digest(bundled / name) == digest(small / name), f"drift in {name}"
 
 
 if __name__ == "__main__":
     failures = 0
     for fn in [test_module_dirs_and_scripts, test_bundled_json_parses,
-               test_checksums_validate, test_required_docs_exist]:
+               test_checksums_validate, test_required_docs_exist,
+               test_packaged_data_matches_repo]:
         try:
             fn()
             print(f"PASS {fn.__name__}")

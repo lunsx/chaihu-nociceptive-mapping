@@ -1,29 +1,57 @@
-# Computational mapping of inflammatory nociceptive signaling in Chaihu-Shugan-San
+# DECIMAP: de-circular, evidence-graded computational mapping
 
-Reproducible code and data guide for the manuscript:
+Reproducible code, data, and a command line tool for the manuscript:
 
-> **A de-circularized, evidence-graded computational framework maps Chaihu Shugan San onto the liver inflammation to pain-sensitization axis**
+> **DECIMAP: a de-circularized, evidence-graded computational framework for mapping Chinese medicine formulas onto a disease axis**
 > Fengkai Liu, Tianhui Gao*
-> Target journal: *Computers in Biology and Medicine* (Elsevier)
+> Target journal: *Computer Methods and Programs in Biomedicine* (Elsevier)
 > Affiliation: School of Pharmacy, Qilu Medical University, Zibo, Shandong, China
 
-This repository is the computational companion to the paper. It documents every
-public data source, the analysis pipeline from raw data to figures and tables,
-fixed random seeds, and the software environment. The study is entirely
-computational (public de-identified data, no new human subjects, no animals).
+DECIMAP is both the name of the framework and an installable Python package. It
+packages the reusable bias-control procedures used in the paper, an external-only
+de-circularized enrichment benchmark and a controlled pseudobulk titration, and
+it applies them to two formulas on the same liver inflammation to pain-sensitization
+axis. The study is entirely computational (public de-identified data, no new human
+subjects, no animals, no cell experiments).
+
+## Install the tool
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate                  # Windows
+python -m pip install .
+```
+
+The package depends only on numpy, pandas, and scipy and bundles the small
+reference files it needs, so the benchmark runs offline in a clean install.
+
+```bash
+decimap benchmark              # run the symmetric de-circularized benchmark
+decimap benchmark --output metrics.csv
+decimap validate               # verify bundled data and reproduce reference values
+decimap --version
+```
+
+`decimap validate` recomputes the benchmark and checks it against the values
+reported in the manuscript. It also verifies the integrity of the bundled data.
 
 ## What the analysis does
 
-The framework links compounds of the seven-herb formula Chaihu-Shugan-San (which
-contains vinegar-processed *Cyperi Rhizoma*) to human targets, then asks whether
-those targets are (1) differentially expressed in inflammatory/metabolic liver
-disease, (2) localized to specific cell types, (3) supported by perturbation and
-causal evidence, and (4) physically plausible by molecular docking, molecular
-dynamics, and an external benchmark. The IL1B -> PTGS2 -> PGE2 signaling route
-itself is already established by earlier experiments; the question this study
-addresses is how the formula's compounds map onto that route and how robust the
-mapping is. Direct binding and analgesic efficacy are not demonstrated here and
-are explicitly left to later experimental work.
+The framework maps compounds of a formula onto human targets, then asks whether
+those targets are (1) differentially expressed in inflammatory and metabolic
+liver disease, (2) localized to specific cell types, (3) supported by perturbation
+and human genetic evidence, and (4) physically plausible by molecular docking and
+molecular dynamics. The IL1B -> PTGS2 -> PGE2 route is established by earlier
+experiments; the contribution here is a reusable, de-circularized way to show how
+formula compounds map onto that route, and to quantify how strongly the mapping
+enriches against external references. Direct binding, causal effects, and analgesic
+efficacy are not demonstrated and are left to later experimental work.
+
+Two formulas are studied on the same disease axis. Chaihu Shugan San is the first
+case and Jinlingzi San is the portability test; the two share no herbs but their
+filtered genes overlap at Jaccard 0.703, so the second case is presented as
+portability and convergence, not an independent gene set. An exploratory third
+formula, Xiaoyao San, is kept as a control.
 
 ## Repository layout
 
@@ -31,9 +59,11 @@ are explicitly left to later experimental work.
 chaihu-nociceptive-mapping/
 ├── README.md                 # this file
 ├── LICENSE                   # MIT
-├── requirements.txt          # pinned Python packages (pip)
+├── pyproject.toml            # DECIMAP package build and console entry point
+├── requirements.txt          # pinned packages for the full analysis environment
 ├── environment.yml           # equivalent conda environment
-├── .gitignore
+├── src/
+│   └── decimap/              # installable package (cli, benchmark, validate, data)
 ├── scripts/                  # curated, final analysis scripts by module
 │   ├── 01_bulk_deg/          # GSE89632 QC, annotation, differential expression
 │   ├── 02_tcmsp_targets/     # TCMSP parsing, UniProt mapping, intersections
@@ -42,103 +72,63 @@ chaihu-nociceptive-mapping/
 │   ├── 05_md_mmgbsa/         # OpenMM setup, production, analysis, MM-GBSA
 │   ├── 06_multicohort_meta/  # five-cohort voting, random-effects meta-analysis
 │   ├── 07_singlecell_spatial/# single-cell and spatial localization
-│   ├── 08_perturbation/      # L1000/Enrichr, CellOracle-style perturbation
+│   ├── 08_perturbation/      # L1000/Enrichr and in-silico perturbation
 │   ├── 09_benchmarks/        # dilution, CI/TOST, framework benchmark, MASLD
 │   ├── 10_manuscript/        # builds the Word manuscript, letter, highlights
-│   ├── 11_mr/                # eQTLGen instruments, MR estimators, ABF colocalization, SMR/HEIDI
-│   └── 12_drg/               # human DRG receptor/channel expression bridge
+│   ├── 11_mr/                # eQTLGen instruments, MR, colocalization, SMR/HEIDI
+│   ├── 12_drg/               # human DRG receptor/channel expression bridge
+│   └── 13_cross_formula/     # self-contained cross-formula fetch, parse, benchmark
 ├── data/
-│   ├── processed_small/      # small result tables that can be versioned in git
+│   ├── processed_small/      # small result tables versioned in git
 │   └── raw_external_links/   # manifests pointing to raw/GEO data (large files)
-├── figures/                  # versioned publication figures (e.g. DRG dot plot)
-├── docs/
-│   ├── workflow.md           # step-by-step pipeline and figure/table mapping
-│   ├── code_map.md           # curated script -> original script -> output mapping
-│   ├── data_sources.md       # every database, URL, accession, and version
-│   └── 第3/4/6轮 reports   # round-by-round analysis reports (第6轮_防守项/)
+├── figures/                  # versioned publication figures
+├── docs/                     # workflow, code map, data sources, methodology reports
 ├── notebooks/                # optional exploratory notebooks (not authoritative)
 └── tests/                    # lightweight sanity checks
 ```
 
-## Quick start
+## Reproduce the full pipeline
 
 ```bash
-# 1. Create the environment
-python -m venv .venv
-.venv\Scripts\activate            # Windows
+# Full environment (the package alone needs only numpy/pandas/scipy)
 python -m pip install -r requirements.txt
 
-# 2. Download/prepare raw data following docs/data_sources.md
-#    (large files are not stored in git; manifests record exact URLs and checksums)
-
-# 3. Run modules in numeric order 01 -> 12
-#    Each script writes its outputs under a module-specific results directory.
-#    Module 11 needs an OpenGWAS token: set OPENGWAS_JWT (or OPENGWAS_JWT_FILE).
+# Run modules in numeric order 01 -> 13. Each script writes its own outputs.
+# Module 11 needs an OpenGWAS token: set OPENGWAS_JWT (or OPENGWAS_JWT_FILE).
+python tests/test_sanity.py
 ```
 
-Molecular docking additionally requires the standalone **AutoDock Vina 1.2.7**
-executable (path configured per module), and molecular dynamics uses **OpenMM**.
-Ligand protonation uses **Meeko** and **Open Babel**. See `docs/workflow.md`.
+Molecular docking requires the standalone AutoDock Vina executable and molecular
+dynamics uses OpenMM; ligand preparation uses Meeko and Open Babel. See
+`docs/workflow.md` and `docs/data_sources.md`.
 
-## Reproducibility notes
+## Reproducibility and honest boundaries
 
-- Random seeds are fixed inside each stochastic script (docking seed `42`;
-  numeric and resampling seeds recorded where used).
-- Multiple testing uses Benjamini-Hochberg FDR; the meta-analysis uses Hedges' g
-  with a DerSimonian-Laird random-effects model.
-- Null and inconclusive results are reported as such. The meta-analysis is
-  underpowered and inconclusive (confidence intervals cross zero); it is not
-  interpreted as evidence of a zero effect.
-- MR finds no robust causal effect of the seven genes' expression on abdominal
-  pain, and colocalization gives PP.H4 all <= 0.003. SMR/HEIDI agrees: one
-  nominal SMR p=0.0246 on a fallback instrument, none survives Bonferroni or BH
-  across 28 tests. The human DRG analysis shows neurons carry inflammatory-mediator
-  receptors (notably PTGER3) without producing the mediators; both are reported as
-  bridging, not causal, evidence.
-- Docking conclusions are reported at the level the grid supports. All four PTGS2
-  structures are co-crystal complexes (5KIR rofecoxib; 1CX2/6COX SC-558; 3PGH
-  flurbiprofen), and co-crystal redock passes on all four, with RMSDs of 1.073,
-  0.718, 0.105, and 1.478 A. Seed variation is negligible (mean spread 0.04
-  kcal/mol), Vinardo and Vina rank ligands similarly but differ by 2.35 kcal/mol
-  in absolute value, cross-structure agreement ranges from 1.00 to below 0.26, and
-  the positive control celecoxib outscores the formula compounds in the SC-558
-  pockets. Luteolin is placed among known inhibitors, not above them.
-- The selection benchmark is reported with its residual circularity: against an
-  eight-gene external reference the framework keeps 8/8 with 14.6% precision and a
-  permutation p=0.0001 (13.55x enrichment over the 664-gene universe; the
-  resolution limit for 10,000 permutations), while the
-  degree-based and strict-intersection heuristics recover 1/8 and 0/8. Evidence
-  tiers do not predict external confirmation, and the paper says so.
-- The MASLD single-cell series is complete (19 case + 1 control, 48,594 cells) but
-  the single control is composition-mismatched, so it is used for donor-level
-  localization only, never for a disease-versus-normal comparison.
-- The spatial analysis is replicated across nine Visium files. SPP1 spatial
-  clustering holds on all four PSC011 sections (Moran I 0.31-0.49) and separates
-  completely from the four C73 normal sections (0.03-0.12); the pooled four-donor
-  normal reference and the mouse MASLD case-control table point the same way.
-  Each donor group has one donor, so the sections establish technical
-  reproducibility rather than population-level inference, and the paper states
-  this. Sparse cytokines keep near-zero Moran values because each spot mixes
-  multiple cells, which is treated as a detection limit rather than absence.
-- The 20-sample MASLD series is integrated with Harmony (pure-Python harmonypy
-  0.0.6, sample as batch). The same-sample neighbor fraction falls from 0.359 to
-  0.237 (MASLD 0.319 to 0.191), a descriptive mixing check that is not a disease
-  comparison given the single control. Co-crystal pocket volumes are measured by
-  a grid flood-fill (5KIR 6967, 6COX 7490, 1CX2 7578, 3PGH 5659 A^3 at 0.5 A
-  spacing; two spacings agree within 2%) as a geometric cavity descriptor, not an
-  energy. Average-linkage pose clustering places all 250 frames in one backbone
-  basin (0.16 nm) and splits ligand poses into six clusters with a dominant 72.8%
-  basin and a 18% secondary pose (0.15 nm). A second independent 10 ns trajectory
-  (seed 2027) reproduces the same pose and the ARG376/ASN375 anchors, while its
-  MM-GBSA mean is 2.53 kcal/mol more negative; the pose is reproducible across
-  seeds, the absolute free energy is not. Large regenerable embeddings and
-  per-cell tables stay out of git.
+- Random seeds are fixed in every stochastic script (permutation seed 20261116;
+docking seed 42). Multiple testing uses Benjamini-Hochberg FDR.
+- The symmetric benchmark returns near-identical precision for the two formulas,
+11.76% and 11.90%, each about three-fold above the permutation null, with Fisher
+p = 0.0026 and 0.0103. The two cases are not independent confirmations because
+the gene universes overlap.
+- Co-crystal redock passes on all four PTGS2 structures, with RMSDs of 1.073,
+0.718, 0.105, and 1.478 A, and the DUD-E benchmark confirms the docking protocol
+enriches active ligands. Docking scores are not binding free energies, and the
+MM-GBSA values do not converge across technical replicates, so they are used only
+relatively.
+- The single fully held-out cohort does not support prospective direction
+prediction (42.3% agreement, below chance). This is reported as a failed end-to-end
+generalization test, distinct from the component-level controls that pass.
+- MR, colocalization, and SMR do not support a causal claim, and the instruments
+derive from whole-blood rather than liver eQTL. The null is not evidence of absence.
+- The MASLD single-cell series has one healthy control, so it supports localization
+but not disease-contrast inference. Spatial sections are technical replicates from
+one donor per group and are treated as descriptive.
 
 ## Citation and archived data
 
-A frozen snapshot of this repository is archived on **Zenodo** and assigned a DOI;
-the DOI is inserted here once the repository is made public. All source data come
-from public repositories named in `docs/data_sources.md`.
+A frozen snapshot is archived on Zenodo; the DOI is inserted once the repository is
+made public. All source data come from public repositories named in
+`docs/data_sources.md`.
 
 ## License
 

@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "decimap"
+dynamic = ["version"]
+description = "De-circular, evidence-graded computational mapping for Chinese medicine formulas on a disease axis"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Fengkai Liu" }]
+keywords = [
+    "network pharmacology",
+    "reproducibility",
+    "computational methodology",
+    "pain sensitization",
+    "permutation test",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "scipy>=1.10",
+]
+
+[project.scripts]
+decimap = "decimap.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+decimap = ["data/*.csv"]
+
+[tool.setuptools.dynamic]
+version = { attr = "decimap.__version__" }
