@@ -1,0 +1,7 @@
+tier,name,n_claims
+T0,Asserted database association,1
+T1,Replicated observational co-change,3
+T2,Curated physical or biochemical interaction,3
+T3,Interventional or perturbation evidence,2
+T4,Human genetic causal inference,1
+No tier,Unclosed links,3
