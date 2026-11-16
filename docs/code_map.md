@@ -48,6 +48,9 @@ those are not needed to reproduce reported results and stay in the project archi
 | 12_drg | analyze_drg.py, build_final_tables.py, plot_drg.py, check_source_genes.py | per-cluster expression, annotation/mediator tables, dot plot, ligand-source check |
 | 13_cross_formula | 01_cross_formula_benchmark.py | self-contained symmetric benchmark; reads only committed processed_small files, reproduces cross_formula_benchmark.csv with no network access |
 | 13_cross_formula | 02_fetch_second_formula.py, 03_parse_map_second_formula.py (project xiaoyao_case) | TCMSP fetch of the two zero-overlap herbs using English names, parse, filter, and gene mapping; paths from config |
+| 14_degree_aware | 01_build_compound_gene_edges.py | rebuilds filtered compound-gene edges and gene-degree tables from the project master tables, with assertions on the 254/204 universes |
+| 14_degree_aware | 02_run_simulation.py | runs the synthetic-graph type I error and power benchmark, saves simulation_validation.csv |
+| 14_degree_aware | 03_brenk_sensitivity.py | named Brenk alert exclusion sensitivity, saves brenk_sensitivity.csv |
 
 ## Review-response scripts (data rounds 1-8)
 
@@ -96,6 +99,23 @@ to `data/processed_small/` are:
 | cross_formula_benchmark.csv | symmetric benchmark metrics for both formulas |
 | cross_formula_composition.csv | composition and count comparison (Table 7) |
 | core_gene_convergence.csv | six-gene core presence across formulas (Table 8) |
+
+## Degree-aware module (version 2 estimator)
+
+The package modules `src/decimap/degree_aware.py` and `simulation.py` implement
+the version 2 estimator and its validation. The redistributable products added
+to `data/processed_small/` (and mirrored into `src/decimap/data/` for the
+packaged CLI) are:
+
+| Product | Content |
+|---|---|
+| chaihu_compound_gene_edges.csv | filtered compound to gene edges for the first formula (2095) |
+| jinling_compound_gene_edges.csv | filtered compound to gene edges for the second formula (1085) |
+| chaihu_gene_degree.csv | number of compounds mapping to each first-formula gene (254) |
+| jinling_gene_degree.csv | number of compounds mapping to each second-formula gene (204) |
+| simulation_validation.csv | synthetic-graph rejection rates: type I error and power |
+| brenk_sensitivity.csv | degree-aware enrichment under named Brenk alert exclusions |
+| method_comparison.csv | DECIMAP versus the conventional network pharmacology workflow |
 
 ## Path and environment caveat
 

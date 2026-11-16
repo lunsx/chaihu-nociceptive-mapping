@@ -12,7 +12,7 @@ MODULES = [
     "01_bulk_deg", "02_tcmsp_targets", "03_ppi_enrichment", "04_docking",
     "05_md_mmgbsa", "06_multicohort_meta", "07_singlecell_spatial",
     "08_perturbation", "09_benchmarks", "10_manuscript",
-    "11_mr", "12_drg", "13_cross_formula",
+    "11_mr", "12_drg", "13_cross_formula", "14_degree_aware",
 ]
 
 
@@ -74,6 +74,10 @@ def test_packaged_data_matches_repo():
         "gse89632_significant_DEG.csv",
         "chaihu_filtered_gene_universe.csv",
         "jinling_filtered_gene_universe.csv",
+        "chaihu_compound_gene_edges.csv",
+        "jinling_compound_gene_edges.csv",
+        "chaihu_gene_degree.csv",
+        "jinling_gene_degree.csv",
     ]
     for name in names:
         def digest(path):
@@ -85,11 +89,24 @@ def test_packaged_data_matches_repo():
         assert digest(bundled / name) == digest(small / name), f"drift in {name}"
 
 
+def test_simulation_table_present():
+    import csv
+    small = ROOT / "data" / "processed_small"
+    table = small / "simulation_validation.csv"
+    assert table.is_file(), "missing simulation_validation.csv"
+    with open(table, encoding="utf-8", newline="") as fh:
+        rows = list(csv.DictReader(fh))
+    assert len(rows) == 8, "expected 8 simulation rows"
+    for row in rows:
+        rate = float(row["rejection_rate_alpha05"])
+        assert 0.0 <= rate <= 1.0, "rejection rate out of range"
+
+
 if __name__ == "__main__":
     failures = 0
     for fn in [test_module_dirs_and_scripts, test_bundled_json_parses,
                test_checksums_validate, test_required_docs_exist,
-               test_packaged_data_matches_repo]:
+               test_packaged_data_matches_repo, test_simulation_table_present]:
         try:
             fn()
             print(f"PASS {fn.__name__}")

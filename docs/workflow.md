@@ -53,6 +53,12 @@ are configured at the top of each script.
 12. **Human DRG bridge (12_drg).** Download the Nguyen 2021 human DRG h5ad,
     quantify per-cluster receptor/channel expression, build annotation and
     mediator-receptor tables, and render the receptor dot plot.
+13. **Cross-formula (13_cross_formula).** Fetch and map a second zero-herb formula
+    and run the symmetric de-circularized benchmark from committed files.
+14. **Degree-aware estimator (14_degree_aware).** Rebuild the compound-gene edges
+    and degree tables, run the degree-weighted Pareto null with bias-corrected
+    enrichment and empirical calibration, verify type I error and power on
+    synthetic graphs, and run the named Brenk alert exclusion sensitivity.
 
 ## Review-response stage: data rounds 1-8
 

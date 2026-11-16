@@ -1,11 +1,13 @@
 """DECIMAP: de-circular, evidence-graded computational mapping.
 
-DECIMAP packages the reusable bias-control procedures used in the manuscript:
-an external-only de-circularized enrichment benchmark and, in the repository,
-a controlled pseudobulk titration. The package is a thin, tested wrapper around
-fixed procedures; it does not introduce a new statistical estimator.
+DECIMAP packages the bias-control procedures used in the manuscript. Version 2
+adds a degree-aware de-circularized estimator: a fixed-size,
+probability-proportional-to-degree (Pareto) null replaces the uniform
+permutation, with a bias-corrected enrichment ratio, negative-control empirical
+calibration, a conditional portability metric, and a synthetic-graph simulation
+that verifies type I error control and power.
 """
 
-__version__ = "1.0.0"
+__version__ = "2.0.0"
 
 __all__ = ["__version__"]

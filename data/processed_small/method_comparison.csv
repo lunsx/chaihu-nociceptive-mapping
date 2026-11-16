@@ -1,0 +1,11 @@
+dimension,conventional_network_pharmacology,DECIMAP_v2
+enrichment_null,uniform permutation or one-sided hypergeometric test,degree-weighted fixed-size null using a Pareto key
+target_degree,treated as exchangeable; super-hubs enter the null like any gene,each gene sampled with probability proportional to its compound degree
+hub_bias,uncorrected; high-degree hubs can drive apparent enrichment,bias-corrected enrichment ratio; degree inflation reported explicitly
+type_I_verification,usually not reported,synthetic-graph simulation: 97.6 percent uniform false positives versus 1.8 percent degree-aware under hub confounding
+negative_controls,rarely built in,500 degree-matched negative-control sets with empirical calibration
+external_validation,often reuses the same database that supplied the targets,external pain gene set, co-crystal redock, DUD-E, and a held-out cohort
+portability,commonly a single formula,two formulas with a conditional portability metric and the non-independent Jaccard stated up front
+failed_analyses,frequently omitted,held-out cohort below chance and null MR/colocalization reported alongside positive controls
+causal_claims,mechanistic language sometimes implies causation,evidence graded; null causal results retained and not rerun to significance
+distribution,ad hoc scripts that are hard to install,pip-installable package with a command line interface, fixed seeds, bundled data, and sanity tests

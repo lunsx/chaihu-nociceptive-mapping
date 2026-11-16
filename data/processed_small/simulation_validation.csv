@@ -1,0 +1,9 @@
+scenario,test,rejection_rate_alpha05
+S0_exchangeable_null,uniform_permutation,0.018
+S0_exchangeable_null,degree_aware_permutation,0.082
+S1_hub_confounded_null,uniform_permutation,0.976
+S1_hub_confounded_null,degree_aware_permutation,0.018
+S2_alternative_plant2,degree_aware_permutation,0.29
+S2_alternative_plant4,degree_aware_permutation,0.634
+S2_alternative_plant6,degree_aware_permutation,0.712
+S2_alternative_plant8,degree_aware_permutation,0.722

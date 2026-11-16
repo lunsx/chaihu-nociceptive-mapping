@@ -1,0 +1,7 @@
+scenario,compounds_kept,universe_size,positive_in_universe,observed_overlap,corrected_enrichment,degree_weighted_empirical_p
+baseline,139,254,9,6,1.7554,0.00765
+reactive_excluded,128,252,9,6,1.7619,0.00855
+isolated_alkene_excluded,96,245,9,6,1.7471,0.01115
+catechol_excluded,129,168,5,2,0.8926,0.83371
+cumarine_excluded,128,254,9,6,1.7554,0.00795
+all_brenk_excluded,75,149,5,2,0.9761,0.75216
