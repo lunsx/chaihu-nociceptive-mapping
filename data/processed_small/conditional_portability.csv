@@ -1,0 +1,2 @@
+jaccard_universe,intersection_size,deg_genes_in_intersection,pain_genes_in_intersection,observed_shared_threeway,expected_shared_threeway,excess_shared_threeway,null_excess_p2.5,null_excess_p97.5,threeway_z,threeway_empirical_p
+0.7026,189,40,8,5,1.6931,3.3069,-1.6931,2.3069,2.9171,0.014
