@@ -1,5 +1,7 @@
 # DECIMAP: de-circular, evidence-graded computational mapping
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24283746.svg)](https://doi.org/10.5281/zenodo.24283746)
+
 Reproducible code, data, and a command line tool for the manuscript:
 
 > **DECIMAP: a de-circularized, evidence-graded computational framework for mapping Chinese medicine formulas onto a disease axis**
@@ -147,9 +149,10 @@ one donor per group and are treated as descriptive.
 
 ## Citation and archived data
 
-A frozen snapshot is archived on Zenodo; the DOI is inserted once the repository is
-made public. All source data come from public repositories named in
-`docs/data_sources.md`.
+A frozen snapshot of version 2.0.0 is archived on Zenodo and citable as
+10.5281/zenodo.24283746 (https://doi.org/10.5281/zenodo.24283746). The all-versions
+concept DOI 10.5281/zenodo.24283745 always resolves to the latest release. All source
+data come from public repositories named in `docs/data_sources.md`.
 
 ## License
 
