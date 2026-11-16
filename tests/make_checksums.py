@@ -21,9 +21,10 @@ def sha256(path: pathlib.Path) -> str:
 
 def main() -> None:
     lines = []
-    for path in sorted(SMALL.iterdir()):
+    for path in sorted(SMALL.rglob("*")):
         if path.is_file() and path.name != "CHECKSUMS.sha256":
-            lines.append(f"{sha256(path)}  {path.name}")
+            rel = path.relative_to(SMALL).as_posix()
+            lines.append(f"{sha256(path)}  {rel}")
     OUT.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"wrote {len(lines)} checksums to {OUT.name}")
 

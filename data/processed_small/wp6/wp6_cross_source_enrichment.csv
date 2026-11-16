@@ -1,0 +1,9 @@
+formula,graph,n_edges,universe,selected_deg,pain_in_universe,observed_overlap,naive_enrichment,corrected_enrichment,sensitivity_low,sensitivity_high,empirical_p,jaccard_vs_tcmsp,intersection_vs_tcmsp,core_six_n,core_six_genes,genes_without_tcmsp_symmap
+Chaihu_Shugan_San,HERB_all,10942,1765,264,18,7,2.6,1.0423,0.9825,1.12,0.54402,0.1362,242,6,IL1A;IL1B;IL6;PTGER3;PTGES;PTGS2,1250
+Chaihu_Shugan_San,HERB_ob30,6008,803,132,16,7,2.6615,1.3883,1.3023,1.5054,0.12199,0.2922,239,6,IL1A;IL1B;IL6;PTGER3;PTGES;PTGS2,386
+Chaihu_Shugan_San,HERB_no_tcmsp,725,426,71,5,2,2.4,2.768,,,0.15134,,,,,
+Chaihu_Shugan_San,HERB_tcmid_hit_only,506,386,67,4,1,1.4403,1.4604,,,0.53427,,,,,
+Jinlingzi_San,HERB_all,5052,2258,362,10,6,3.7425,1.0186,0.96,1.106,0.62562,0.086,195,5,IL1A;IL1B;IL6;PTGER3;PTGS2,1974
+Jinlingzi_San,HERB_ob30,3486,1725,290,9,6,3.9655,1.2823,1.1969,1.3953,0.21619,0.1118,194,5,IL1A;IL1B;IL6;PTGER3;PTGS2,1481
+Jinlingzi_San,HERB_no_tcmsp,1633,1513,245,1,1,6.1755,6.521,,,0.15339,,,,,
+Jinlingzi_San,HERB_tcmid_hit_only,1535,1481,244,1,1,6.0697,6.2657,,,0.15964,,,,,
