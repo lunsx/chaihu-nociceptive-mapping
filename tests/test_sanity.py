@@ -12,7 +12,7 @@ MODULES = [
     "01_bulk_deg", "02_tcmsp_targets", "03_ppi_enrichment", "04_docking",
     "05_md_mmgbsa", "06_multicohort_meta", "07_singlecell_spatial",
     "08_perturbation", "09_benchmarks", "10_manuscript",
-    "11_mr", "12_drg",
+    "11_mr", "12_drg", "13_cross_formula",
 ]
 
 

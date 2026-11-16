@@ -1,0 +1,3 @@
+﻿formula,universe_size,n_external_pain_in_universe,selected_DEG_intersect,observed_pain_overlap,observed_precision,expected_overlap_by_chance,enrichment_vs_chance,null_precision_mean,null_precision_p95,null_precision_max,fisher_p,empirical_p,three_way_genes
+Chaihu_Shugan_San,254,9,51,6,0.1176,1.81,3.32,0.0353,0.0784,0.1373,0.0025930368799714993,0.002,IL1A;IL1B;IL6;PTGER3;PTGES;PTGS2
+Jinlingzi_San,204,8,42,5,0.119,1.65,3.04,0.0388,0.0952,0.1667,0.010265110018295389,0.0092,IL1A;IL1B;IL6;PTGER3;PTGS2

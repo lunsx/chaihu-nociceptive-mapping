@@ -212,6 +212,27 @@ scripts in `scripts/07_singlecell_spatial/` and
 `scripts/09_benchmarks/threshold_sensitivity_summary.py`. The large h5ad
 source files remain outside the repository and are registered with checksums.
 
+## 14. Second test case (cross-formula, same disease axis)
+
+The second formula tests pipeline portability while the disease axis and the pain
+reference stay fixed. The full design is in
+`docs/cross_formula_methodology_report.md`.
+
+| Source | Role | Key facts |
+|---|---|---|
+| TCMSP Jinlingzi San | Second formula compounds/targets | two herbs, Toosendan Fructus and Corydalis Rhizoma, zero herb overlap with the first formula; 109 compounds, 57 pass filter, 204 filtered genes |
+| TCMSP Xiaoyao San | Exploratory control only | 8 herbs; filtered gene Jaccard 0.932 with the first formula, so not used as a separate case |
+| External pain reference | Shared positive labels | 19 literature-curated pain genes; 9 detectable in the first universe and 8 in the second |
+| GSE89632 DEG | Shared selection rule | 2,982 significant DEG; 51 intersect the first universe and 42 the second |
+
+Result: both formulas reach precision about 0.118, roughly three times the
+permutation expectation, and converge on five of the six core genes. The second
+formula lacks PTGES. Because the gene universes overlap, the case demonstrates
+portability and convergence, not an independent gene set. Outputs:
+`cross_formula_benchmark.csv`, `cross_formula_composition.csv`,
+`core_gene_convergence.csv`, `jinling_gene_mapping.csv`,
+`jinling_filtered_gene_universe.csv`, and the two shared reference lists.
+
 ## Third-party licenses
 
 Databases and tools are used under their respective public licenses. TCMSP, STRING,

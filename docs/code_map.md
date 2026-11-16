@@ -46,6 +46,8 @@ those are not needed to reproduce reported results and stay in the project archi
 | 11_mr | smr_heidi.py, smr_multiplicity.py (cloud mr3) | pure-Python SMR at the top cis SNP with delta-method SE, analytic HEIDI (Zhu 2016), fallback cis instrument, Bonferroni/BH adjustment |
 | 12_drg | find_cellxgene_drg.py, get_human_drg_assets.py, download_human_drg.py, explore_drg.py, check_x.py | CELLxGENE discovery, asset metadata, h5ad download, structure, normalization check |
 | 12_drg | analyze_drg.py, build_final_tables.py, plot_drg.py, check_source_genes.py | per-cluster expression, annotation/mediator tables, dot plot, ligand-source check |
+| 13_cross_formula | 01_cross_formula_benchmark.py | self-contained symmetric benchmark; reads only committed processed_small files, reproduces cross_formula_benchmark.csv with no network access |
+| 13_cross_formula | 02_fetch_second_formula.py, 03_parse_map_second_formula.py (project xiaoyao_case) | TCMSP fetch of the two zero-overlap herbs using English names, parse, filter, and gene mapping; paths from config |
 
 ## Review-response scripts (data rounds 1-8)
 
@@ -77,6 +79,23 @@ Run from the project agent workspace; the redistributable products go into
 | GSE89632 second neutral background | parse_gpl, run_second_background_89632 | second_background_gene_list, second_background_permutation |
 | Independent PSC/PBC titration | verify_psc_raw, run_psc_titration | psc_pseudobulk_titration, psc_pseudobulk_titration_summary |
 | Inference ledger (Table 6) | stage_round2_data (copies the manuscript table) | inference_ledger |
+
+## Cross-formula module (second test case)
+
+The methodology and honest scope are documented in
+`docs/cross_formula_methodology_report.md`. The redistributable products added
+to `data/processed_small/` are:
+
+| Product | Content |
+|---|---|
+| external_pain_gene_set.csv | literature-curated pain reference labels |
+| gse89632_significant_DEG.csv | significant disease DEG genes used as the selection rule |
+| chaihu_filtered_gene_universe.csv | first-formula filtered-molecule gene universe (254) |
+| jinling_filtered_gene_universe.csv | second-formula filtered-molecule gene universe (204) |
+| jinling_gene_mapping.csv | second-formula target name to gene mapping |
+| cross_formula_benchmark.csv | symmetric benchmark metrics for both formulas |
+| cross_formula_composition.csv | composition and count comparison (Table 7) |
+| core_gene_convergence.csv | six-gene core presence across formulas (Table 8) |
 
 ## Path and environment caveat
 
