@@ -8,6 +8,6 @@ calibration, a conditional portability metric, and a synthetic-graph simulation
 that verifies type I error control and power.
 """
 
-__version__ = "2.0.0"
+__version__ = "2.1.0"
 
 __all__ = ["__version__"]
