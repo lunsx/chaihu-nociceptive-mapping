@@ -1,6 +1,6 @@
 # DECIMAP: de-circular, evidence-graded computational mapping
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24283746.svg)](https://doi.org/10.5281/zenodo.24283746)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24283745.svg)](https://doi.org/10.5281/zenodo.24283745)
 
 Reproducible code, data, and a command line tool for the manuscript:
 
@@ -149,11 +149,11 @@ one donor per group and are treated as descriptive.
 
 ## Citation and archived data
 
-A frozen snapshot of each release is archived on Zenodo. Version 2.0.0 is citable
-as 10.5281/zenodo.24283746 (https://doi.org/10.5281/zenodo.24283746). The all-versions
-concept DOI 10.5281/zenodo.24283745 always resolves to the latest release, including
-version 2.1.0, which adds the independent-replicate molecular dynamics robustness
-analysis. All source data come from public repositories named in `docs/data_sources.md`.
+A frozen snapshot of each release is archived on Zenodo. Version 2.1.0 is citable
+as 10.5281/zenodo.24366145 (https://doi.org/10.5281/zenodo.24366145); version 2.0.0
+is citable as 10.5281/zenodo.24283746. The all-versions concept DOI
+10.5281/zenodo.24283745 always resolves to the latest release. All source data come
+from public repositories named in `docs/data_sources.md`.
 
 ## License
 
