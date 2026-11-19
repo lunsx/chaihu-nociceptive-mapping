@@ -112,11 +112,11 @@ dist_df.to_csv(os.path.join(ROOT,"MD_lig_prot_distance.csv"),index=False,encodin
 # ---------- 5) Fig8 拼版 ----------
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-plt.rcParams["font.sans-serif"]=["Microsoft YaHei","SimHei","Arial"]
+plt.rcParams["font.sans-serif"]=["Arial","Helvetica","Times New Roman"]
 fig,axs=plt.subplots(2,2,figsize=(14,9))
 ax=axs[0,0]
-ax.plot(t_ns,bb_rmsd,label="Protein backbone",color="#4C78A8")
-ax.plot(t_ns,lig_rmsd,label="Luteolin (heavy)",color="#E15759")
+ax.plot(t_ns,bb_rmsd,label="Protein backbone",color="#4C78A8",linestyle="-")
+ax.plot(t_ns,lig_rmsd,label="Luteolin (heavy)",color="#E15759",linestyle="--")
 ax.set_xlabel("Time (ns)"); ax.set_ylabel("RMSD (nm)"); ax.set_title("A. RMSD",loc="left",fontweight="bold")
 ax.legend(frameon=False)
 ax=axs[0,1]
@@ -127,8 +127,8 @@ ax.plot(t_ns,per_frame_count,color="#B07AA1")
 ax.set_xlabel("Time (ns)"); ax.set_ylabel("H-bond count")
 ax.set_title("C. Ligand–protein H-bonds",loc="left",fontweight="bold")
 ax=axs[1,1]
-ax.plot(t_ns,min_dist,label="Min distance",color="#F28E2B")
-ax.plot(t_ns,com_dist,label="COM distance",color="#76B7B2")
+ax.plot(t_ns,min_dist,label="Min distance",color="#F28E2B",linestyle="-")
+ax.plot(t_ns,com_dist,label="COM distance",color="#76B7B2",linestyle="--")
 ax.set_xlabel("Time (ns)"); ax.set_ylabel("Distance (nm)"); ax.set_title("D. Ligand–protein distance",loc="left",fontweight="bold")
 ax.legend(frameon=False)
 fig.suptitle("5KIR–luteolin MD stability",fontsize=14)

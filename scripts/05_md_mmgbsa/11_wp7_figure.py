@@ -31,6 +31,8 @@ FIGDIR = ROOT / "figures"
 REPS = [0, 1, 2]
 COLORS = {0: "#1f77b4", 1: "#ff7f0e", 2: "#2ca02c"}
 LABELS = {0: "rep0", 1: "rep1", 2: "rep2"}
+STYLES = {0: "-", 1: "--", 2: ":"}
+MARKERS = {0: "o", 1: "s", 2: "^"}
 
 plt.rcParams["font.family"] = "serif"
 plt.rcParams["font.serif"] = ["Times New Roman", "DejaVu Serif"]
@@ -69,7 +71,7 @@ fig, axes = plt.subplots(2, 3, figsize=(15, 8.2))
 ax = axes[0, 0]
 for r in REPS:
     ax.plot(fcol(rmsd[r], "time_ns"), fcol(rmsd[r], "protein_backbone_RMSD_nm"),
-            color=COLORS[r], label=LABELS[r])
+            color=COLORS[r], linestyle=STYLES[r], label=LABELS[r])
 ax.set_xlabel("Time (ns)")
 ax.set_ylabel("Backbone RMSD (nm)")
 ax.set_title("Protein backbone stability")
@@ -80,7 +82,7 @@ panel_label(ax, "A")
 ax = axes[0, 1]
 for r in REPS:
     ax.plot(fcol(rmsd[r], "time_ns"), fcol(rmsd[r], "ligand_heavy_RMSD_nm"),
-            color=COLORS[r], label=LABELS[r])
+            color=COLORS[r], linestyle=STYLES[r], label=LABELS[r])
 ax.set_xlabel("Time (ns)")
 ax.set_ylabel("Ligand heavy-atom RMSD (nm)")
 ax.set_title("Ligand pose adjustment")
@@ -92,7 +94,7 @@ ax = axes[0, 2]
 for r in REPS:
     ax.plot(fcol(dist[r], "time_ns"),
             fcol(dist[r], "min_lig_prot_distance_nm"),
-            color=COLORS[r], label=LABELS[r])
+            color=COLORS[r], linestyle=STYLES[r], label=LABELS[r])
 ax.axhline(0.4, color="gray", linestyle="--", linewidth=1.0)
 ax.set_xlabel("Time (ns)")
 ax.set_ylabel("Minimum distance (nm)")
@@ -122,7 +124,8 @@ for r in REPS:
                  key=lambda row: float(row["time_ns"]))
     vals = fcol(sub, "dG_total_kcal")
     cum = np.cumsum(vals) / np.arange(1, len(vals) + 1)
-    ax.plot(fcol(sub, "time_ns"), cum, color=COLORS[r], label=LABELS[r])
+    ax.plot(fcol(sub, "time_ns"), cum, color=COLORS[r],
+            linestyle=STYLES[r], label=LABELS[r])
 pooled = fcol(per_frame, "dG_total_kcal").mean()
 ax.axhline(pooled, color="black", linestyle="--", linewidth=1.0,
            label="pooled mean")
@@ -139,7 +142,7 @@ for r in REPS:
     sub = [row for row in blocks if int(row["replicate"]) == r]
     m = (fcol(sub, "block_start_ns") + fcol(sub, "block_end_ns")) / 2.0
     ax.scatter(m, fcol(sub, "block_mean_dG_kcal_mol"), color=COLORS[r],
-               s=28, label=LABELS[r], zorder=3)
+               marker=MARKERS[r], s=28, label=LABELS[r], zorder=3)
 ax.axhline(pooled, color="black", linestyle="--", linewidth=1.0,
            label="pooled mean")
 ax.set_xlabel("Block midpoint (ns)")
