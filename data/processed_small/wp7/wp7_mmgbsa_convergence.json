@@ -1,0 +1,25 @@
+{
+  "method": "single-trajectory MM-GBSA, OBC2, NoCutoff, entropy omitted; relative not absolute binding free energy",
+  "sampling_stride_ns": 0.16,
+  "samples_per_replicate": 125,
+  "replicate_total_dG_kcal_mol": {
+    "rep0": -30.660248617145236,
+    "rep1": -18.525103609886393,
+    "rep2": -22.580298666347765
+  },
+  "pooled_mean_kcal_mol": -23.921883631126462,
+  "between_replicate_SD_kcal_mol": 6.17780897649725,
+  "between_replicate_SEM_kcal_mol": 3.566759675582774,
+  "block_size_ns": 4.0,
+  "n_blocks": 15,
+  "block_based_SEM_kcal_mol": 1.455679541248886,
+  "naive_pooled_SEM_kcal_mol": 0.1883936673044853,
+  "first_half_mean_kcal_mol": -24.71351500877614,
+  "second_half_mean_kcal_mol": -23.11748400545017,
+  "pooled_running_mean_final_kcal_mol": -23.921883631126455,
+  "within_rep_cumulative_final": {
+    "rep0": -30.660248617145218,
+    "rep1": -18.525103609886393,
+    "rep2": -22.580298666347762
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "design": "three independent 20 ns replicates, velocity seeds 20262117, 20263117, 20264117; 4 fs timestep, OpenCL",
+  "production_frames_each": 500,
+  "pooled": {
+    "mean_backbone_RMSD_nm": 0.15418283641338348,
+    "between_rep_SD_backbone_RMSD_nm": 0.017105204984545708,
+    "between_rep_CV_backbone_RMSD_nm": 0.11094104498624802,
+    "mean_ligand_RMSD_nm": 0.32614684104919434,
+    "between_rep_SD_ligand_RMSD_nm": 0.09664876013994217,
+    "between_rep_CV_ligand_RMSD_nm": 0.2963351011276245,
+    "mean_HB_count": 2.877333333333334,
+    "between_rep_SD_HB_count": 1.7589375581109565,
+    "between_rep_CV_HB_count": 0.6113082338198411,
+    "mean_min_distance_nm": 0.2682392035126686,
+    "between_rep_SD_min_distance_nm": 0.008121926488810733,
+    "between_rep_CV_min_distance_nm": 0.030278670613585922,
+    "mean_COM_distance_nm": 1.738281053384145,
+    "between_rep_SD_COM_distance_nm": 0.0933850283468231,
+    "between_rep_CV_COM_distance_nm": 0.05372262912549034
+  },
+  "per_replicate_means": {
+    "rep0": {
+      "backbone_RMSD_nm": 0.17381758987903595,
+      "ligand_RMSD_nm": 0.21944311261177063,
+      "HB_count": 4.908,
+      "min_distance_nm": 0.25963434943556785,
+      "COM_distance_nm": 1.6638925604820252
+    },
+    "rep1": {
+      "backbone_RMSD_nm": 0.14622153341770172,
+      "ligand_RMSD_nm": 0.40781334042549133,
+      "HB_count": 1.828,
+      "min_distance_nm": 0.2757716544866562,
+      "COM_distance_nm": 1.8430809772014618
+    },
+    "rep2": {
+      "backbone_RMSD_nm": 0.1425093561410904,
+      "ligand_RMSD_nm": 0.35118404030799866,
+      "HB_count": 1.896,
+      "min_distance_nm": 0.2693116066157818,
+      "COM_distance_nm": 1.7078696224689485
+    }
+  },
+  "RMSF_pairwise_pearson": {
+    "rep0_rep1": 0.8317737706845532,
+    "rep0_rep2": 0.8012525586663234,
+    "rep1_rep2": 0.7749078404913139
+  },
+  "n_distinct_ligand_protein_HB_contacts": 23,
+  "consistently_occupied_HB_occupancy_ge_0_2": [
+    {
+      "resSeq": 142,
+      "residue": "PHE",
+      "ligand_role": "ligDonor",
+      "mean_occupancy": 0.25333333333333335
+    },
+    {
+      "resSeq": 375,
+      "residue": "ASN",
+      "ligand_role": "ligDonor",
+      "mean_occupancy": 0.37600000000000006
+    },
+    {
+      "resSeq": 376,
+      "residue": "ARG",
+      "ligand_role": "ligAcceptor",
+      "mean_occupancy": 0.4653333333333333
+    }
+  ]
+}
