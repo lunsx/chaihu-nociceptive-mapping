@@ -1,0 +1,7 @@
+{
+  "heldout_cohort": "GSE147304",
+  "n_scored": 52,
+  "point_accuracy": 0.4231,
+  "bootstrap_95ci_lo": 0.2885,
+  "bootstrap_95ci_hi": 0.5577
+}

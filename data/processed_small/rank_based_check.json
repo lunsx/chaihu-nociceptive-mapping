@@ -1,0 +1,25 @@
+{
+  "n_genes": 54,
+  "n_pain_in_list": 13,
+  "pain_genes": [
+    "CALCRL",
+    "IL1A",
+    "IL1B",
+    "IL6",
+    "NGF",
+    "PTGER3",
+    "PTGES",
+    "PTGS2",
+    "SCN9A",
+    "TACR1",
+    "TNF",
+    "TRPA1",
+    "TRPV1"
+  ],
+  "median_g_pain": 0.067,
+  "median_g_other": -0.028,
+  "mean_g_pain": 0.0488,
+  "mean_g_other": 0.0055,
+  "mannwhitney_p_two_sided": 0.670919,
+  "note": "Exploratory rank-based check on pooled Hedges g; no directional enrichment across the 54-gene list is assumed."
+}
