@@ -25,6 +25,16 @@ OUT = PATHS["figures"] / "fig_external_healthy_reference.png"
 KEY_GENES = ["IL1B", "TNF", "PTGS2", "IL6", "FOS", "ICAM1"]
 
 
+def safe_text(v, decimals=0):
+    """Format a cell value without emitting a negative zero label."""
+    if np.isnan(v):
+        return ""
+    r = float(np.round(v, decimals))
+    if r == 0.0:
+        r = 0.0
+    return f"{r:.{decimals}f}"
+
+
 def main():
     plt.rcParams["font.family"] = "Arial"
     plt.rcParams["font.size"] = 9
@@ -71,7 +81,7 @@ def main():
         for j in range(diff.shape[1]):
             v = diff.values[i, j]
             if not np.isnan(v):
-                ax.text(j, i, f"{v:.0f}", ha="center", va="center",
+                ax.text(j, i, safe_text(v, 0), ha="center", va="center",
                         color="white" if v > 45 else "black", fontsize=8)
     ax.set_title("MASLD minus healthy (percentage points)")
     fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04, label="percentage points")
