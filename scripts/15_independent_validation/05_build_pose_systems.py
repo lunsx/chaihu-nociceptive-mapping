@@ -27,7 +27,7 @@ PROT_PDB = r"C:\Users\Administrator\Desktop\草药\新选题_醋香附胁痛\计
 CANON_SDF = r"C:\dockwork\md\luteolin_docked.sdf"
 SAGE = r"C:\dockwork\md\openff-2.1.0.offxml"
 WP10 = PATHS["dock_root"] / "md" / "wp10_multipose"
-N_BLIND = 4
+N_BLIND = 9
 
 CANON_RD = Chem.MolFromMolFile(CANON_SDF, removeHs=False)
 TEMPLATE = Chem.MolFromMolFile(CANON_SDF, removeHs=True)
