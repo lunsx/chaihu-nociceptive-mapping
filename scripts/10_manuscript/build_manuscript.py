@@ -73,6 +73,11 @@ FIG_MAP = {
          "wp7_cross_replicate.png",
          "Figure 11. Cross-replicate structural robustness over three independent 20 ns molecular dynamics runs, including backbone and ligand RMSD, pocket retention, residue flexibility, and block-based MM-GBSA convergence."),
     ],
+    "3.20": [
+        (os.path.join(BASE, "chaihu-nociceptive-mapping", "figures"),
+         "wp10_multipose.png",
+         "Figure 12. Multi-pose molecular dynamics across ten 20 ns arms. (A) Protein backbone RMSD stays stable in every arm. (B) Ligand centre-of-mass drift and (C) minimum ligand-protein distance distinguish retained, re-associated, relocated, and detached arms. (D) Per-arm MM-GBSA binding free energy, color-coded by structural outcome. (E) Ligand heavy-atom RMSD and (F) mean hydrogen-bond count."),
+    ],
 }
 
 # ---------- low-level helpers ----------
@@ -287,6 +292,13 @@ for e in entries:
 
 # ---------- end tables ----------
 _CJK = re.compile(r"[一-鿿]")
+_NONASCII = re.compile(r"[^\x00-\x7f]")
+# A whole <w:font> block whose name contains a non-ASCII character.
+_FONT_BLOCK_RE = re.compile(
+    r'\s*<w:font\b(?=[^>]*w:name="[^"]*[^\x00-\x7f])[^>]*>.*?</w:font>',
+    re.S)
+# Any attribute value that contains a non-ASCII character.
+_ATTR_NONASCII_RE = re.compile(r'="[^"]*[^\x00-\x7f][^"]*"')
 def read_csv_rows(directory, name):
     with open(os.path.join(directory, name), encoding="utf-8-sig") as f:
         rows = list(csv.reader(f))
@@ -329,17 +341,14 @@ def strip_cjk_metadata(document):
     for part in document.part.package.iter_parts():
         s = str(part.partname)
         if s == "/word/fontTable.xml" or s.startswith("/word/theme/"):
-            el = getattr(part, "_element", None)
-            if el is not None:
-                for e in el.iter():
-                    for a in list(e.attrib):
-                        if _CJK.search(e.attrib[a] or ""):
-                            e.attrib[a] = "Calibri"
-                    if e.text and _CJK.search(e.text):
-                        e.text = "Calibri"
-            else:
-                # Generic parts keep their bytes in .blob rather than an lxml tree.
-                part._blob = _CJK.sub("Calibri", part.blob.decode("utf-8")).encode("utf-8")
+            # Generic parts keep their bytes in .blob rather than an lxml tree.
+            blob = part.blob.decode("utf-8")
+            if s == "/word/fontTable.xml":
+                # Drop unused east-asian font definitions as whole blocks.
+                blob = _FONT_BLOCK_RE.sub("", blob)
+            # Normalize any remaining non-ASCII typeface/name value as a whole.
+            blob = _ATTR_NONASCII_RE.sub('="Calibri"', blob)
+            part._blob = blob.encode("utf-8")
 
 strip_cjk_metadata(doc)
 
