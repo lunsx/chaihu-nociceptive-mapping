@@ -1,0 +1,18 @@
+pocket,rank,probability,center_distance_to_canonical,n_canonical_residues_hit,canonical_residues
+pocket1,1,0.984,20.276,2,375 376
+pocket2,2,0.984,22.225,0,
+pocket3,3,0.894,24.468,0,
+pocket4,4,0.218,33.647,0,
+pocket5,5,0.167,27.523,0,
+pocket6,6,0.124,25.849,0,
+pocket7,7,0.087,12.074,0,
+pocket8,8,0.084,4.134,3,226 374 375
+pocket9,9,0.07,33.187,0,
+pocket10,10,0.07,28.873,0,
+pocket11,11,0.048,34.006,0,
+pocket12,12,0.04,31.409,0,
+pocket13,13,0.036,31.159,0,
+pocket14,14,0.028,31.54,0,
+pocket15,15,0.021,21.867,0,
+pocket16,16,0.018,17.498,0,
+pocket17,17,0.006,12.368,1,376
