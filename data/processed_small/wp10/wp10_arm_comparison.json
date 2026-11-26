@@ -1,0 +1,155 @@
+{
+  "design": "ten 20 ns arms, one canonical plus nine blind sites; 4 fs timestep, OpenCL; identical solute topology",
+  "production_frames_each": 500,
+  "between_arm_dispersion": {
+    "arm_mean_backbone_RMSD_nm": {
+      "mean_of_arms": 0.14641889929771423,
+      "between_arm_SD": 0.01315206941217184,
+      "min": 0.12443891912698746,
+      "max": 0.16830670833587646,
+      "range": 0.04386778920888901
+    },
+    "arm_mean_ligand_RMSD_nm": {
+      "mean_of_arms": 1.5831410884857178,
+      "between_arm_SD": 2.489213705062866,
+      "min": 0.10310670733451843,
+      "max": 8.091289520263672,
+      "range": 7.98818302154541
+    },
+    "arm_mean_ligand_COM_drift_nm": {
+      "mean_of_arms": 1.529563546180725,
+      "between_arm_SD": 2.4982118606567383,
+      "min": 0.08696357160806656,
+      "max": 8.089940071105957,
+      "range": 8.002976417541504
+    },
+    "arm_mean_HB_count": {
+      "mean_of_arms": 1.6466,
+      "between_arm_SD": 0.822231138089798,
+      "min": 0.56,
+      "max": 2.806,
+      "range": 2.246
+    },
+    "arm_mean_min_distance_nm": {
+      "mean_of_arms": 1.1361981004565953,
+      "between_arm_SD": 1.5664140337806034,
+      "min": 0.25607920131087303,
+      "max": 4.117430801391602,
+      "range": 3.8613516000807286
+    },
+    "arm_mean_COM_distance_nm": {
+      "mean_of_arms": 3.2014516443848606,
+      "between_arm_SD": 2.4074843450428274,
+      "min": 0.9113528418540955,
+      "max": 7.5546885471344,
+      "range": 6.643335705280304
+    }
+  },
+  "per_arm_means": {
+    "arm0": {
+      "backbone_RMSD_nm": 0.1614769548177719,
+      "ligand_RMSD_nm": 0.39066869020462036,
+      "ligand_COM_drift_nm": 0.2974303662776947,
+      "HB_count": 2.194,
+      "min_distance_nm": 0.25948565152287484,
+      "COM_distance_nm": 1.7806505501270293
+    },
+    "arm1": {
+      "backbone_RMSD_nm": 0.1393587291240692,
+      "ligand_RMSD_nm": 0.3229674696922302,
+      "ligand_COM_drift_nm": 0.2823196351528168,
+      "HB_count": 2.15,
+      "min_distance_nm": 0.27697428834438326,
+      "COM_distance_nm": 0.9113528418540955
+    },
+    "arm2": {
+      "backbone_RMSD_nm": 0.13530707359313965,
+      "ligand_RMSD_nm": 0.10310670733451843,
+      "ligand_COM_drift_nm": 0.08696357160806656,
+      "HB_count": 2.806,
+      "min_distance_nm": 0.25607920131087303,
+      "COM_distance_nm": 2.391071750164032
+    },
+    "arm3": {
+      "backbone_RMSD_nm": 0.14957833290100098,
+      "ligand_RMSD_nm": 0.16019056737422943,
+      "ligand_COM_drift_nm": 0.11564110964536667,
+      "HB_count": 1.028,
+      "min_distance_nm": 0.2950061936080456,
+      "COM_distance_nm": 0.9212124427556991
+    },
+    "arm4": {
+      "backbone_RMSD_nm": 0.14388814568519592,
+      "ligand_RMSD_nm": 0.19388137757778168,
+      "ligand_COM_drift_nm": 0.1305895894765854,
+      "HB_count": 2.472,
+      "min_distance_nm": 0.28755365777015685,
+      "COM_distance_nm": 2.783286789417267
+    },
+    "arm5": {
+      "backbone_RMSD_nm": 0.12443891912698746,
+      "ligand_RMSD_nm": 8.091289520263672,
+      "ligand_COM_drift_nm": 8.089940071105957,
+      "HB_count": 2.244,
+      "min_distance_nm": 0.7226132571697235,
+      "COM_distance_nm": 2.986926896572113
+    },
+    "arm6": {
+      "backbone_RMSD_nm": 0.16830670833587646,
+      "ligand_RMSD_nm": 1.2221518754959106,
+      "ligand_COM_drift_nm": 1.1803290843963623,
+      "HB_count": 0.674,
+      "min_distance_nm": 4.04775340461731,
+      "COM_distance_nm": 7.203938490867615
+    },
+    "arm7": {
+      "backbone_RMSD_nm": 0.137462317943573,
+      "ligand_RMSD_nm": 1.5965129137039185,
+      "ligand_COM_drift_nm": 1.5854848623275757,
+      "HB_count": 0.866,
+      "min_distance_nm": 4.117430801391602,
+      "COM_distance_nm": 7.5546885471344
+    },
+    "arm8": {
+      "backbone_RMSD_nm": 0.14822302758693695,
+      "ligand_RMSD_nm": 3.2812163829803467,
+      "ligand_COM_drift_nm": 3.139211893081665,
+      "HB_count": 0.56,
+      "min_distance_nm": 0.8227549327611923,
+      "COM_distance_nm": 4.049957770824433
+    },
+    "arm9": {
+      "backbone_RMSD_nm": 0.15614880621433258,
+      "ligand_RMSD_nm": 0.4694264233112335,
+      "ligand_COM_drift_nm": 0.38772547245025635,
+      "HB_count": 1.472,
+      "min_distance_nm": 0.2763296160697937,
+      "COM_distance_nm": 1.4314303641319275
+    }
+  },
+  "n_distinct_ligand_protein_HB_contacts": 169,
+  "arm_mean_ligand_COM_drift_nm": {
+    "arm0": 0.2974303662776947,
+    "arm1": 0.2823196351528168,
+    "arm2": 0.08696357160806656,
+    "arm3": 0.11564110964536667,
+    "arm4": 0.1305895894765854,
+    "arm5": 8.089940071105957,
+    "arm6": 1.1803290843963623,
+    "arm7": 1.5854848623275757,
+    "arm8": 3.139211893081665,
+    "arm9": 0.38772547245025635
+  },
+  "max_ligand_COM_drift_nm": {
+    "arm0": 0.4864548444747925,
+    "arm1": 0.4497908651828766,
+    "arm2": 0.20822127163410187,
+    "arm3": 0.3092826306819916,
+    "arm4": 0.293403685092926,
+    "arm5": 9.155906677246094,
+    "arm6": 2.4546728134155273,
+    "arm7": 3.2002975940704346,
+    "arm8": 8.54995059967041,
+    "arm9": 0.7817808389663696
+  }
+}

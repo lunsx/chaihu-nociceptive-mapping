@@ -1,0 +1,12 @@
+﻿resSeq,residue,ligand_role,n_frames,occupancy
+289,GLN,ligAcceptor,265,0.53
+210,PHE,ligDonor,384,0.768
+214,HIS,ligDonor,10,0.02
+207,HIS,ligAcceptor,11,0.022
+382,ASN,ligAcceptor,1,0.002
+207,HIS,ligDonor,2,0.004
+409,TYR,ligAcceptor,1,0.002
+206,THR,ligDonor,14,0.028
+206,THR,ligAcceptor,2,0.004
+203,GLN,ligAcceptor,1,0.002
+443,ALA,ligDonor,4,0.008
